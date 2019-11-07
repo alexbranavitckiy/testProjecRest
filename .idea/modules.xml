@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Beck/Beck.iml" filepath="$PROJECT_DIR$/Beck/Beck.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Jirafapi/Jirafapi.iml" filepath="$PROJECT_DIR$/Jirafapi/Jirafapi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProjectJira.iml" filepath="$PROJECT_DIR$/ProjectJira.iml" />
+    </modules>
+  </component>
+</project>
