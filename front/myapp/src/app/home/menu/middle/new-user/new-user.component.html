@@ -1,0 +1,42 @@
+<div class="container color">
+  <form class="was-validated cardA">
+    <div class="h4 cardA">New user</div>
+
+
+
+    <div class="form-group cardA">
+      <label class="" for="custom-select">Role</label>
+      <select ID="custom-select" class="custom-select" required>
+        <option value="">Role</option>
+        <option value="1">Developer</option>
+        <option value="2">Tester</option>
+        <option value="3">Project Manager</option>
+      </select>
+      <div class="invalid-feedback">Example invalid custom select feedback</div>
+    </div>
+
+
+
+
+
+    <div >
+
+      <label for="exampleFormControlInput1">Email</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" value="" required >
+
+    </div>
+    <div >
+
+      <label for="exampleFormControlInput1">Password</label>
+      <input type="password" class="form-control" id="exampleFormControlInput2" placeholder="" value="" required >
+
+    </div>
+  </form>
+
+
+
+
+<br>
+  <button (click)="goComponent('NewTasks')" type="button" class="btn btn-secondary cardA">Добавить</button>
+
+</div>

@@ -1,0 +1,17 @@
+<div class="fon">
+  <div  class="bottonExit">
+    <br>
+    <button  (click)=" goComponent('Home/Login')" class="btn btn-primary  my-2 my-sm-0" type="submit">Выход</button>
+  </div>
+  <div class="container">
+    <div class=" row">
+      <div class=" col-md-3 colorcol3 ">
+<app-sidebar></app-sidebar>
+      </div>
+      <div class="col-md-9 card-deck colorcol9">
+        <router-outlet>
+      </router-outlet>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,65 @@
+<div class="container textColor">
+  <form class="was-validated cardA">
+    <div class="h4 cardA">New task</div>
+
+
+
+    <div class="form-group cardA">
+      <select class="custom-select" required>
+        <option value="">Project name</option>
+        <option value="1">Project59</option>
+        <option value="2">Project253</option>
+        <option value="3">Project2</option>
+      </select>
+      <div class="invalid-feedback">Example invalid custom select feedback</div>
+    </div>
+
+      <div class="form-group cardA">
+        <select class="custom-select" required>
+          <option value="3">__________</option>
+          <option value="">Developer</option>
+          <option value="1">Tom-id459</option>
+          <option value="2">Alex-id9253</option>
+          <option value="3">Ivan-id12</option>
+        </select>
+        <div class="invalid-feedback">Example invalid custom select feedback</div>
+      </div>
+
+
+
+
+    <div >
+
+      <label for="exampleFormControlInput1">Сustomer email</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" value="" required disabled>
+
+    </div>
+  </form>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Комментарии к задачи</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Клиент любит помидоры</textarea>
+  </div>
+
+  <div class="custom-file">
+    <input type="file" class="custom-file-input" id="" required>
+    <label class="custom-file-label" for="">Choose file...</label>
+  </div>
+
+  <div class="container cardA row">
+    <div class="col">
+      <div class="h-50">Start date
+        <input type="date" class="form-control" id="date" name="date" placeholder="Дата" required>
+      </div>
+    </div>
+
+  </div>
+  <div class="col">
+    <div>
+      <div class="h-50">End date
+        <input type="date" class="form-control" id="date2" name="date" placeholder="Дата" required>
+      </div>
+    </div>
+  </div>
+  <button (click)="goComponent('NewTasks')" type="button" class="btn btn-secondary cardA">Добавить</button>
+
+</div>
