@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ModalService} from "../../../../shared/modalService";
 
 @Component({
   selector: 'app-project-view',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectViewComponent implements OnInit {
 
-  constructor() { }
+  constructor(private  modalServ:ModalService) { }
 
   ngOnInit() {
   }

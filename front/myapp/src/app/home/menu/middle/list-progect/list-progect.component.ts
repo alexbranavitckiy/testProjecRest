@@ -12,17 +12,17 @@ export class ListProgectComponent implements OnInit {
 
 
 
-  constructor(private router: Router,private Service :Service) { }
+  constructor(private router: Router,private service :Service) { }
 
   ngOnInit() {
 
-    this.Service.fethDataBase().subscribe(()=>{
+    this.service.fethDataBase().subscribe(()=>{
 
     })
   }
   oncChange(id :number){
     //  this.onToggle.emit(id)
-    this.Service.onToggle(id)
+    this.service.onToggle(id)
   }
   goComponent(str:string){
     this.router.navigate([str]);

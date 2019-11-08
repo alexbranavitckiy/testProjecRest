@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute, Router} from "@angular/router";
-import {AuthService} from "../../shared/AuthService";
-import {ModalService} from "../../shared/modalService";
+import {ModalService} from "../../../shared/modalService";
+import {AuthService} from "../../../shared/AuthService";
 
 
 

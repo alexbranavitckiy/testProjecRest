@@ -13,7 +13,6 @@ import {FooterComponent} from "./home/footer/footer.component";
 import {HomeComponent} from "./home/home.component";
 import {ProjectViewComponent} from "./home/menu/middle/project-view/project-view.component";
 import {NewUserComponent} from "./home/menu/middle/new-user/new-user.component";
-import {LoginComponent} from "./home/login/login.component";
 import {WorkTaskComponent} from "./home/menu/middle/work-task/work-task.component";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
@@ -26,6 +25,7 @@ import { ModalModule } from 'ngx-bootstrap/modal';
 import {ModalService} from "./shared/modalService";
 import { TypeaheadModule } from 'ngx-bootstrap/typeahead';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {LoginComponent} from "./home/modal/login/login.component";
 
 
 //canActivate : [AuthGuardService],
@@ -35,11 +35,11 @@ const appRoutes: Routes = [
   {path: 'Home', component:HomeComponent  ,children:[
       {path: 'ListProgect', canActivate : [AuthGuardService],component: ListProgectComponent},
       {path: 'NewProgect',canActivate : [AuthGuardService], component: NewProgectComponent},
-      {path: 'NewTasks',canActivate : [AuthGuardService], component: NewTaskComponent},
+      {path: 'NewTasks', canActivate : [AuthGuardService],component: NewTaskComponent},
       {path: 'ProjectView',canActivate : [AuthGuardService],component: ProjectViewComponent},
-      {path: 'NewUser',canActivate : [AuthGuardService], component: NewUserComponent},
-      {path: 'WorkTask', canActivate : [AuthGuardService],component: WorkTaskComponent},
-      { path: 'Login', canActivate : [AuthGuardService],component : LoginComponent}
+      {path: 'NewUser', canActivate : [AuthGuardService],component: NewUserComponent},
+      {path: 'WorkTask',canActivate : [AuthGuardService], component: WorkTaskComponent},
+      { path: 'Login',canActivate : [AuthGuardService],component : LoginComponent}
     ]},
   { path: '**', redirectTo: 'Home',pathMatch :'full'}
 ];

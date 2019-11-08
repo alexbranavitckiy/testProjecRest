@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {Router} from "@angular/router";
+import {Service} from "../../../../shared/service";
 
 @Component({
   selector: 'app-new-progect',
@@ -9,7 +10,7 @@ import {Router} from "@angular/router";
 })
 export class NewProgectComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router,private service:Service) { }
 
   ngOnInit() {
   }
@@ -17,9 +18,6 @@ export class NewProgectComponent implements OnInit {
 
 
 
-  goComponent(str:string){
-    this.router.navigate([str]);
-  }
 
 
 

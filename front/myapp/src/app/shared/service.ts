@@ -36,7 +36,9 @@ public  getIdiser(){
     this.idnabber=number;
   }
 
-
+  goComponent(str:string){
+    this.router.navigate([str]);
+  }
 
 
   public paths: Paths[]=[

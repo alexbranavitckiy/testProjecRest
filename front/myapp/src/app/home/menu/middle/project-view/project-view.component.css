@@ -10,6 +10,11 @@
 
   background-color: #11110b;
 }
+
+.btn{
+  color: #e9ecef;
+  background-color: rgba(27, 30, 33, 0);
+}
 .progress{
   background-color: #11110b2e;
 

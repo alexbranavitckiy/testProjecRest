@@ -5,7 +5,9 @@ color: #e9ecef;
 }
 
 
-
+.card-body{
+  min-width: 12rem;
+}
 
 
 .cardA{
