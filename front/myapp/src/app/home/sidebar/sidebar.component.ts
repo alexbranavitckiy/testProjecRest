@@ -9,7 +9,7 @@ import {Component, OnInit} from "@angular/core";
   styleUrls: ['./sidebar.component.css']
 })
 
-
+//*ngIf="authService.isloggedIn  " для тго чтобы добавить защитника + в модули и роутинг 
 export class SidebarComponent implements OnInit {
 
 

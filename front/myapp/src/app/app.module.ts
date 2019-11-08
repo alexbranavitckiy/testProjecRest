@@ -22,15 +22,18 @@ import {Service} from "./shared/service";
 import {AuthService} from "./shared/AuthService";
 import {AuthGuardService} from "./shared/AuthGuardService";
 
+
+//canActivate : [AuthGuardService],
+
 const appRoutes: Routes = [
   { path: '', redirectTo: 'Home',pathMatch :'full'},
   {path: 'Home', component:HomeComponent  ,children:[
-      {path: 'ListProgect',canActivate : [AuthGuardService], component: ListProgectComponent},
-      {path: 'NewProgect', canActivate : [AuthGuardService],component: NewProgectComponent},
-      {path: 'NewTasks', canActivate : [AuthGuardService],component: NewTaskComponent},
-      {path: 'ProjectView', canActivate : [AuthGuardService],component: ProjectViewComponent},
-      {path: 'NewUser',canActivate : [AuthGuardService], component: NewUserComponent},
-      {path: 'WorkTask',canActivate : [AuthGuardService], component: WorkTaskComponent},
+      {path: 'ListProgect', component: ListProgectComponent},
+      {path: 'NewProgect', component: NewProgectComponent},
+      {path: 'NewTasks', component: NewTaskComponent},
+      {path: 'ProjectView',component: ProjectViewComponent},
+      {path: 'NewUser', component: NewUserComponent},
+      {path: 'WorkTask', component: WorkTaskComponent},
       { path: 'Login', component : LoginComponent}
     ]},
   { path: '**', redirectTo: 'Home',pathMatch :'full'}

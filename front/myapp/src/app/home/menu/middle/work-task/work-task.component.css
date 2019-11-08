@@ -16,6 +16,9 @@
 
 
 }
+.table{
+  flex: 1;
+}
 
 .textColor{
   color: #e9ecef;

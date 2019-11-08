@@ -69,23 +69,3 @@ export class AuthService {
 
 }
 
-  interface Interfac1e1 {
-
-
-}
-
-
-interface Interfac1e2 {
-
-
-}
-
-class Class1 {
-
-}
-class Class2 {
-
-}
-class Clas3 implements Interfac1e1,Interfac1e2{
-
-}
