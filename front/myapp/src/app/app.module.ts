@@ -21,6 +21,11 @@ import {RouterModule, Routes} from "@angular/router";
 import {Service} from "./shared/service";
 import {AuthService} from "./shared/AuthService";
 import {AuthGuardService} from "./shared/AuthGuardService";
+import {BsDropdownModule, BsModalService} from "ngx-bootstrap";
+import { ModalModule } from 'ngx-bootstrap/modal';
+import {ModalService} from "./shared/modalService";
+import { TypeaheadModule } from 'ngx-bootstrap/typeahead';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 //canActivate : [AuthGuardService],
@@ -28,13 +33,13 @@ import {AuthGuardService} from "./shared/AuthGuardService";
 const appRoutes: Routes = [
   { path: '', redirectTo: 'Home',pathMatch :'full'},
   {path: 'Home', component:HomeComponent  ,children:[
-      {path: 'ListProgect', component: ListProgectComponent},
-      {path: 'NewProgect', component: NewProgectComponent},
-      {path: 'NewTasks', component: NewTaskComponent},
-      {path: 'ProjectView',component: ProjectViewComponent},
-      {path: 'NewUser', component: NewUserComponent},
-      {path: 'WorkTask', component: WorkTaskComponent},
-      { path: 'Login', component : LoginComponent}
+      {path: 'ListProgect', canActivate : [AuthGuardService],component: ListProgectComponent},
+      {path: 'NewProgect',canActivate : [AuthGuardService], component: NewProgectComponent},
+      {path: 'NewTasks',canActivate : [AuthGuardService], component: NewTaskComponent},
+      {path: 'ProjectView',canActivate : [AuthGuardService],component: ProjectViewComponent},
+      {path: 'NewUser',canActivate : [AuthGuardService], component: NewUserComponent},
+      {path: 'WorkTask', canActivate : [AuthGuardService],component: WorkTaskComponent},
+      { path: 'Login', canActivate : [AuthGuardService],component : LoginComponent}
     ]},
   { path: '**', redirectTo: 'Home',pathMatch :'full'}
 ];
@@ -55,13 +60,14 @@ const appRoutes: Routes = [
     LoginComponent,
     WorkTaskComponent,
   ],
-  imports: [
+  imports: [BrowserAnimationsModule,
+    TypeaheadModule.forRoot(),
     RouterModule.forRoot(appRoutes),
     BrowserModule,
-    HttpClientModule,
-    FormsModule, ReactiveFormsModule
+    HttpClientModule,ModalModule.forRoot(),
+    FormsModule, ReactiveFormsModule, ModalModule.forRoot(), TypeaheadModule.forRoot(), BrowserAnimationsModule
   ],
-  providers: [AuthGuardService,AuthService,Service],
+  providers: [AuthGuardService,AuthService,Service,ModalService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

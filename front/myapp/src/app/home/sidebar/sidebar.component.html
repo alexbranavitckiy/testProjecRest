@@ -1,4 +1,4 @@
-<div   class="cardA container-fluid card-deck">
+<div  *ngIf="authService.isloggedIn  " class="cardA container-fluid card-deck">
   <div *ngFor="let  paths of service.paths;">
     <div class="row">
       <div class="col">

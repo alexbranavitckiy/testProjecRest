@@ -3,9 +3,13 @@
 
   <div  class="bottonExit">
     <br>
-    <button  (click)=" goComponent('Home/Login')" class="btn btn-primary  my-2 my-sm-0" type="submit">Выход</button>
+
+
+    <button type = "button" class = "btn btn-primary" (click) = "onLogin(templeyt)"> выход </button>
+
+
   </div>
-  <div class="container">
+  <div  class="container">
     <div class=" row">
       <div class=" col-md-3 colorcol3 ">
 <app-sidebar></app-sidebar>
@@ -18,3 +22,9 @@
     </div>
   </div>
 </div>
+
+<ng-template #templeyt >
+  <app-login ></app-login>
+</ng-template>
+
+
