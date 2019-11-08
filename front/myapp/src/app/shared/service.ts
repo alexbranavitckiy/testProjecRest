@@ -42,14 +42,14 @@ public  getIdiser(){
 
 
   public paths: Paths[]=[
-    {Role:1,nameRout:'Home/ListProgect',nameForm:'List Progect'},
+    {Role:1,nameRout:'Home/ListProject',nameForm:'List Project'},
     {Role:1,nameRout:'Home/NewTasks',nameForm:'New Tasks'},
-    {Role:1,nameRout:'Home/NewProgect',nameForm:'New Progect'},
+    {Role:1,nameRout:'Home/NewProject',nameForm:'New Project'},
     {Role:2,nameRout:'Home/NewUser',nameForm:"New User"},
-    {Role:2,nameRout:'Home/ListProgect',nameForm:"List Progect"},
-    {Role:3,nameRout:'Home/ListProgect',nameForm:"My tasks"},
+    {Role:2,nameRout:'Home/ListProject',nameForm:"List Project"},
+    {Role:3,nameRout:'Home/ListProject',nameForm:"My tasks"},
     {Role:3,nameRout:'Home/ProjectView',nameForm:"My office"},
-    {Role:3,nameRout:'Home/ListProgect',nameForm:"Settings"},
+    {Role:3,nameRout:'Home/ListProject',nameForm:"Settings"},
     {Role:4,nameRout:'Home/',nameForm:"Work Developer"},
     {Role:4,nameRout:'Home/',nameForm:"My office"},
     {Role:4,nameRout:'Home/',nameForm:" Settings"},

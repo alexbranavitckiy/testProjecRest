@@ -10,6 +10,12 @@ import {Router} from "@angular/router";
 export class ListProgectComponent implements OnInit {
 
 
+  toggle(index:number):boolean{
+    if(index%3==0){
+      return  false
+    }
+    else return true
+  }
 
 
   constructor(private router: Router,private service :Service) { }

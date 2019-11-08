@@ -12,25 +12,31 @@
 }
 
 .btn{
-  color: #e9ecef;
-  background-color: rgba(27, 30, 33, 0);
+/*
+ color: #e9ecef;
+  */
+background-color: rgba(27, 30, 33, 0);
 }
 .progress{
-  background-color: #11110b2e;
+background-color: #11110b2e;
 
 
 
 }
-
+.btn{
+  color: #1d2124;
+}
 .textColor{
-  color: #e9ecef;
+
+color: #101010;
+
 }
 
 .table{
 
 }
 a {
-  color:#e9ecef;
-  text-decoration: none;
-  background-color: transparent;
+color: #101010;
+text-decoration: none;
+background-color: transparent;
 }

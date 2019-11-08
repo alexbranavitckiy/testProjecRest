@@ -20,15 +20,15 @@
   flex: 1;
 }
 
-.textColor{
-  color: #e9ecef;
-}
+
 
 .table{
 
 }
 a {
+ /*
   color:#e9ecef;
+   */
   text-decoration: none;
   background-color: transparent;
 }

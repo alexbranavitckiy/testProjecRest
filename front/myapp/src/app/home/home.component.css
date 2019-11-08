@@ -23,6 +23,7 @@
 }
 
 .fon{
+  /*
   background-image: url("~src/app/resources/black-metal-grid-2.png");
 
 min-height: 3000px;
@@ -48,11 +49,11 @@ min-height: 3000px;
 }
 /*----*/
 .card{
-  color: #010101a8;
+/*color: #010101a8;*/
 }
 /*
 списки
- */
+*/
 .list-counter-square {
   list-style: none;
   counter-reset: list;
@@ -102,11 +103,20 @@ min-height: 3000px;
   border-radius: 1.25rem;
   border: .25rem solid #fff;
   text-align: center;
+ /*
   color: #fff;
+
+   */
+  font-family: "BIMINI";
   background: #7b1fa2;
 }
 
+.bottonExit{
 
+
+  font-family: "BIMINI";
+
+}
 
 
 

@@ -26,6 +26,7 @@ import {ModalService} from "./shared/modalService";
 import { TypeaheadModule } from 'ngx-bootstrap/typeahead';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {LoginComponent} from "./home/modal/login/login.component";
+import { TaskWorkComponent } from './home/modal/task-work/task-work.component';
 
 
 //canActivate : [AuthGuardService],
@@ -33,13 +34,14 @@ import {LoginComponent} from "./home/modal/login/login.component";
 const appRoutes: Routes = [
   { path: '', redirectTo: 'Home',pathMatch :'full'},
   {path: 'Home', component:HomeComponent  ,children:[
-      {path: 'ListProgect', canActivate : [AuthGuardService],component: ListProgectComponent},
-      {path: 'NewProgect',canActivate : [AuthGuardService], component: NewProgectComponent},
-      {path: 'NewTasks', canActivate : [AuthGuardService],component: NewTaskComponent},
-      {path: 'ProjectView',canActivate : [AuthGuardService],component: ProjectViewComponent},
-      {path: 'NewUser', canActivate : [AuthGuardService],component: NewUserComponent},
-      {path: 'WorkTask',canActivate : [AuthGuardService], component: WorkTaskComponent},
-      { path: 'Login',canActivate : [AuthGuardService],component : LoginComponent}
+      {path: 'ListProject', component: ListProgectComponent},
+      {path: 'NewProject', component: NewProgectComponent},
+      {path: 'NewTasks',component: NewTaskComponent},
+      {path: 'ProjectView',component: ProjectViewComponent},
+      {path: 'NewUser', component: NewUserComponent},
+      {path: 'WorkTask', component: WorkTaskComponent},
+      { path: 'Login',component : LoginComponent},
+      { path: 'TaskWork',component : TaskWorkComponent}
     ]},
   { path: '**', redirectTo: 'Home',pathMatch :'full'}
 ];
@@ -56,9 +58,10 @@ const appRoutes: Routes = [
     ProjectViewComponent,
     SidebarComponent,
     TopmenusComponent,
-    NewUserComponent,
+    NewUserComponent,TaskWorkComponent,
     LoginComponent,
     WorkTaskComponent,
+    TaskWorkComponent,
   ],
   imports: [BrowserAnimationsModule,
     TypeaheadModule.forRoot(),
