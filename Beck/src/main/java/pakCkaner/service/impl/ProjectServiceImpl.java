@@ -19,10 +19,14 @@ public class ProjectServiceImpl implements ProjectService {
         this.repository = repository;
     }
 
+
+
     @Override
     public Iterable<Project> getProjectAccounts() {
-            return repository.findAll();
-        }
+        return repository.findAll();
+    }
+
+
 
     @Override
     public void deleteProjectAccount(Long id) {

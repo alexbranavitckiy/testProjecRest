@@ -2,12 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f21aba1f-a93c-4161-827a-dd89b4782b4e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_atteo_evo_inflector_1_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_rest_2_0_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_0_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_rest_core_3_0_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_rest_webmvc_3_0_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_hateoas_spring_hateoas_0_25_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_test_5_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_session_spring_session_core_2_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jirafapi/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Beck/src/main/java/pakCkaner/BeckendApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/Beck/src/main/java/pakCkaner/BeckendApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Beck/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Beck/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Beck/src/main/java/pakCkaner/controller/ProjectControllrt.java" beforeDir="false" afterPath="$PROJECT_DIR$/Beck/src/main/java/pakCkaner/controller/ProjectControllrt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Beck/src/main/java/pakCkaner/entity/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/Beck/src/main/java/pakCkaner/entity/Project.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Beck/src/main/java/pakCkaner/repository/ProjectRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Beck/src/main/java/pakCkaner/repository/ProjectRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Beck/src/main/java/pakCkaner/service/ProjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Beck/src/main/java/pakCkaner/service/ProjectService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Beck/src/main/java/pakCkaner/service/impl/ProjectServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Beck/src/main/java/pakCkaner/service/impl/ProjectServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Beck/target/classes/pakCkaner/controller/ProjectControllrt.class" beforeDir="false" afterPath="$PROJECT_DIR$/Beck/target/classes/pakCkaner/controller/ProjectControllrt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Beck/target/classes/pakCkaner/entity/Project.class" beforeDir="false" afterPath="$PROJECT_DIR$/Beck/target/classes/pakCkaner/entity/Project.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Beck/target/classes/pakCkaner/service/impl/ProjectServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Beck/target/classes/pakCkaner/service/impl/ProjectServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jirafapi/Jirafapi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Jirafapi/Jirafapi.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jirafapi/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Jirafapi/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jirafapi/src/main/java/scanpackage/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Jirafapi/src/main/java/scanpackage/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jirafapi/src/main/java/scanpackage/controller/ProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Jirafapi/src/main/java/scanpackage/controller/ProjectController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jirafapi/src/main/java/scanpackage/models/ProjectModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Jirafapi/src/main/java/scanpackage/models/ProjectModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jirafapi/src/main/java/scanpackage/service/ProjectDataService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Jirafapi/src/main/java/scanpackage/service/ProjectDataService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jirafapi/src/main/java/scanpackage/service/impl/ProjectDataService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Jirafapi/src/main/java/scanpackage/service/impl/ProjectDataService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jirafapi/src/main/resources/app.properties.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/myapp/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/myapp/src/app/home/menu/middle/list-progect/list-progect.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/myapp/src/app/home/menu/middle/list-progect/list-progect.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/myapp/src/app/model/project.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/myapp/src/app/model/project.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/myapp/src/app/shared/service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/myapp/src/app/shared/service.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/Jirafapi/target/" />
@@ -20,109 +49,82 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Beck/src/main/java/pakCkaner/service/impl/ProjectServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
-              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#711#712#0" expanded="true" />
-                <element signature="e#760#761#0" expanded="true" />
-                <element signature="e#837#838#0" expanded="true" />
-                <element signature="e#891#892#0" expanded="true" />
-                <element signature="e#963#964#0" expanded="true" />
-                <element signature="e#1014#1015#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Beck/src/main/java/pakCkaner/service/ProjectService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Beck/src/main/java/pakCkaner/controller/ProjectControllrt.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="46" column="46" selection-start-line="46" selection-start-column="46" selection-end-line="46" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#426#427#0" expanded="true" />
-                <element signature="e#478#479#0" expanded="true" />
-                <element signature="e#1276#1277#0" expanded="true" />
-                <element signature="e#1341#1342#0" expanded="true" />
-                <element signature="e#1490#1491#0" expanded="true" />
-                <element signature="e#1545#1546#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Beck/src/main/java/pakCkaner/entity/Project.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-580">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="238">
+              <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Beck/src/main/java/pakCkaner/BeckendApp.java">
+        <entry file="file://$PROJECT_DIR$/front/myapp/src/app/shared/service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="306">
+              <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#235#236#0" expanded="true" />
-                <element signature="e#296#297#0" expanded="true" />
+                <element signature="e#0#52#0" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front/myapp/src/app/model/project.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front/myapp/src/app/model/parol.ts">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Beck/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="964">
-              <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+            <state relative-caret-position="556">
+              <caret line="81" selection-start-line="81" selection-end-line="81" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Beck/src/main/resources/application.properties">
+        <entry file="file://$PROJECT_DIR$/Jirafapi/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="311">
+              <caret line="70" selection-end-line="70" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Beck/src/main/java/pakCkaner/entity/Task.java">
+        <entry file="file://$PROJECT_DIR$/Jirafapi/src/main/java/scanpackage/models/ProjectModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="289">
+              <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Beck/src/main/java/pakCkaner/entity/Users.java">
+        <entry file="file://$PROJECT_DIR$/Beck/src/main/java/pakCkaner/controller/ProjectControllrt.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="83">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -130,10 +132,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Beck/src/main/java/pakCkaner/repository/ProjectRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="136">
+              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Beck/src/main/java/pakCkaner/service/impl/ProjectServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#599#600#0" expanded="true" />
+                <element signature="e#642#643#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -157,14 +173,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Beck/pom.xml" />
-        <option value="$PROJECT_DIR$/front/myapp/package.json" />
-        <option value="$PROJECT_DIR$/front/myapp/src/app/app.component.html" />
-        <option value="$PROJECT_DIR$/front/myapp/src/styles.css" />
-        <option value="$PROJECT_DIR$/Beck/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/Beck/src/main/java/pakCkaner/entity/Project.java" />
-        <option value="$PROJECT_DIR$/front/myapp/src/index.html" />
-        <option value="$PROJECT_DIR$/front/myapp/src/app/shared/AuthGuardService.ts" />
         <option value="$PROJECT_DIR$/front/myapp/src/app/home/sidebar/sidebar.component.ts" />
         <option value="$PROJECT_DIR$/front/myapp/src/app/home/menu/middle/work-task/work-task.component.html" />
         <option value="$PROJECT_DIR$/front/myapp/src/app/shared/ModalService.ts" />
@@ -184,12 +192,10 @@
         <option value="$PROJECT_DIR$/front/myapp/src/app/home/modal/task-work/task-work.component.ts" />
         <option value="$PROJECT_DIR$/front/myapp/src/app/home/menu/middle/new-task/new-task.component.html" />
         <option value="$PROJECT_DIR$/front/myapp/src/app/home/modal/task-work/task-work.component.html" />
-        <option value="$PROJECT_DIR$/front/myapp/src/app/home/menu/middle/list-progect/list-progect.component.ts" />
         <option value="$PROJECT_DIR$/front/myapp/src/app/home/menu/middle/work-task/work-task.component.css" />
         <option value="$PROJECT_DIR$/front/myapp/src/app/home/menu/middle/new-progect/new-progect.component.css" />
         <option value="$PROJECT_DIR$/front/myapp/src/app/home/menu/middle/new-task/new-task.component.css" />
         <option value="$PROJECT_DIR$/front/myapp/src/app/home/menu/middle/new-user/new-user.component.css" />
-        <option value="$PROJECT_DIR$/front/myapp/src/app/shared/service.ts" />
         <option value="$PROJECT_DIR$/front/myapp/src/app/home/menu/middle/new-progect/new-progect.component.html" />
         <option value="$PROJECT_DIR$/front/myapp/src/app/home/home.component.css" />
         <option value="$PROJECT_DIR$/front/myapp/src/app/home/sidebar/sidebar.component.css" />
@@ -199,14 +205,25 @@
         <option value="$PROJECT_DIR$/front/myapp/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/front/myapp/src/app/home/menu/middle/list-progect/list-progect.component.css" />
         <option value="$PROJECT_DIR$/front/myapp/src/app/home/menu/middle/list-progect/list-progect.component.html" />
-        <option value="$PROJECT_DIR$/Jirafapi/src/main/resources/app.properties.properties" />
-        <option value="$PROJECT_DIR$/Jirafapi/pom.xml" />
         <option value="$PROJECT_DIR$/Jirafapi/src/main/java/scanpackage/FapiApp.java" />
-        <option value="$PROJECT_DIR$/Beck/src/main/java/pakCkaner/repository/ProjectRepository.java" />
         <option value="$PROJECT_DIR$/Beck/src/main/java/pakCkaner/BeckendApp.java" />
-        <option value="$PROJECT_DIR$/Beck/src/main/java/pakCkaner/service/impl/ProjectServiceImpl.java" />
         <option value="$PROJECT_DIR$/Beck/src/main/java/pakCkaner/service/ProjectService.java" />
+        <option value="$PROJECT_DIR$/Jirafapi/pom.xml" />
+        <option value="$PROJECT_DIR$/Jirafapi/src/main/java/scanpackage/config/WebConfig.java" />
+        <option value="$PROJECT_DIR$/Jirafapi/src/main/java/scanpackage/service/ProjectDataService.java" />
+        <option value="$PROJECT_DIR$/Jirafapi/src/main/java/scanpackage/controller/ProjectController.java" />
+        <option value="$PROJECT_DIR$/Jirafapi/src/main/resources/app.properties.properties" />
+        <option value="$PROJECT_DIR$/Jirafapi/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/front/myapp/src/app/shared/service.ts" />
+        <option value="$PROJECT_DIR$/front/myapp/src/app/home/menu/middle/list-progect/list-progect.component.ts" />
+        <option value="$PROJECT_DIR$/Beck/src/main/java/pakCkaner/service/impl/ProjectServiceImpl.java" />
         <option value="$PROJECT_DIR$/Beck/src/main/java/pakCkaner/controller/ProjectControllrt.java" />
+        <option value="$PROJECT_DIR$/Jirafapi/src/main/java/scanpackage/service/impl/ProjectDataService.java" />
+        <option value="$PROJECT_DIR$/Beck/src/main/java/pakCkaner/repository/ProjectRepository.java" />
+        <option value="$PROJECT_DIR$/Beck/pom.xml" />
+        <option value="$PROJECT_DIR$/front/myapp/src/app/model/project.ts" />
+        <option value="$PROJECT_DIR$/Beck/src/main/java/pakCkaner/entity/Project.java" />
+        <option value="$PROJECT_DIR$/Jirafapi/src/main/java/scanpackage/models/ProjectModel.java" />
       </list>
     </option>
   </component>
@@ -216,6 +233,12 @@
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="952" />
@@ -343,6 +366,175 @@
             <path>
               <item name="ProjectJira" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProjectJira" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjectJira" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectJira" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="myapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjectJira" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectJira" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="myapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjectJira" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectJira" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="myapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjectJira" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectJira" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="myapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjectJira" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectJira" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="myapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="footer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjectJira" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectJira" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="myapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="header" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjectJira" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectJira" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="myapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="menu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjectJira" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectJira" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="myapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="menu" type="462c0819:PsiDirectoryNode" />
+              <item name="middle" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjectJira" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectJira" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="myapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="menu" type="462c0819:PsiDirectoryNode" />
+              <item name="middle" type="462c0819:PsiDirectoryNode" />
+              <item name="list-progect" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjectJira" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectJira" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="myapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="menu" type="462c0819:PsiDirectoryNode" />
+              <item name="middle" type="462c0819:PsiDirectoryNode" />
+              <item name="new-progect" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjectJira" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectJira" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="myapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="menu" type="462c0819:PsiDirectoryNode" />
+              <item name="middle" type="462c0819:PsiDirectoryNode" />
+              <item name="new-task" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjectJira" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectJira" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="myapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="menu" type="462c0819:PsiDirectoryNode" />
+              <item name="middle" type="462c0819:PsiDirectoryNode" />
+              <item name="new-user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjectJira" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectJira" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="myapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="modal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjectJira" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectJira" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="myapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="modal" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjectJira" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectJira" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="myapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjectJira" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectJira" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="myapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="shared" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjectJira" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectJira" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjectJira" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectJira" type="462c0819:PsiDirectoryNode" />
               <item name="Jirafapi" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -374,6 +566,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="scanpackage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjectJira" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectJira" type="462c0819:PsiDirectoryNode" />
+              <item name="Jirafapi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="scanpackage" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ProjectJira" type="b2602c69:ProjectViewProjectNode" />
@@ -401,16 +603,6 @@
               <item name="Jirafapi" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="scanpackage" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProjectJira" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectJira" type="462c0819:PsiDirectoryNode" />
-              <item name="Jirafapi" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -426,7 +618,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573316946933" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573333000381" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -440,13 +632,14 @@
     <property name="ts.external.directory.path" value="C:\Users\User\Desktop\ProjectJira\front\myapp\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Desktop\ProjectJira\front\myapp\src\app\home\modal" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Desktop\ProjectJira\Jirafapi\src\main\resources" />
       <recent name="C:\Users\User\Desktop\ProjectJira\Beck\src\main\resources" />
       <recent name="C:\Users\User\Desktop\ProjectJira\front\myapp\src\app" />
       <recent name="C:\Users\User\Desktop\ProjectJira\front\myapp" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\User\Desktop\ProjectJira\front\myapp\src\app\home\modal" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -461,7 +654,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.BeckendApp">
+  <component name="RunManager" selected="npm.start">
     <configuration name="BeckendApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="Beck" />
       <extension name="coverage">
@@ -471,6 +664,13 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="pakCkaner.BeckendApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FapiApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Jirafapi" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="scanpackage.FapiApp" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -497,8 +697,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.BeckendApp" />
         <item itemvalue="npm.start" />
+        <item itemvalue="Spring Boot.BeckendApp" />
         <item itemvalue="npm.ng" />
       </list>
     </recent_temporary>
@@ -517,18 +717,18 @@
       <workItem from="1573141923097" duration="1661000" />
       <workItem from="1573146078397" duration="34024000" />
       <workItem from="1573229030820" duration="17381000" />
-      <workItem from="1573308509385" duration="5710000" />
+      <workItem from="1573308509385" duration="16487000" />
+      <workItem from="1573329112605" duration="3845000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59263000" />
+    <option name="totallyTimeSpent" value="73885000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="0" width="781" height="830" extended-state="0" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.041608877" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29865772" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -536,11 +736,10 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932885" visible="true" weight="0.106017195" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.25070822" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932885" weight="0.2917847" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.7025496" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -552,12 +751,13 @@
       <window_info anchor="bottom" id="Spring" order="12" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="TypeScript" order="14" />
+      <window_info anchor="bottom" id="Messages" order="15" weight="0.14164306" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Maven" order="5" visible="true" weight="0.020134227" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Database" order="8" />
@@ -573,98 +773,6 @@
     </ignored-roots>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/front/myapp/src/app/home/menu/middle/new-user/new-user.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="42" column="43" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/myapp/src/app/home/modal/login/login.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="32" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/myapp/src/app/home/modal/login/login.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/myapp/src/app/home/footer/footer.component.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/myapp/src/app/home/menu/middle/new-progect/new-progect.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/myapp/src/app/home/menu/middle/new-task/new-task.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/myapp/src/app/home/menu/middle/new-user/new-user.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/myapp/src/app/home/menu/middle/work-task/work-task.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="2" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/myapp/src/app/home/modal/login/login.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/myapp/src/app/shared/service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="55" column="6" lean-forward="true" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/myapp/src/app/home/menu/middle/list-progect/list-progect.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/myapp/src/app/home/modal/task-work/task-work.component.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/myapp/src/app/home/modal/task-work/task-work.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="26" lean-forward="true" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/front/myapp/src/app/home/home.component.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
@@ -775,16 +883,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front/myapp/src/app/home/menu/middle/list-progect/list-progect.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="69" column="10" selection-start-line="69" selection-start-column="10" selection-end-line="69" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/myapp/src/app/home/footer/footer.component.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/front/myapp/src/app/home/menu/middle/list-progect/list-progect.component.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -802,102 +900,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Beck/src/main/java/pakCkaner/service/asd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Jirafapi/src/main/resources/app.properties.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Jirafapi/src/main/java/scanpackage/erf.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Jirafapi/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="78" selection-start-line="78" selection-end-line="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Jirafapi/src/main/java/scanpackage/FapiApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#145#146#0" expanded="true" />
-            <element signature="e#211#212#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Jirafapi/src/main/java/scanpackage/controller/ProjectController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Jirafapi/src/main/java/scanpackage/models/ProjectModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Jirafapi/src/main/java/scanpackage/service/ProjectDataService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Jirafapi/src/main/java/scanpackage/config/WebConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Jirafapi/src/main/java/scanpackage/service/impl/ProjectDataService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Beck/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Beck/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="964">
-          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Beck/src/main/java/pakCkaner/entity/Project.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-580">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Beck/src/main/java/pakCkaner/service/asd.java" />
+    <entry file="file://$PROJECT_DIR$/Jirafapi/src/main/java/scanpackage/erf.java" />
     <entry file="file://$PROJECT_DIR$/Beck/src/main/java/pakCkaner/entity/Task.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -912,36 +916,131 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Beck/src/main/java/pakCkaner/repository/ProjectRepository.java">
+    <entry file="file://$PROJECT_DIR$/Jirafapi/src/main/java/scanpackage/FapiApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="119">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Beck/src/main/java/pakCkaner/service/impl/ProjectServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/Jirafapi/src/main/resources/app.properties.properties" />
+    <entry file="file://$PROJECT_DIR$/front/myapp/src/app/home/menu/middle/list-progect/list-progect.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="411">
+          <caret line="69" column="10" selection-start-line="69" selection-start-column="10" selection-end-line="69" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/myapp/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/myapp/proxy.conf.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/myapp/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/myapp/src/app/app.component.spec.ts" />
+    <entry file="file://$PROJECT_DIR$/Jirafapi/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Jirafapi/src/main/java/scanpackage/service/ProjectDataService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#711#712#0" expanded="true" />
-            <element signature="e#760#761#0" expanded="true" />
-            <element signature="e#837#838#0" expanded="true" />
-            <element signature="e#891#892#0" expanded="true" />
-            <element signature="e#963#964#0" expanded="true" />
-            <element signature="e#1014#1015#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Jirafapi/src/main/java/scanpackage/config/WebConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="48" column="33" selection-start-line="48" selection-start-column="33" selection-end-line="48" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/myapp/angular.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/myapp/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/myapp/src/app/home/menu/middle/list-progect/list-progect.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.0.9.RELEASE/spring-aop-5.0.9.RELEASE.jar!/org/springframework/aop/framework/JdkDynamicAopProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="120" selection-start-line="120" selection-end-line="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/myapp/src/app/home/footer/footer.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Jirafapi/src/main/java/scanpackage/controller/ProjectController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Jirafapi/src/main/java/scanpackage/service/impl/ProjectDataService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1171#1172#0" expanded="true" />
+            <element signature="e#1198#1199#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.0.5.RELEASE/spring-boot-autoconfigure-2.0.5.RELEASE.jar!/org/springframework/boot/autoconfigure/orm/jpa/JpaBaseConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="97" column="50" selection-start-line="97" selection-start-column="50" selection-end-line="97" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Beck/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="21" selection-start-line="1" selection-end-line="1" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Beck/src/main/java/pakCkaner/service/ProjectService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="187">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -950,28 +1049,97 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Beck/src/main/java/pakCkaner/BeckendApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#235#236#0" expanded="true" />
-            <element signature="e#296#297#0" expanded="true" />
+            <element signature="e#295#296#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Beck/src/main/java/pakCkaner/repository/ProjectRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Beck/src/main/java/pakCkaner/service/impl/ProjectServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#599#600#0" expanded="true" />
+            <element signature="e#642#643#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Jirafapi/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="70" selection-end-line="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Beck/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/myapp/src/app/shared/service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/myapp/src/app/model/parol.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/myapp/src/app/model/project.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Jirafapi/src/main/java/scanpackage/models/ProjectModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Beck/src/main/java/pakCkaner/controller/ProjectControllrt.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="46" column="46" selection-start-line="46" selection-start-column="46" selection-end-line="46" selection-end-column="46" />
+        <state relative-caret-position="83">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#426#427#0" expanded="true" />
-            <element signature="e#478#479#0" expanded="true" />
-            <element signature="e#1276#1277#0" expanded="true" />
-            <element signature="e#1341#1342#0" expanded="true" />
-            <element signature="e#1490#1491#0" expanded="true" />
-            <element signature="e#1545#1546#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Beck/src/main/java/pakCkaner/entity/Project.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1064,5 +1232,10 @@
         </settings>
       </state>
     </states>
+  </component>
+  <component name="mavenExecuteGoalHistory">
+    <option value="$PROJECT_DIR$/Jirafapi" />
+    <option value="package" />
+    <option value="clean" />
   </component>
 </project>

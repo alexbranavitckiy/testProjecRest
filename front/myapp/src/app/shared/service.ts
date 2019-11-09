@@ -4,6 +4,7 @@ import {HttpClient} from "@angular/common/http";
 import {Observable, pipe} from "rxjs";
 import {tap} from "rxjs/operators";
 import {Router} from "@angular/router";
+import {Project} from "../model/project";
 // ангулар , тайпскрипт тест только
 //Для отображения данных на странице, сначала
 // нужно эти данные
@@ -59,6 +60,32 @@ public  getIdiser(){
   public dataBase: DataBase[]=[];
 
   constructor(private http: HttpClient,private router: Router){}
+
+
+
+  // Ajax request for billing account data
+  getBillingAccounts(): Observable<Project[]> {
+    return this.http.get<Project[]>('/api/ba');
+  }
+
+  saveBillingAccount(billingAccount: Project): Observable<Project> {
+    return this.http.post<Project>('/api/ba', billingAccount);
+  }
+
+  deleteBillingAccount(billingAccountId: string): Observable<void> {
+    return this.http.delete<void>('/api/ba/' + billingAccountId);
+  }
+
+
+
+
+
+
+
+
+
+
+
 
   fethDataBase():Observable<DataBase[]> {
     return   this.http.get<DataBase[]>('https://jsonplaceholder.typicode.com/todos')

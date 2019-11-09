@@ -1,119 +1,87 @@
 package pakCkaner.entity;
 
+
+
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
 import java.util.Objects;
 
-@Entity
-@Table(name = "project")
-public class Project {
+    @Entity
+    @Table(name = "billing_account")
+    public class Project {
+        @Id
+        @GeneratedValue(strategy = GenerationType.IDENTITY)
+        private long id;
+        private String address;
+        private String username;
+        private String email;
 
-//create table if not exists project(
-//idProject int auto_increment primary key ,
-//nameProject varchar(45),
-//customerEmail varchar(45),
-//duaData varchar(45),
-//createData varchar(45),
-//istorii varchar(45),
-//comments varchar(45)
-//)
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @NotNull
-    private int idProject;
-    private String nameProject;
-    private String customerEmail;
-    private String duaData;
-    private String createData;
-    private String istorii;
-    private String comments;
+        public Project(String address, String username, String email) {
+            this.address = address;
+            this.username = username;
+            this.email = email;
+        }
 
-    public void setIdProject(int idProject) {
-        this.idProject = idProject;
+        public Project() {
+
+        }
+
+        public long getId() {
+            return id;
+        }
+
+        public void setId(long id) {
+            this.id = id;
+        }
+
+        public String getAddress() {
+            return address;
+        }
+
+        public void setAddress(String address) {
+            this.address = address;
+        }
+
+        public String getUsername() {
+            return username;
+        }
+
+        public void setUsername(String username) {
+            this.username = username;
+        }
+
+        public String getEmail() {
+            return email;
+        }
+
+        public void setEmail(String email) {
+            this.email = email;
+        }
+
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
+            Project that = (Project) o;
+            return id == that.id &&
+                    Objects.equals(address, that.address) &&
+                    Objects.equals(username, that.username) &&
+                    Objects.equals(email, that.email);
+        }
+
+        @Override
+        public int hashCode() {
+
+            return Objects.hash(id, address, username, email);
+        }
+
+        @Override
+        public String toString() {
+            return "BillingAccount{" +
+                    "id=" + id +
+                    ", address='" + address + '\'' +
+                    ", username='" + username + '\'' +
+                    ", email='" + email + '\'' +
+                    '}';
+        }
+
     }
-
-    public void setNameProject(String nameProject) {
-        this.nameProject = nameProject;
-    }
-
-    public void setCustomerEmail(String customerEmail) {
-        this.customerEmail = customerEmail;
-    }
-
-    public void setDuaData(String duaData) {
-        this.duaData = duaData;
-    }
-
-    public void setCreateData(String createData) {
-        this.createData = createData;
-    }
-
-    public void setIstorii(String istorii) {
-        this.istorii = istorii;
-    }
-
-    public void setComments(String comments) {
-        this.comments = comments;
-    }
-
-    public int getIdProject() {
-        return idProject;
-    }
-
-    public String getNameProject() {
-        return nameProject;
-    }
-
-    public String getCustomerEmail() {
-        return customerEmail;
-    }
-
-    public String getDuaData() {
-        return duaData;
-    }
-
-    public String getCreateData() {
-        return createData;
-    }
-
-    public String getIstorii() {
-        return istorii;
-    }
-
-    public String getComments() {
-        return comments;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Project project = (Project) o;
-        return idProject == project.idProject &&
-                nameProject.equals(project.nameProject) &&
-                customerEmail.equals(project.customerEmail) &&
-                duaData.equals(project.duaData) &&
-                createData.equals(project.createData) &&
-                istorii.equals(project.istorii) &&
-                comments.equals(project.comments);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(idProject, nameProject, customerEmail, duaData, createData, istorii, comments);
-    }
-
-
-    @Override
-    public String toString() {
-        return "Project{" +
-                "idProject=" + idProject +
-                ", nameProject='" + nameProject + '\'' +
-                ", customerEmail='" + customerEmail + '\'' +
-                ", duaData='" + duaData + '\'' +
-                ", createData='" + createData + '\'' +
-                ", istorii='" + istorii + '\'' +
-                ", comments='" + comments + '\'' +
-                '}';
-    }
-}

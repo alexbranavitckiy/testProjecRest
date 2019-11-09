@@ -9,9 +9,11 @@ import pakCkaner.service.ProjectService;
 
 import java.util.Optional;
 
+
 @RestController
 @RequestMapping("/api/billing-accounts")
 public class ProjectControllrt {
+
     private ProjectService projectService;
 
     @Autowired
@@ -21,9 +23,7 @@ public class ProjectControllrt {
 
     @RequestMapping(value = "", method = RequestMethod.GET)
     public Iterable<Project> getAllProject() {
-        return projectService.getProjectAccounts();
-
-    }
+        return projectService.getProjectAccounts();}
 
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
@@ -35,8 +35,6 @@ public class ProjectControllrt {
             return ResponseEntity.notFound().build();
         }
     }
-
-
 
     @RequestMapping(method = RequestMethod.POST)
     public Project saveProjecValues(@RequestBody Project project) {

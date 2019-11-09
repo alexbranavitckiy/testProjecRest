@@ -1,14 +1,16 @@
 export class Project {
-  idProject: number;
-  nameProject: string;
-  customerEmail :string;
-  dueData: string;//срок выполнения
-  createDate: string;// дата создания
-  istorii: string;
-  comments: string;
+  id: string;
+  address: string;
+  username: string;
+  email: string;
 
-  constructor(){
+  static cloneBase(project: Project): Project {
+    let clonedBillingAccount: Project = new Project();
+    clonedBillingAccount.id = project.id;
+    clonedBillingAccount.username = project.username;
+    clonedBillingAccount.email = project.email;
+    clonedBillingAccount.address = project.address;
+    return clonedBillingAccount;
   }
-
 
 }
