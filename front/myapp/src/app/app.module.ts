@@ -34,14 +34,14 @@ import { TaskWorkComponent } from './home/modal/task-work/task-work.component';
 const appRoutes: Routes = [
   { path: '', redirectTo: 'Home',pathMatch :'full'},
   {path: 'Home', component:HomeComponent  ,children:[
-      {path: 'ListProject', canActivate : [AuthGuardService],component: ListProgectComponent},
-      {path: 'NewProject', canActivate : [AuthGuardService],component: NewProgectComponent},
-      {path: 'NewTasks',canActivate : [AuthGuardService],component: NewTaskComponent},
-      {path: 'ProjectView',canActivate : [AuthGuardService],component: ProjectViewComponent},
-      {path: 'NewUser',canActivate : [AuthGuardService], component: NewUserComponent},
-      {path: 'WorkTask',canActivate : [AuthGuardService], component: WorkTaskComponent},
-      { path: 'Login',canActivate : [AuthGuardService],component : LoginComponent},
-      { path: 'TaskWork',canActivate : [AuthGuardService],component : TaskWorkComponent}
+      {path: 'ListProject',component: ListProgectComponent},
+      {path: 'NewProject', component: NewProgectComponent},
+      {path: 'NewTasks',component: NewTaskComponent},
+      {path: 'ProjectView',component: ProjectViewComponent},
+      {path: 'NewUser', component: NewUserComponent},
+      {path: 'WorkTask', component: WorkTaskComponent},
+      { path: 'Login',component : LoginComponent},
+      { path: 'TaskWork',component : TaskWorkComponent}
     ]},
   { path: '**', redirectTo: 'Home',pathMatch :'full'}
 ];
