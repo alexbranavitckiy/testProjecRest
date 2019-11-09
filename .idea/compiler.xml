@@ -12,12 +12,13 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Beck" target="1.8" />
-      <module name="Jirafapi" target="1.5" />
+      <module name="Jirafapi" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Beck" options="-parameters" />
+      <module name="Jirafapi" options="-parameters" />
     </option>
   </component>
 </project>
