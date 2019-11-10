@@ -1,0 +1,15 @@
+<div *ngIf="authService.getisloggedIn"  class=" cardA container card-deck">
+  <div *ngFor="let  pathsSideBar of service.pathsSideBar;">
+      <div class="col-sm">
+        <div class="row">
+        <div *ngIf="service.getIdiser()==pathsSideBar.Role" type="button" class="cardA card colorCard">
+          <a  (click)="goComponent(pathsSideBar.nameRout)" class="btn">
+            <div class="card-body">
+              <h4 class="card-title">&rArr;{{pathsSideBar.nameForm}}</h4>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
