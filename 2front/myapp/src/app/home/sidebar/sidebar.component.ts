@@ -20,8 +20,6 @@ export class SidebarComponent implements OnInit {
   }
 
 
-  goComponent(str: string) {
-    this.router.navigate([str]);
-  }
+
 
 }

@@ -15,6 +15,7 @@ export interface  PathsSideBar{
   Role: number;//1-manager
  nameRout :string;
   nameForm:string;
+  booleanCheckOpenList ?:boolean;
 }
 
 
@@ -34,20 +35,13 @@ export interface DataBase {// для левых данных
 }
 
 
-export interface  PathsListProgect{
-  Role?: number;
-  nameTable ?:string;
-  ProgressBoolean ?:boolean;
-  nameButton?:string;
-  ButtonRout?:string;
-}
+
 
 
 @Injectable({providedIn:'root'})
 export  class Service {
-
+public flagUserList:boolean;
   private idnabber:number;// для защитника
-
   public  getIdiser(){// для защитника
   return  this.idnabber;
    }
@@ -55,34 +49,26 @@ export  class Service {
     this.idnabber=number;
   }
 
-  goComponent(str:string){
+  goComponent(str:string,flagUserList?:boolean):any {
+    this.flagUserList=flagUserList;
     this.router.navigate([str]);
   }
 
 
-  public pathsListProgect: PathsListProgect[]=[
-    {Role:1,nameTable:'Project',nameButton:'Delete',ProgressBoolean:true},
-    {Role:2,nameTable:'Project',nameButton:'Delete',ProgressBoolean:true},
-    {Role:3,nameTable:'Task',ProgressBoolean:false},
-    {Role:4,nameTable:'Task',ProgressBoolean:false},
-  ];
-
-
 //1 - менеджер 2- админ
   public pathsSideBar: PathsSideBar[]=[
-    {Role:1,nameRout:'Home/ListProject',nameForm:'List Project'},
-    {Role:1,nameRout:'Home/NewTasks',nameForm:'New Tasks'},
-    {Role:1,nameRout:'Home/NewProject',nameForm:'New Project'},
-    {Role:2,nameRout:'Home/NewUser',nameForm:"New User"},
-    {Role:2,nameRout:'Home/ListProject',nameForm:"List Project"},
-    {Role:2,nameRout:'Home/ListProject',nameForm:"List User"},
-
-    {Role:3,nameRout:'Home/ListProject',nameForm:"My tasks"},
-    {Role:3,nameRout:'Home/ProjectView',nameForm:"My office"},
-    {Role:3,nameRout:'Home/ListProject',nameForm:"Settings"},
-    {Role:4,nameRout:'Home/',nameForm:"Work Developer"},
-    {Role:4,nameRout:'Home/',nameForm:"My office"},
-    {Role:4,nameRout:'Home/',nameForm:" Settings"},
+    {Role:1,nameRout:'Home/ListProject',nameForm:'List Project',booleanCheckOpenList:false},
+    {Role:1,nameRout:'Home/NewTasks',nameForm:'New Tasks',booleanCheckOpenList:false},
+    {Role:1,nameRout:'Home/NewProject',nameForm:'New Project',booleanCheckOpenList:false},
+    {Role:2,nameRout:'Home/NewUser',nameForm:"New User",booleanCheckOpenList:false},
+    {Role:2,nameRout:'Home/ListProject',nameForm:"List Project",booleanCheckOpenList:false},
+    {Role:2,nameRout:'Home/ListProject',nameForm:"List User",booleanCheckOpenList:true},
+    {Role:3,nameRout:'Home/ListProject',nameForm:"My tasks",booleanCheckOpenList:false},
+    {Role:3,nameRout:'Home/ProjectView',nameForm:"My office",booleanCheckOpenList:false},
+    {Role:3,nameRout:'Home/ListProject',nameForm:"Settings",booleanCheckOpenList:false},
+    {Role:4,nameRout:'Home/',nameForm:"Work Developer,booleanCheckOpenList:true"},
+    {Role:4,nameRout:'Home/',nameForm:"My office",booleanCheckOpenList:false},
+    {Role:4,nameRout:'Home/',nameForm:" Settings",booleanCheckOpenList:false},
     ];
 
 

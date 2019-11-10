@@ -3,7 +3,7 @@
       <div class="col-sm">
         <div class="row">
         <div *ngIf="service.getIdiser()==pathsSideBar.Role" type="button" class="cardA card colorCard">
-          <a  (click)="goComponent(pathsSideBar.nameRout)" class="btn">
+          <a  (click)="service.goComponent(pathsSideBar.nameRout,pathsSideBar.booleanCheckOpenList)" class="btn">
             <div class="card-body">
               <h4 class="card-title">&rArr;{{pathsSideBar.nameForm}}</h4>
             </div>
