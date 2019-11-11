@@ -21,7 +21,6 @@ constructor(private  modalServ:ModalService,private authService: AuthService,pri
 
 
 onLogin (template: TemplateRef<any>){
-
   this.modalServ._openModal(template);
 this.authService.login('12','12');
 }

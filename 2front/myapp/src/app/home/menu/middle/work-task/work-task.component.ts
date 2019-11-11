@@ -10,7 +10,7 @@ import {Service} from "../../../../shared/service";
 export class WorkTaskComponent implements OnInit {
 
 
-  constructor(private router: Router, private Service: Service) {
+  constructor(private router: Router, private Service: Service, private service: Service) {
   }
 
   ngOnInit() {

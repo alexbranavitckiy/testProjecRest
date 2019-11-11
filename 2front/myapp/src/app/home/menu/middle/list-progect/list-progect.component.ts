@@ -3,6 +3,7 @@ import {Service} from "../../../../shared/service";
 import {Router} from "@angular/router";
 import {Project} from "../../../../model/project";
 import {Subscription} from "rxjs";
+import {ModalService} from "../../../../shared/modalService";
 
 @Component({
   selector: 'app-list-progect',
@@ -56,10 +57,9 @@ export class ListProgectComponent implements OnInit,DoCheck{
             break
           }
           case true:{
-           console.log(this.service.flagUserList)
             this.table1 = "Users"
             this.table2 = " "
-            this.table3 = "Progress"
+            this.table3 = "Gravity"
             this.table4 = " "
          //   this.templates = this.templatesUsers;
             break
@@ -89,8 +89,7 @@ export class ListProgectComponent implements OnInit,DoCheck{
 
   }
 
-
-  constructor(private router: Router, private service: Service) {
+  constructor(private router: Router, private service: Service, private modalServ :ModalService) {
     this.template(this.service.getIdiser())
   }
 

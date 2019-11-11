@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, TemplateRef} from '@angular/core';
 import {AuthService} from "../../../shared/AuthService";
 import {Router} from "@angular/router";
 import {ModalService} from "../../../shared/modalService";
+import {BsModalRef, BsModalService} from "ngx-bootstrap";
 
 @Component({
   selector: 'app-task-work',
@@ -10,7 +11,7 @@ import {ModalService} from "../../../shared/modalService";
 })
 export class TaskWorkComponent implements OnInit {
 
-  constructor(private authService: AuthService,
+  constructor(private authService: AuthService,private modalService: BsModalService,
               private router: Router,private  modalServ :ModalService) { }
 
   ngOnInit() {

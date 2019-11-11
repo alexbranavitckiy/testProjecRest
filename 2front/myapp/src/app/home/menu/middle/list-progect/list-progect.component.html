@@ -43,16 +43,18 @@
     <th  scope="col">{{table1}}</th>
     <th  scope="col">{{table2}}</th>
     <th  scope="col">{{table3}}</th>
-    <th scope="col">{{table4}}</th>
+    <th scope="col">{{table4}}
+    </th>
   </tr>
   </thead>
   <tbody>
  <tr *ngFor="let  data of service.dataBase   let i= index    "class="cardA">
     <th scope="row">{{data.title[i]}} {{i}}</th>
     <td>
-      <div class="row cardA">
-        <button  class="btn botonCardColor" (click)="goComponent('Home/ProjectView')">Work</button>
-    </div>
+      <div [ngSwitch]="service.flagUserList"  class="row cardA">
+        <button *ngSwitchCase="true" class="btn botonCardColor" (click)=modalServ._openModal(templeyt)>Settings</button>
+        <button *ngSwitchCase="false" class="btn botonCardColor" (click)="goComponent('Home/ProjectView')">Work</button><!-- для попапа изерс-->
+      </div>
     </td>
 
    <td>  <div class="progress card-title">
@@ -62,7 +64,7 @@
         <div class="progress-barTime" role="progressbar" [ngStyle]="{'width': data.progress + '%'}" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">time 	&#8986;</div>
       </div>
    </td>
-    <td *ngIf="1==service.getIdiser()" >
+    <td *ngIf="1==service.getIdiser()|| service.flagUserList" >
           <div  class="row cardA">
             <button  class="btn btn-danger" >Delete</button>
           </div>
@@ -71,3 +73,7 @@
   </tbody>
 </table>
 </div>
+
+<ng-template #templeyt >
+ <app-new-user></app-new-user>
+</ng-template>

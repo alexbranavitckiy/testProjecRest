@@ -54,7 +54,6 @@ public flagUserList:boolean;
     this.router.navigate([str]);
   }
 
-
 //1 - менеджер 2- админ
   public pathsSideBar: PathsSideBar[]=[
     {Role:1,nameRout:'Home/ListProject',nameForm:'List Project',booleanCheckOpenList:false},
@@ -64,8 +63,6 @@ public flagUserList:boolean;
     {Role:2,nameRout:'Home/ListProject',nameForm:"List Project",booleanCheckOpenList:false},
     {Role:2,nameRout:'Home/ListProject',nameForm:"List User",booleanCheckOpenList:true},
     {Role:3,nameRout:'Home/ListProject',nameForm:"My tasks",booleanCheckOpenList:false},
-    {Role:3,nameRout:'Home/ProjectView',nameForm:"My office",booleanCheckOpenList:false},
-    {Role:3,nameRout:'Home/ListProject',nameForm:"Settings",booleanCheckOpenList:false},
     {Role:4,nameRout:'Home/',nameForm:"Work Developer,booleanCheckOpenList:true"},
     {Role:4,nameRout:'Home/',nameForm:"My office",booleanCheckOpenList:false},
     {Role:4,nameRout:'Home/',nameForm:" Settings",booleanCheckOpenList:false},
