@@ -21,7 +21,11 @@ public class ProjectControllrt {
 
     @RequestMapping(value = "", method = RequestMethod.GET)
     public Iterable<Project> getAllProject() {
-        return projectService.getProjectAccounts();}
+
+        return projectService.getProjectAccounts();
+
+
+    }
 
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)

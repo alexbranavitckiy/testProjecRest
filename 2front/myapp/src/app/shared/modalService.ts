@@ -1,7 +1,6 @@
-import {Injectable, TemplateRef} from '@angular/core';
+import {Injectable, NgModule, TemplateRef} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {BsModalRef, BsModalService} from "ngx-bootstrap";
-
 @Injectable()
 export class ModalService{
   public modalRef: BsModalRef;
@@ -13,12 +12,12 @@ export class ModalService{
     this.modalRef.hide();
   }
 
-  public _openModal(template: TemplateRef<any>): void {
+  public flagOpenInsettings:boolean=false;
 
+  public _openModal(template: TemplateRef<any>,flagOpenInsettings?:boolean): void {
 
-    this.modalRef = this.modalService.show(template);
+ this.modalRef = this.modalService.show(template);
+ this.flagOpenInsettings=flagOpenInsettings;
   }
-
-
 
 }

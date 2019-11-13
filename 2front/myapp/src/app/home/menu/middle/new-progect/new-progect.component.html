@@ -7,17 +7,22 @@
   <input type="text" class="form-control" id="validationCustom02" placeholder="Project Name" value="" required>
 
 </div>
-
-  <div >
-
-    <label for="exampleFormControlInput1">Сustomer email</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" value="" required>
-
+  <div id="Priority" class="form-group cardA">
+    <label for="Priority">Status RFT</label>
+    <select class="custom-select" >
+      <option value="0">Open</option>
+      <option value="1">InProgress</option>
+      <option value="2">Ressolved</option>
+      <option value="3">Reopend</option>
+      <option value="4">Closed</option>
+    </select>
+    <div class="invalid-feedback">Example invalid custom select feedback</div>
   </div>
+
 </form>
   <div class="form-group">
     <label for="exampleFormControlTextarea1">Комментарии к проекту</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Клиент любит помидоры</textarea>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
   </div>
 
   <div class="custom-file">

@@ -1,40 +1,20 @@
 
-<div>
+<form class="was-validated cardA">
+  <div class="container ">
+<div class=" textColor">
   <div class="modal-header">
-    <button type="button" class="close pull-right" aria-label="Close" (click)="modalServ.modalRef.hide()">
+    <h4 class="modal-title pull-left">Task-N123</h4> <button type="button" class="close pull-right" aria-label="Close" (click)="modalServ.modalRef.hide()">
       <span aria-hidden="true">&times;</span>
     </button>
   </div>
-
   <div class="modal-body">
-      <h4 class="modal-title pull-left">Task-N123</h4>
 
     <div class="color form-group">
-<div class="container row">
-  <div class="col">
-    <div class=" colform-group cardA">
-      <label for="custom-select1">Developer</label>
-      <select id="custom-select1" class="custom-select" required disabled>
-        <option value="3">Tom-id459</option>
-        <option value="">Developer</option>
-        <option value="1">Tom-id459</option>
-        <option value="2">Alex-id9253</option>
-        <option value="3">Ivan-id12</option>
-      </select>
-      <div class="invalid-feedback">Example invalid custom select feedback</div>
-    </div>
-    <label for="rogressLable1">Gravity Developer</label>
-    <div> <div class="progress card-title cardA">
-      <div id="rogressLable1" class="progress-bar" role="progressbar" style="width: 35%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">35% </div>
-    </div>
-    </div>
-    <div class="">    <button (click)="goComponent('ProjectView')" type="button" class="btn btn-secondary cardA">Сhange Developer</button>
-    </div>
-  </div>
+<div class=" row">
   <div class="col">
   <div class=" colform-group cardA">
-        <label for="custom-select2">Tester</label>
-        <select id="custom-select2" class="custom-select" required disabled>
+        <label for="custom-select2">Executor</label>
+        <select id="custom-select2" class="custom-select" required>
           <option value="3">Ivan-id459</option>
           <option value="">Developer</option>
           <option value="1">Tom-id459</option>
@@ -43,42 +23,75 @@
         </select>
         <div class="invalid-feedback">Example invalid custom select feedback</div>
       </div>
-    <label for="rogressLable">Gravity user</label>
-    <div> <div class="progress card-title cardA">
-      <div id="rogressLable" class="progress-bar" role="progressbar" style="width: 35%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">35% </div>
-    </div>
+    <div>
 </div>
-  <div class="">    <button (click)="goComponent('ProjectView')" type="button" class="btn btn-secondary cardA">Сhange Tester</button>
-  </div>
 </div>
 </div>
     <div>
-      <div class="container cardA row">
-        <div class="col">
-          <div class="h-50">Start date
-            <input type="date" class="form-control" id="date" name="date" placeholder="Дата" required>
-          </div>
-        </div>
-      <div class="col">
-        <div>
-          <div class="h-50">End date
-            <input type="date" class="form-control" id="date2" name="date" placeholder="Дата" required>
-          </div>
-        </div>
-      </div>
-      </div>
-
-      <div class="form-group">
         <label for="exampleFormControlTextarea1">Сomments</label>
         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
-    </div>
 
 
 
+
+
+
+
+
+    <div class="row ">
+      <div class="col">
+        <label for="Priority">Priority</label>
+        <div id="Priority" class="form-group ">
+          <select class="custom-select" required>
+            <option value="3">__________</option>
+            <option value="">Blocker</option>
+            <option value="1">Critical</option>
+            <option value="2">Major</option>
+            <option value="3">Trivial</option>
+          </select>
+          <div class="invalid-feedback">Example invalid custom select feedback</div>
+        </div>
+      </div>
+
+      <div class="col">
+        <label for="form12" >время выполнения</label>
+        <div  class="form-group ">
+            <input id="form12" class="form-control" type="number" value="3" >
+          <div class="invalid-feedback">Example invalid custom select feedback</div>
+        </div>
+      </div>
     </div>
 </div>
+
+
+
+  <div class="custom-file">
+    <input type="file" class="custom-file-input" id="" required>
+    <label class="custom-file-label" for="">Choose file...</label>
+  </div>
+
+  <div class="row">
+    <div class="col">
+        <div class="h-50">Star date
+          <input type="date" class="form-control" name="date" placeholder="Дата" required>
+        </div>
+    </div>
+    <div class="col">
+        <div class="h-50">Update date
+          <input type="date" class="form-control"  name="date" placeholder="Дата" required>
+        </div>
+    </div>
+    <div class="col">
+        <div class="h-50">End date
+          <input type="date" class="form-control"  name="date" placeholder="Дата редактирования" required>
+        </div>
+    </div>
+  </div><br>
+      <div class="cardA">
+        <button  (click)="service.goComponent('Home/ProjectView')" type="button" class="btn btn-secondary ">Save</button>
+      </div>
 </div>
-
-
-
+  </div>
+</div>
+</form>

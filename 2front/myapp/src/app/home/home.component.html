@@ -1,30 +1,31 @@
 
-<div class="fon">
+<div class=" fon">
 
 
-  <div  class="bottonExit">
+  <div  class="col bottonExit">
     <br>
-
-
     <button type = "button" class = "btn btn-dark" (click) = "onLogin(templeyt)"> выход </button>
-
-
   </div>
-  <div  class="container">
+
+
+  <div  class="container-fluid">
     <div class=" row">
-      <div class=" col-md-3 colorcol3 ">
+      <div class=" col colorcol3 ">
 <app-sidebar></app-sidebar>
       </div>
-      <div class="col-md-9 colorcol9" >
+      <div class="col-md-8 colorcol9" >
 
         <router-outlet ></router-outlet>
 
       </div>
+      <div class="col colorcol9" >
+<app-sidemenu></app-sidemenu>
+      </div>
+      </div>
     </div>
   </div>
-</div>
 
-<ng-template #templeyt >
+<ng-template  #templeyt >
   <app-login ></app-login>
 </ng-template>
 

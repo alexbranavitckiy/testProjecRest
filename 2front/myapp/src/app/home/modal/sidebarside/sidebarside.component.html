@@ -1,0 +1,94 @@
+
+
+
+<div class="modal-header  ">
+  <button type="button" class="close pull-right" aria-label="Close" (click)="modalServ.modalRef.hide()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <h4 class="modal-title pull-left">Login to account</h4>
+
+  <div class="container textColor">
+    <form class="was-validated cardA">
+      <div class=" h4 cardA">New task</div>
+      <div class="row">
+        <div class="col">
+          <label for="validationCustom02">Task name</label>
+          <input type="text" class="form-control" id="validationCustom02" placeholder="Project Name" value="" required>
+        </div>
+        <div id="ProjectName" class="col form-group ">
+          <label for="ProjectName">Project name</label>
+          <select class="custom-select" required>
+            <option value="">Project name</option>
+            <option value="1">Project59</option>
+            <option value="2">Project253</option>
+            <option value="3">Project2</option>
+          </select>
+          <div class="invalid-feedback">Example invalid custom select feedback</div>
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col">
+          <label class="">Developer:</label>
+          <form class=" form-inline">
+            <input class="form-control " type="search" placeholder="Search" aria-label="Developer">
+            <div class="">  <button  type="button" class="btn btn-secondary cardA">Установить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="row cardA">
+        <div class="col">
+          <div id="Priority" class="form-group cardA">
+            <label for="Priority">Priority</label>
+            <select class="custom-select" required>
+              <option value="3">__________</option>
+              <option value="">Blocker</option>
+              <option value="1">Critical</option>
+              <option value="2">Major</option>
+              <option value="3">Trivial</option>
+            </select>
+            <div class="invalid-feedback">Example invalid custom select feedback</div>
+          </div>
+        </div>
+        <div class="col">
+          <label for="example-number-input" class="col-xs-2 col-form-label">примерное время выполнения</label>
+          <div class="col-xs-10">
+            <input class="form-control" type="number" value="3" id="example-number-input">
+          </div>
+        </div>
+      </div>
+
+
+    </form>
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Комментарии к задачи</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+
+    <div class="custom-file">
+      <input type="file" class="custom-file-input" id="" required>
+      <label class="custom-file-label" for="">Choose file...</label>
+    </div>
+
+    <div class="container cardA row">
+
+      <div class="col">
+        <div>
+          <div class="h-50">End date
+            <input type="date" class="form-control" id="date2" name="date" placeholder="Дата" required>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button (click)="service.goComponent('Home/ProjectView')" type="button" class="btn btn-secondary cardA">Добавить</button>
+  </div>
+
+
+
+
+</div>
+
+

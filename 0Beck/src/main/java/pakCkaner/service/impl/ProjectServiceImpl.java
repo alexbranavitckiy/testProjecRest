@@ -23,7 +23,9 @@ public class ProjectServiceImpl implements ProjectService {
 
     @Override
     public Iterable<Project> getProjectAccounts() {
+
         return repository.findAll();
+
     }
 
 

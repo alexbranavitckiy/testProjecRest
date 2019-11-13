@@ -1,0 +1,28 @@
+<div *ngIf="service.getIdiser()==(3||4)" class="container">
+  <div class="h3">Loose task</div>
+<table  class="table table-hover">
+  <thead class="thead-light">
+  <tr>
+    <th scope="col">Tasks </th>
+    <th scope="col">lead time</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td> <button type="button" class="btn btnMyColor btn-dark"  (click)="modalServ._openModal(task)">Task1</button>
+    <td><a href="#">3</a></td>
+  </tr>
+  <tr>
+    <td> <button type="button" class="btn btnMyColor btn-dark"  (click)="modalServ._openModal(task)">Task2</button>
+    <td><a href="#">5</a></td>
+  </tr>
+  <tr>
+    <td> <button type="button" class="btn btnMyColor btn-dark"  (click)="modalServ._openModal(task)">Task3</button>
+    <td><a href="#">12</a></td>
+  </tr>
+  </tbody>
+</table>
+<ng-template #task >
+  <app-task-work></app-task-work>
+</ng-template>
+</div>

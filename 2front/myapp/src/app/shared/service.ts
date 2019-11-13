@@ -59,14 +59,12 @@ public flagUserList:boolean;
     {Role:1,nameRout:'Home/ListProject',nameForm:'List Project',booleanCheckOpenList:false},
     {Role:1,nameRout:'Home/NewTasks',nameForm:'New Tasks',booleanCheckOpenList:false},
     {Role:1,nameRout:'Home/NewProject',nameForm:'New Project',booleanCheckOpenList:false},
-    {Role:2,nameRout:'Home/NewUser',nameForm:"New User",booleanCheckOpenList:false},
+    {Role:2,nameRout:'Home/NewUser',nameForm:"New User ",booleanCheckOpenList:false},
     {Role:2,nameRout:'Home/ListProject',nameForm:"List Project",booleanCheckOpenList:false},
     {Role:2,nameRout:'Home/ListProject',nameForm:"List User",booleanCheckOpenList:true},
     {Role:3,nameRout:'Home/ListProject',nameForm:"My tasks",booleanCheckOpenList:false},
-    {Role:4,nameRout:'Home/',nameForm:"Work Developer,booleanCheckOpenList:true"},
-    {Role:4,nameRout:'Home/',nameForm:"My office",booleanCheckOpenList:false},
-    {Role:4,nameRout:'Home/',nameForm:" Settings",booleanCheckOpenList:false},
-    ];
+    {Role:4,nameRout:'Home/ListProject',nameForm:"My tasks",booleanCheckOpenList:false}
+  ];
 
 
   public dataBase: DataBase[]=[];

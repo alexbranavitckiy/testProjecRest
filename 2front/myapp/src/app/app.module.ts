@@ -6,10 +6,6 @@ import { AppComponent } from './app.component';
 import {NewTaskComponent} from "./home/menu/middle/new-task/new-task.component";
 import {NewProgectComponent} from "./home/menu/middle/new-progect/new-progect.component";
 import {ListProgectComponent} from "./home/menu/middle/list-progect/list-progect.component";
-import {HeaderComponent} from "./home/header/header.component";
-import {TopmenusComponent} from "./home/topmenus/topmenus.component";
-import {SidebarComponent} from "./home/sidebar/sidebar.component";
-import {FooterComponent} from "./home/footer/footer.component";
 import {HomeComponent} from "./home/home.component";
 import {ProjectViewComponent} from "./home/menu/middle/project-view/project-view.component";
 import {NewUserComponent} from "./home/menu/middle/new-user/new-user.component";
@@ -27,6 +23,10 @@ import { TypeaheadModule } from 'ngx-bootstrap/typeahead';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {LoginComponent} from "./home/modal/login/login.component";
 import { TaskWorkComponent } from './home/modal/task-work/task-work.component';
+import {SidebarsideComponent} from "./home/modal/sidebarside/sidebarside.component";
+import {SidebarComponent} from "./home/sidebar/sidebar.component";
+import { SidemenuComponent } from './home/menu/sidemenu/sidemenu.component';
+
 
 
 //canActivate : [AuthGuardService],
@@ -50,18 +50,20 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,FooterComponent,
-    HeaderComponent,
+    HomeComponent,
+
     ListProgectComponent,
     NewProgectComponent,
     NewTaskComponent,
     ProjectViewComponent,
     SidebarComponent,
-    TopmenusComponent,
+
     NewUserComponent,TaskWorkComponent,
     LoginComponent,
     WorkTaskComponent,
     TaskWorkComponent,
+    SidebarsideComponent,
+    SidemenuComponent,
   ],
   imports: [BrowserAnimationsModule,
     TypeaheadModule.forRoot(),
