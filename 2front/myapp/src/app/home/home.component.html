@@ -1,14 +1,9 @@
-
 <div class=" fon">
-
-
   <div  class="col bottonExit">
     <br>
-    <button type = "button" class = "btn btn-dark" (click) = "onLogin(templeyt)"> выход </button>
+    <button class="btn btn-outline-primary mb-2 mr-2" (click)="modalServ.openVerticallyCentered(content)"><ng-container class="h4">{{authService.nameLogin}}</ng-container></button>
   </div>
-
-
-  <div  class="container-fluid">
+<div  class="container-fluid">
     <div class=" row">
       <div class=" col colorcol3 ">
 <app-sidebar></app-sidebar>
@@ -25,8 +20,8 @@
     </div>
   </div>
 
-<ng-template  #templeyt >
-  <app-login ></app-login>
+<ng-template [title]="" #content let-modal   >
+<app-login [title]="modal"></app-login>
 </ng-template>
 
 

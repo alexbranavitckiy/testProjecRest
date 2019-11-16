@@ -1,10 +1,11 @@
 import {Router} from "@angular/router";
 import {HttpClient} from "@angular/common/http";
 import {AuthService} from "../shared/AuthService";
-import {Component, OnInit, TemplateRef} from "@angular/core";
+import {Component, OnInit, TemplateRef, ViewChild} from "@angular/core";
 import {BsModalRef, BsModalService} from "ngx-bootstrap";
 import {ModalService} from "../shared/modalService";
 import {Service} from "../shared/service";
+import {LoginComponent} from "./modal/login/login.component";
 
 
 @Component({
@@ -13,18 +14,18 @@ import {Service} from "../shared/service";
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit{
-username:string;
+
+
+
+
 
 constructor(private  modalServ:ModalService,private authService: AuthService,private http: HttpClient,
   private router: Router,private service :Service) {
 }
 
-
-onLogin (template: TemplateRef<any>){
-  this.modalServ._openModal(template);
-this.authService.login('12','12');
-}
-
+  onFormSubmit(loginForm) :boolean{
+    return this.authService.login(loginForm.value.username, loginForm.value.password)
+  }
 
 ngOnInit() {
 }

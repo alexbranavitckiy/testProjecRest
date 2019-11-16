@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {ActivatedRoute, Router} from "@angular/router";
 import {ModalService} from "../../../shared/modalService";
 import {AuthService} from "../../../shared/AuthService";
@@ -15,23 +15,22 @@ import {ModalConfig} from "ngb-modal";
 })
 export class LoginComponent implements OnInit {
 
-  username:string;
+  @Input() title: string;
 
   constructor(private authService: AuthService,
               private router: Router,private  modalServ :ModalService) {
 
   }
-
   ngOnInit() {
-
   }
 
 
-  onFormSubmit(loginForm) {
 
-    this.authService.login(loginForm.value.username, loginForm.value.password);
 
+ onFormSubmit(loginForm) :boolean{
+   return this.authService.login(loginForm.value.username, loginForm.value.password)
   }
+
   goComponent(str:string){
     this.router.navigate([str]);
   }

@@ -1,18 +1,20 @@
 
-<div class="modal-header  ">
-  <button type="button" class="close pull-right" aria-label="Close" (click)="modalServ.modalRef.hide()">
-    <span aria-hidden="true">&times;</span>
-  </button>
+<div class="modal-header">
+  <h4 class="modal-title">login window</h4>
+</div>
+<div class="container-fluid">
 </div>
 <div class="modal-body">
-  <h4 class="modal-title pull-left">Login to account</h4>
-
   <div class="color form-group">
-    <form #loginForm="ngForm" (ngSubmit)="onFormSubmit(loginForm)" >
-      <p>User Name: <input type='text'   class="form-control" name='username' ngModel></p>
-      <p>Password: <input type="password" class="form-control"  name="password" ngModel></p>
-      <p><button  type="submit" class="btn btn-primary">Submit</button></p>
-    </form>
+    <div class="container-fluid">
+      <form #loginForm="ngForm"  (ngSubmit)="onFormSubmit(loginForm)" >
+        <div class="h5">User Name <input type='text'   class="form-control" name='username' ngModel></div>
+        <div class="h5">Password <input type="password" class="form-control"  name="password" ngModel></div>
+        <p ><button   type="submit"  class="btn btn-primary">Submit</button></p>
+      </form>
+    </div>
   </div>
 </div>
-
+<div class="modal-footer">
+  <button type="button" class="btn btn-light"   (click)="title.close('Close click')">Close</button>
+</div>

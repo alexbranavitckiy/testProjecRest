@@ -26,7 +26,7 @@ import { TaskWorkComponent } from './home/modal/task-work/task-work.component';
 import {SidebarsideComponent} from "./home/modal/sidebarside/sidebarside.component";
 import {SidebarComponent} from "./home/sidebar/sidebar.component";
 import { SidemenuComponent } from './home/menu/sidemenu/sidemenu.component';
-
+import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
 
 
 //canActivate : [AuthGuardService],
@@ -65,7 +65,7 @@ const appRoutes: Routes = [
     SidebarsideComponent,
     SidemenuComponent,
   ],
-  imports: [BrowserAnimationsModule,
+  imports: [BrowserAnimationsModule, NgbModule,
     TypeaheadModule.forRoot(),
     RouterModule.forRoot(appRoutes),
     BrowserModule,

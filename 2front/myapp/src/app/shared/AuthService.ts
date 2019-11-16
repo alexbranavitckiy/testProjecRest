@@ -10,14 +10,19 @@ export class AuthService {
 
   private _isloggedIn: boolean;
   private userName:string;
-
+nameLogin :string;
   constructor(private service:Service,private  modalServ:ModalService ) {
     this._isloggedIn=false;
+    this.nameLogin="Вход";
   }
-  login(username: string, password:string) {
+
+  clicks:number = 0;
+
+
+  login(username: string, password:string):boolean {
     switch(username) {
       case "Manager": {
-        this.modalServ.modalRef.hide()
+        this.nameLogin="Выход";
       this.service.setIdiser(1);
         this._isloggedIn=true;
         this.userName=username;
@@ -25,30 +30,29 @@ export class AuthService {
         break;
       }
       case "Admin": {
-        this.modalServ.modalRef.hide()
+        this.nameLogin="Выход";
         this._isloggedIn=true;
         this.userName=username;
         this.service.setIdiser(2);
         return this._isloggedIn;
         break;
-
       }
       case "Tester": {
         this._isloggedIn=true;
-
-        this.modalServ.modalRef.hide()
+        this.nameLogin="Выход";
         this.service.setIdiser(3);
         return this._isloggedIn;
         break;
       }
       case "Developer": {
-        this.modalServ.modalRef.hide()
+        this.nameLogin="Выход";
         this._isloggedIn=true;
         this.service.setIdiser(4);
         return this._isloggedIn;
         break;
       }
       default: {
+        this.nameLogin="Вход";
         this._isloggedIn=false;
         return this._isloggedIn;
         break;
