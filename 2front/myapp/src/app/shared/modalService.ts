@@ -25,6 +25,9 @@ export class ModalService{
   public _close(): void {
   }
 
+  openScrollableContent(longContent) {
+    this.ngbModal.open(longContent, { scrollable: true });
+  }
 
  // this.modalService.open(content, { size: 'lg' });
 

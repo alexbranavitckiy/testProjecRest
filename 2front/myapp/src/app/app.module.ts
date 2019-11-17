@@ -29,6 +29,7 @@ import { SidemenuComponent } from './home/menu/sidemenu/sidemenu.component';
 import {NgbActiveModal, NgbModule} from "@ng-bootstrap/ng-bootstrap";
 import { SettingsComponent } from './home/menu/middle/settings/settings.component';
 import { AddExecuterComponent } from './home/modal/add-executer/add-executer.component';
+import { HistoryComponent } from './home/modal/history/history.component';
 
 
 
@@ -70,6 +71,7 @@ const appRoutes: Routes = [
     SidemenuComponent,
     SettingsComponent,
     AddExecuterComponent,
+    HistoryComponent,
 
   ],
   imports: [BrowserAnimationsModule, NgbModule,FormsModule,
