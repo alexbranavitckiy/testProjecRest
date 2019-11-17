@@ -3,17 +3,16 @@
   <div class="container ">
 <div class=" textColor">
   <div class="modal-header">
-    <h4 class="modal-title pull-left">Task-N123</h4> <button type="button" class="close pull-right" aria-label="Close" (click)="modalServ.modalRef.hide()">
+    <h4 class="modal-title pull-left h4">Task-N123</h4> <button type="button" class="close pull-right" aria-label="Close" (click)="modalServ.modalRef.hide()">
       <span aria-hidden="true">&times;</span>
     </button>
   </div>
   <div class="modal-body">
-
     <div class="color form-group">
 <div class=" row">
   <div class="col">
   <div class=" colform-group cardA">
-        <label for="custom-select2">Executor</label>
+        <label for="custom-select2" class="h5">Executor</label>
         <select id="custom-select2" class="custom-select" required>
           <option value="3">Ivan-id459</option>
           <option value="">Developer</option>
@@ -28,20 +27,13 @@
 </div>
 </div>
     <div>
-        <label for="exampleFormControlTextarea1">Сomments</label>
+        <label for="exampleFormControlTextarea1" class="cardA">Сomments</label>
         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
 
-
-
-
-
-
-
-
-    <div class="row ">
+      <div class="row ">
       <div class="col">
-        <label for="Priority">Priority</label>
+        <label for="Priority" class="h5">Priority</label>
         <div id="Priority" class="form-group ">
           <select class="custom-select" required>
             <option value="3">__________</option>
@@ -55,7 +47,17 @@
       </div>
 
       <div class="col">
-        <label for="form12" >время выполнения</label>
+        <label class="h5  cardA" >Status:</label>
+        <select  class="custom-select" required>
+          <option value="1">__________</option>
+          <option value="2">Closed</option>
+          <option value="3">In developing</option>
+          <option value="4">is open</option>
+          <option value="4">In testing</option>
+        </select></div>
+
+      <div class="col">
+        <label for="form12" class="h5 cardA"  >lead time</label>
         <div  class="form-group ">
             <input id="form12" class="form-control" type="number" value="3" >
           <div class="invalid-feedback">Example invalid custom select feedback</div>

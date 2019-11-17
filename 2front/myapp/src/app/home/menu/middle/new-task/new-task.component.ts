@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Service} from "../../../../shared/service";
+import {ModalService} from "../../../../shared/modalService";
 
 @Component({
   selector: 'app-new-task',
@@ -8,7 +9,7 @@ import {Service} from "../../../../shared/service";
 })
 export class NewTaskComponent implements OnInit {
 
-  constructor(private service :Service) { }
+  constructor(private service :Service,private  modalServ:ModalService) { }
 
   ngOnInit() {
   }

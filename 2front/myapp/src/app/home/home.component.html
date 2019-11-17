@@ -1,7 +1,9 @@
 <div class=" fon">
-  <div  class="col bottonExit">
-    <br>
-    <button class="btn btn-outline-primary mb-2 mr-2" (click)="modalServ.openVerticallyCentered(content)"><ng-container class="h4">{{authService.nameLogin}}</ng-container></button>
+  <div  class="row">
+    <div class="col">
+      <br>
+    <button class="bottonExit btn btn-outline-primary mb-2 mr-2" (click)="modalServ.openVerticallyCentered(content)"><ng-container class="h4">{{authService.nameLogin}}</ng-container></button>
+    </div>
   </div>
 <div  class="container-fluid">
     <div class=" row">
@@ -20,7 +22,7 @@
     </div>
   </div>
 
-<ng-template [title]="" #content let-modal   >
+<ng-template  #content let-modal   >
 <app-login [title]="modal"></app-login>
 </ng-template>
 

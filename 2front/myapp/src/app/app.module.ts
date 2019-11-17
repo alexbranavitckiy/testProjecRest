@@ -26,7 +26,10 @@ import { TaskWorkComponent } from './home/modal/task-work/task-work.component';
 import {SidebarsideComponent} from "./home/modal/sidebarside/sidebarside.component";
 import {SidebarComponent} from "./home/sidebar/sidebar.component";
 import { SidemenuComponent } from './home/menu/sidemenu/sidemenu.component';
-import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
+import {NgbActiveModal, NgbModule} from "@ng-bootstrap/ng-bootstrap";
+import { SettingsComponent } from './home/menu/middle/settings/settings.component';
+import { AddExecuterComponent } from './home/modal/add-executer/add-executer.component';
+
 
 
 //canActivate : [AuthGuardService],
@@ -41,7 +44,8 @@ const appRoutes: Routes = [
       {path: 'NewUser', component: NewUserComponent},
       {path: 'WorkTask', component: WorkTaskComponent},
       { path: 'Login',component : LoginComponent},
-      { path: 'TaskWork',component : TaskWorkComponent}
+      { path: 'TaskWork',component : TaskWorkComponent},
+      { path: 'Settings',component : SettingsComponent}
     ]},
   { path: '**', redirectTo: 'Home',pathMatch :'full'}
 ];
@@ -64,8 +68,11 @@ const appRoutes: Routes = [
     TaskWorkComponent,
     SidebarsideComponent,
     SidemenuComponent,
+    SettingsComponent,
+    AddExecuterComponent,
+
   ],
-  imports: [BrowserAnimationsModule, NgbModule,
+  imports: [BrowserAnimationsModule, NgbModule,FormsModule,
     TypeaheadModule.forRoot(),
     RouterModule.forRoot(appRoutes),
     BrowserModule,

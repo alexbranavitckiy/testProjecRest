@@ -54,7 +54,7 @@ public flagUserList:boolean;
     this.router.navigate([str]);
   }
 
-//1 - менеджер 2- админ
+//1 - менеджер 2- админ my settings
   public pathsSideBar: PathsSideBar[]=[
     {Role:1,nameRout:'Home/ListProject',nameForm:'List Project',booleanCheckOpenList:false},
     {Role:1,nameRout:'Home/NewTasks',nameForm:'New Tasks',booleanCheckOpenList:false},
@@ -65,6 +65,8 @@ public flagUserList:boolean;
     {Role:3,nameRout:'Home/ListProject',nameForm:"My tasks",booleanCheckOpenList:false},
     {Role:4,nameRout:'Home/ListProject',nameForm:"My tasks",booleanCheckOpenList:false}
   ];
+
+
 
 
   public dataBase: DataBase[]=[];

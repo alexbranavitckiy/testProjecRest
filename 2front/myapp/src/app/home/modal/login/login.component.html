@@ -10,7 +10,8 @@
       <form #loginForm="ngForm"  (ngSubmit)="onFormSubmit(loginForm)" >
         <div class="h5">User Name <input type='text'   class="form-control" name='username' ngModel></div>
         <div class="h5">Password <input type="password" class="form-control"  name="password" ngModel></div>
-        <p ><button   type="submit"  class="btn btn-primary">Submit</button></p>
+        <p ><button (click)="modalServ.close()"  type="submit"  class="btn btn-primary">Submit</button></p>
+
       </form>
     </div>
   </div>

@@ -4,6 +4,7 @@ import {ModalService} from "../../../shared/modalService";
 import {AuthService} from "../../../shared/AuthService";
 import {config} from "rxjs";
 import {ModalConfig} from "ngb-modal";
+import {NgbModal} from "@ng-bootstrap/ng-bootstrap";
 
 
 
@@ -18,7 +19,7 @@ export class LoginComponent implements OnInit {
   @Input() title: string;
 
   constructor(private authService: AuthService,
-              private router: Router,private  modalServ :ModalService) {
+              private router: Router,private  modalServ :ModalService,private ngbModal:NgbModal) {
 
   }
   ngOnInit() {
@@ -27,9 +28,10 @@ export class LoginComponent implements OnInit {
 
 
 
- onFormSubmit(loginForm) :boolean{
-   return this.authService.login(loginForm.value.username, loginForm.value.password)
-  }
+ onFormSubmit(loginForm) {
+ this.authService.login(loginForm.value.username, loginForm.value.password)
+   this.ngbModal.dismissAll();
+ }
 
   goComponent(str:string){
     this.router.navigate([str]);

@@ -1,13 +1,24 @@
 <div class="container textColor">
   <form class="was-validated cardA">
     <div class=" h4 cardA">New task</div>
+
+
     <div class="row">
       <div class="col">
-      <label for="validationCustom02">Task name</label>
+      <label class="h5" for="validationCustom02">Task name</label>
       <input type="text" class="form-control" id="validationCustom02" placeholder="Project Name" value="" required>
       </div>
-    <div id="ProjectName" class="col form-group ">
-      <label for="ProjectName">Project name</label>
+    </div>
+
+    <div class="row">
+        <div id="ProjectName" class=" form-group cardA">
+          <div class="col cardA">
+            <label class="h5" for="ProjectName">Project name</label>
+        <form class="form-inline">
+          <input class="form-control " type="search" placeholder="Search" aria-label="Search">
+        </form>
+      </div>
+          <div class="col cardA">
       <select class="custom-select" required>
         <option value="">Project name</option>
         <option value="1">Project59</option>
@@ -15,23 +26,47 @@
         <option value="3">Project2</option>
       </select>
       <div class="invalid-feedback">Example invalid custom select feedback</div>
-    </div>
+          </div>
+     </div>
+
+
     </div>
 <div class="row ">
-  <div class="col">
-    <label class="">Developer:</label>
+  <!--<div class="col">
+    <label class="h5" >Developer:</label>
     <form class=" form-inline">
     <input class="form-control " type="search" placeholder="Search" aria-label="Developer">
     <div class="">  <button  type="button" class="btn btn-secondary cardA">Установить</button>
     </div>
   </form>
+    <div class="form-group">
+      <label for="exampleFormControlSelect2">Example select</label>
+      <select class="form-control" id="exampleFormControlSelect2">
+        <option >1</option>
+        <option>2</option>
+        <option>3</option>
+        <option scope=row>4</option>
+        <option>5</option>
+      </select>
+    </div>
   </div>
+  -->
+
+
+
+
 </div>
 
 <div class="row cardA">
   <div class="col">
+    <label class="h5  cardA" >Status:</label>
+    <select  class="custom-select" required>
+      <option value="1">__________</option>
+      <option value="4">is open</option>
+    </select></div>
+  <div class="col">
     <div id="Priority" class="form-group cardA">
-      <label for="Priority">Priority</label>
+      <label class="h5" for="Priority">Priority</label>
       <select class="custom-select" required>
         <option value="3">__________</option>
         <option value="">Blocker</option>
@@ -39,27 +74,28 @@
         <option value="2">Major</option>
         <option value="3">Trivial</option>
       </select>
-      <div class="invalid-feedback">Example invalid custom select feedback</div>
+      <div class="invalid-feedback h5" >Example invalid custom select feedback</div>
     </div>
   </div>
   <div class="col">
-    <label for="example-number-input" class="col-xs-2 col-form-label">Estimated lead time</label>
+    <label for="example-number-input" class="col-xs-2 col-form-label h5">Estimated lead time</label>
     <div class="col-xs-10">
       <input class="form-control" type="number" value="3" id="example-number-input">
     </div>
   </div>
+
 </div>
 
 
   </form>
   <div class="form-group">
-    <label for="exampleFormControlTextarea1">Комментарии к задачи</label>
+    <label class="h5" for="exampleFormControlTextarea1">Комментарии к задачи</label>
     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
   </div>
 
   <div class="custom-file">
     <input type="file" class="custom-file-input" id="" required>
-    <label class="custom-file-label" for="">Choose file...</label>
+    <label class="custom-file-label h5" for="">Choose file...</label>
   </div>
 
   <div class="container cardA row">
@@ -73,4 +109,11 @@
     </div>
   </div>
   <button (click)="service.goComponent('Home/ProjectView')" type="button" class="btn btn-secondary cardA">Добавить</button>
+  <button (click)="modalServ.openLgCentered(content)" type="button" class="btn btn-secondary cardA">Render</button>
 </div>
+
+
+<ng-template  #content let-modal   >
+  <app-add-executer [title]="modal"></app-add-executer>
+</ng-template>
+
