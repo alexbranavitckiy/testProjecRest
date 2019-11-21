@@ -16,12 +16,12 @@ export class ProjectService {
 
 
 
- // getAllProject():Observable<Project[]>{
+  saveProject(project: Project):Observable<Project>{
+    return this.http.post<Project>('api/project',project);
+  }
 
-   // return this.http.get<Project[]>('');
-
-
-  //}
-
+  getAllProject():Observable<Project[]>{
+    return this.http.get<Project[]>('api/project/all');
+  }
 
 }

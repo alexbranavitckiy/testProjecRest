@@ -30,6 +30,7 @@ import {NgbActiveModal, NgbModule} from "@ng-bootstrap/ng-bootstrap";
 import { SettingsComponent } from './home/menu/middle/settings/settings.component';
 import { AddExecuterComponent } from './home/modal/add-executer/add-executer.component';
 import { HistoryComponent } from './home/modal/history/history.component';
+import { TableComponent } from './home/table/table.component';
 
 
 
@@ -72,6 +73,7 @@ const appRoutes: Routes = [
     SettingsComponent,
     AddExecuterComponent,
     HistoryComponent,
+    TableComponent,
 
   ],
   imports: [BrowserAnimationsModule, NgbModule,FormsModule,

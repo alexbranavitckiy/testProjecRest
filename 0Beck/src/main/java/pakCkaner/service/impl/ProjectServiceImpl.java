@@ -1,47 +1,41 @@
 package pakCkaner.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 import pakCkaner.entity.Project;
 import pakCkaner.repository.ProjectRepository;
 import pakCkaner.service.ProjectService;
 
+import java.util.List;
 import java.util.Optional;
 
 
-@Component
+@Service
 public class ProjectServiceImpl implements ProjectService {
 
-    private ProjectRepository repository;
-
     @Autowired
-    public ProjectServiceImpl(ProjectRepository repository) {
-        this.repository = repository;
+    ProjectRepository projectRepository;
+
+
+    @Override
+    public Project addProject(Project project) {
+        Project nProject = projectRepository.save(project);
+        return nProject;
     }
 
-
-
     @Override
-    public Iterable<Project> getProjectAccounts() {
-
-        return repository.findAll();
-
+    public Optional<Project> findById(Long id) {
+        return projectRepository.findById(id);
     }
 
-
-
     @Override
-    public void deleteProjectAccount(Long id) {
-            repository.deleteById(id);
-        }
-
-    @Override
-    public Optional<Project> getProjectAccountById(Long id) {
-            return repository.findById(id);
-        }
-
-    @Override
-    public Project saveProjectAccount(Project project) {
-            return repository.save(project);
+    public List<Project> getAll() {
+        return (List<Project>) projectRepository.findAll();
     }
+
+    @Override
+    public void deleteProject(Long id) {
+        projectRepository.deleteById(id);
+    }
+
 }

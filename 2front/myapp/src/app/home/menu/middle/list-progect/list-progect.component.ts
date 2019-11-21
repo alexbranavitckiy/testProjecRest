@@ -4,6 +4,9 @@ import {Router} from "@angular/router";
 import {Project} from "../../../../model/project";
 import {Subscription} from "rxjs";
 import {ModalService} from "../../../../shared/modalService";
+import {ProjectService} from "../../../../shared/project.service";
+import {UserService} from "../../../../shared/user.service";
+import {User} from "../../../../model/user";
 
 @Component({
   selector: 'app-list-progect',
@@ -22,25 +25,44 @@ export class ListProgectComponent implements OnInit,DoCheck{
   table4: string=" ";
 
 
+  public newProject: Project = new Project();
+  public allProject: Project[] =[];
+
+  public allUsers: User[] =[];
+  public newUsers: Project = new Project();
+
+
   templates: any[] = ['templates'];
   templatesUsers: any[] = ['templatesUsers'];
   templatesProject: any[] = ['templatesProject'];
   templatesTasks: any[] = ['templatesTasks'];
 
 
-  constructor(private router: Router, private service: Service, private modalServ :ModalService) {
-    this.template(this.service.getIdiser())
+  constructor(private userService :UserService,private projectService:ProjectService, private router: Router, private service: Service, private modalServ :ModalService) {
+    this.template(this.service.getIdiser() )
   }
 
 
+  ngOnInit(): void {
+    this.userService.getAllUser().subscribe((data: User[]) => {
+      data.forEach((user: User) => this.allUsers.push(user));
+    });
 
-  ngOnInit() {
-  //  this.loadBillingAccounts()// загруска таблицы
-    this.service.fethDataBase().subscribe(() => {
-    })
+
+    this.projectService.getAllProject().subscribe((data: Project[]) => {
+      data.forEach((p: Project) => this.allProject.push(p));
+    });
   }
 
-  ngDoCheck(){this.template(this.service.getIdiser())}
+ // ngOnInit() {
+  //     this.loadBillingAccounts()// загруска таблицы
+  //     this.service.fethDataBase().subscribe(() => {
+  //     })
+  //   }
+
+  ngDoCheck(){
+
+    this.template(this.service.getIdiser())}
 
 
   onLogin (template: TemplateRef<any>){
@@ -102,7 +124,15 @@ export class ListProgectComponent implements OnInit,DoCheck{
   }
 
 
-
+  public loadBillingAccounts(): void {
+    // Get data from BillingAccountService
+    this.subscriptions.push(this.service.getBillingAccounts().subscribe(accounts => {
+      // Parse json response into local array
+      this.projects = accounts as Project[];
+      // Check data in console
+      console.log(this.projects);// don't use console.log in angular :)
+    }));
+  }
 
 
   // oncChange(id :number){
@@ -113,19 +143,9 @@ export class ListProgectComponent implements OnInit,DoCheck{
   goComponent(str: string) {
     this.router.navigate([str]);
   }
-  ngOnDestroy(): void {
-    this.subscriptions.forEach(subscription => subscription.unsubscribe());
- }
 
 
- public loadBillingAccounts(): void {
-  // Get data from BillingAccountService
-   this.subscriptions.push(this.service.getBillingAccounts().subscribe(accounts => {
-    // Parse json response into local array
-     this.projects = accounts as Project[];
-     // Check data in console
-     console.log(this.projects);// don't use console.log in angular :)
-    }));
-  }
+
+
 }
 

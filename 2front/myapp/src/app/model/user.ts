@@ -4,16 +4,12 @@ import {Status} from "./status";
 
 export class User {
 
-  idUsers: number;
-  FerstSecondName: string;
-  role: Role;
-  parol:Parol;
+  idUsers: String;
+  Name: string;
+  role: String;
 
 
 
-  constructor(){
-    this.role = new Role();
-    this.parol = new Parol();
-  }
+
 
 }

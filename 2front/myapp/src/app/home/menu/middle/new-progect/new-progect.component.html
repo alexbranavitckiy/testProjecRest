@@ -1,50 +1,87 @@
 <div class="container textColor">
-<form class="was-validated cardA">
+
+
+
+
+
+
+
+
+
+
 <div class="h4 cardA">New project</div>
-<div>
 
-  <label class="h5" for="validationCustom02">Project name</label>
-  <input type="text" class="form-control" id="validationCustom02" placeholder="Project Name" value="" required>
+  <form [formGroup]="projectForm" (ngSubmit)="_createNewProject()">
+    <div class="form-group">
 
-</div>
-  <div id="Priority" class="form-group cardA" >
-    <label class="h5" for="Priority">Status RFT</label>
-    <select class="custom-select" >
-      <option value="0">Open</option>
-      <option value="4">Closed</option>
-    </select>
-    <div class="invalid-feedback">Example invalid custom select feedback</div>
-  </div>
+      <label class="h5" for="validationCustom02">Project name</label>
+      <input id="validationCustom02" type="text" class="form-control"  placeholder="Project Name" value="" formControlName="name">
 
-</form>
-  <div class="form-group">
-    <label class="h5" for="exampleFormControlTextarea1">Комментарии к проекту</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  </div>
+      <div class="alert alert-danger"
+           *ngIf="projectForm.controls['name'].invalid && projectForm.controls['name'].touched">
+        <div *ngIf="projectForm.controls['name'].errors['required']">
+          Empty Project name
+        </div>
+        <div *ngIf="projectForm.controls['name'].errors['minlength']">
+          Minimum length = 3
+        </div>
+        <div *ngIf="projectForm.controls['name'].errors['maxlength']">
+          Maximum length = 30
+        </div>
+      </div>
+      <div class="alert alert-danger" *ngIf="searchCreatedProject()">
+        This name a created
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="h5" for="exampleFormControlTextarea1" >Комментарии к проекту</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1"  formControlName="summary" rows="3"></textarea>
 
+      <div class="alert alert-danger"
+           *ngIf="projectForm.controls['summary'].invalid && projectForm.controls['summary'].touched">
+        <div *ngIf="projectForm.controls['summary'].errors['required']">
+          Empty Summary
+        </div>
+        <div *ngIf="projectForm.controls['summary'].errors['minlength']">
+          Minimum length = 5
+        </div>
+        <div *ngIf="projectForm.controls['summary'].errors['maxlength']">
+          Maximum length = 50
+        </div>
 
-  <input class="btn-dark" type="file"  onchange="showFile(this)">
-
-
-
-<div class="container cardA row">
-    <div class="col">
-      <div class="h-50">Start date
-        <input type="date" class="form-control" id="date" name="date" placeholder="Дата" required>
       </div>
     </div>
 
-  <div class="col">
-    <div>
-      <div class="h-50">End date
-        <input type="date" class="form-control" id="date2" name="date" placeholder="Дата" required>
+    <input class="btn-dark" type="file"  onchange="showFile(this)">
+
+    <div id="Priority" class="form-group cardA" >
+      <label class="h5" for="Priority">Status RFT</label>
+      <select class="custom-select" >
+        <option value="0">Open</option>
+        <option value="4">Closed</option>
+      </select>
+      <div class="invalid-feedback">Example invalid custom select feedback</div>
+    </div>
+
+    <div class="container cardA row">
+      <div class="col">
+        <div class="h-50">Start date
+          <input type="date" class="form-control" id="date" name="date" placeholder="Дата" required>
+        </div>
+      </div>
+
+      <div class="col">
+        <div>
+          <div class="h-50">End date
+            <input type="date" class="form-control" id="date2" name="date" placeholder="Дата" required>
+          </div>
+        </div>
       </div>
     </div>
-</div>
-</div>
 
-  <div class="col-md-4 cardA ">
-    <button (click)="service.goComponent('Home/ProjectView')" type="button" class="btn btn-secondary cardA">Add</button>
-    </div>
+  </form>
+<div class="col-md-4 cardA ">
+  <button type="submit" class="btn btn-dark text-white" [disabled]="projectForm.invalid || searchCreatedProject()" (click)="_createNewProject()">
+    Create
+  </button></div>
 </div>
-

@@ -2,9 +2,10 @@ import {Component, Injectable} from "@angular/core";
 import {providerDef} from "@angular/compiler/src/view_compiler/provider_compiler";
 import {HttpClient} from "@angular/common/http";
 import {Observable, pipe} from "rxjs";
-import {tap} from "rxjs/operators";
+import {map, tap} from "rxjs/operators";
 import {Router} from "@angular/router";
 import {Project} from "../model/project";
+import {User} from "../model/user";
 // ангулар , тайпскрипт тест только
 //Для отображения данных на странице, сначала
 // нужно эти данные
@@ -74,10 +75,16 @@ public flagUserList:boolean;
   constructor(private http: HttpClient,private router: Router){}
 
 
-
-  getBillingAccounts(): Observable<Project[]> {
+  getProject(): Observable<Project[]> {
     return this.http.get<Project[]>('/api/ba');
   }
+//getUsers
+  getBillingAccounts(): Observable<Project[]> {
+
+    return this.http.get<Project[]>('api/project/all');
+  }
+
+
 
   saveBillingAccount(billingAccount: Project): Observable<Project> {
     return this.http.post<Project>('/api/ba', billingAccount);
@@ -86,15 +93,6 @@ public flagUserList:boolean;
   deleteBillingAccount(billingAccountId: string): Observable<void> {
     return this.http.delete<void>('/api/ba/' + billingAccountId);
   }
-
-
-
-
-
-
-
-
-
 
 
 
