@@ -7,23 +7,23 @@ import javax.validation.constraints.Size;
 import java.util.Objects;
 
 @Entity
-@Table(name = "users")
+@Table(name = "user")
 public class User {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @NotNull
-    private long idUsers;
 
+   @Id
+   @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+// Unknown column 'user0_.id_users' in 'field list'
     @NotBlank
     private String name;
-
+//
    // @ManyToOne(targetEntity = Role.class)
 
    @NotNull
     private int role;
 
-    public long getIdUsers() {
-        return idUsers;
+    public Integer getId() {
+        return id;
     }
 
     public String getName() {
@@ -34,15 +34,30 @@ public class User {
         return role;
     }
 
-    public void setIdUsers(long idUsers) {
-        this.idUsers = idUsers;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public void setName(String name) {
-        this.name = name;
+        name = name;
     }
 
     public void setRole(int role) {
-        this.role = role;
+        role = role;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        User user = (User) o;
+        return id == user.id &&
+                role == user.role &&
+                Objects.equals(name, user.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, name, role);
     }
 }

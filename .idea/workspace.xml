@@ -2,77 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f21aba1f-a93c-4161-827a-dd89b4782b4e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/controller/ProjectController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/controller/StatusController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/controller/TaskController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/entity/Priority.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/entity/Sign.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/entity/Status.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/repository/SignRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/repository/StatusRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/repository/TaskRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/service/SignService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/service/StatusService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/service/TaskService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/service/impl/SignServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/service/impl/StatusServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/service/impl/TaskServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/models/UserModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/service/ProjectService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/service/impl/ProjectServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/BeckendApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/BeckendApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/controller/ProjectControllrt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/controller/ProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/controller/ProjectController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/entity/Priority.java" beforeDir="false" afterPath="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/entity/Priority.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/entity/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/entity/Project.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/entity/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/entity/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/entity/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/entity/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/repository/ProjectRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/repository/ProjectRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/entity/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/repository/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/service/ProjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/service/ProjectService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/service/impl/ProjectServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/service/impl/ProjectServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/0Beck/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/0Beck/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0Beck/target/classes/pakCkaner/controller/ProjectControllrt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/0Beck/target/backend-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/0Beck/target/backend-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0Beck/target/backend-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/0Beck/target/backend-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0Beck/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/0Beck/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0Beck/target/classes/pakCkaner/controller/ProjectController.class" beforeDir="false" afterPath="$PROJECT_DIR$/0Beck/target/classes/pakCkaner/controller/ProjectController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0Beck/target/classes/pakCkaner/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/0Beck/target/classes/pakCkaner/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0Beck/target/classes/pakCkaner/entity/Priority.class" beforeDir="false" afterPath="$PROJECT_DIR$/0Beck/target/classes/pakCkaner/entity/Priority.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/0Beck/target/classes/pakCkaner/entity/Project.class" beforeDir="false" afterPath="$PROJECT_DIR$/0Beck/target/classes/pakCkaner/entity/Project.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0Beck/target/classes/pakCkaner/entity/Task.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0Beck/target/classes/pakCkaner/entity/Users.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/0Beck/target/classes/pakCkaner/entity/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/0Beck/target/classes/pakCkaner/entity/Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0Beck/target/classes/pakCkaner/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/0Beck/target/classes/pakCkaner/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0Beck/target/classes/pakCkaner/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/0Beck/target/classes/pakCkaner/repository/UserRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/0Beck/target/classes/pakCkaner/service/ProjectService.class" beforeDir="false" afterPath="$PROJECT_DIR$/0Beck/target/classes/pakCkaner/service/ProjectService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0Beck/target/classes/pakCkaner/service/impl/ProjectServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/0Beck/target/classes/pakCkaner/service/impl/ProjectServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0Beck/target/classes/pakCkaner/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/0Beck/target/classes/pakCkaner/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0Beck/target/classes/pakCkaner/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/0Beck/target/classes/pakCkaner/service/impl/UserServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/controller/ProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/controller/ProjectController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/models/ProjectModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/models/ProjectModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/service/ProjectDataService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/service/impl/ProjectDataService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Jirafapi/target/Jirafapi-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/1Jirafapi/target/Jirafapi-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Jirafapi/target/Jirafapi-1.0-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/1Jirafapi/target/Jirafapi-1.0-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1Jirafapi/target/classes/scanpackage/controller/ProjectController.class" beforeDir="false" afterPath="$PROJECT_DIR$/1Jirafapi/target/classes/scanpackage/controller/ProjectController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Jirafapi/target/classes/scanpackage/models/ProjectModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/1Jirafapi/target/classes/scanpackage/models/ProjectModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Jirafapi/target/classes/scanpackage/service/ProjectDataService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Jirafapi/target/classes/scanpackage/service/impl/ProjectDataService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Jirafapi/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/1Jirafapi/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Jirafapi/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/1Jirafapi/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2front/myapp/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/2front/myapp/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2front/myapp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/2front/myapp/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2front/myapp/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/2front/myapp/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2front/myapp/src/app/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/2front/myapp/src/app/home/home.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2front/myapp/src/app/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/2front/myapp/src/app/home/home.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2front/myapp/src/app/home/menu/middle/list-progect/list-progect.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/2front/myapp/src/app/home/menu/middle/list-progect/list-progect.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2front/myapp/src/app/home/menu/middle/list-progect/list-progect.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/2front/myapp/src/app/home/menu/middle/list-progect/list-progect.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1Jirafapi/target/classes/scanpackage/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/1Jirafapi/target/classes/scanpackage/controller/UserController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2front/myapp/src/app/home/menu/middle/new-progect/new-progect.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/2front/myapp/src/app/home/menu/middle/new-progect/new-progect.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2front/myapp/src/app/home/menu/middle/new-progect/new-progect.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/2front/myapp/src/app/home/menu/middle/new-progect/new-progect.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2front/myapp/src/app/home/menu/middle/project-view/project-view.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/2front/myapp/src/app/home/menu/middle/project-view/project-view.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2front/myapp/src/app/home/menu/middle/project-view/project-view.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/2front/myapp/src/app/home/menu/middle/project-view/project-view.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2front/myapp/src/app/model/project.ts" beforeDir="false" afterPath="$PROJECT_DIR$/2front/myapp/src/app/model/project.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2front/myapp/src/app/model/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/2front/myapp/src/app/model/user.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2front/myapp/src/app/shared/project.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/2front/myapp/src/app/shared/project.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2front/myapp/src/app/shared/service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/2front/myapp/src/app/shared/service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2front/myapp/src/app/shared/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/2front/myapp/src/app/shared/user.service.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/Jirafapi/target/" />
@@ -100,55 +60,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/models/UserModel.java">
+        <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/entity/Priority.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/controller/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="20" column="156" selection-start-line="20" selection-start-column="156" selection-end-line="20" selection-end-column="156" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/entity/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#530#531#0" expanded="true" />
-                <element signature="e#560#561#0" expanded="true" />
-                <element signature="e#591#592#0" expanded="true" />
-                <element signature="e#618#619#0" expanded="true" />
-                <element signature="e#646#647#0" expanded="true" />
-                <element signature="e#673#674#0" expanded="true" />
-                <element signature="e#717#718#0" expanded="true" />
-                <element signature="e#755#756#0" expanded="true" />
-                <element signature="e#795#796#0" expanded="true" />
-                <element signature="e#827#828#0" expanded="true" />
-                <element signature="e#864#865#0" expanded="true" />
-                <element signature="e#896#897#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/repository/UserRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="102">
+              <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -159,8 +74,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/entity/Project.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="19" column="3" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+            <state relative-caret-position="204">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -171,11 +86,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-11">
+            <state relative-caret-position="408">
+              <caret line="32" column="28" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#493#494#0" expanded="true" />
-                <element signature="e#536#537#0" expanded="true" />
+                <element signature="e#541#542#0" expanded="true" />
+                <element signature="e#584#585#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -184,8 +100,56 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/controller/ProjectController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+            <state relative-caret-position="391">
+              <caret line="26" column="97" selection-start-line="26" selection-start-column="85" selection-end-line="26" selection-end-column="97" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/service/impl/UserServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/controller/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/controller/ProjectController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="261">
+              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/service/impl/ProjectServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -196,8 +160,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/repository/ProjectRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+            <state relative-caret-position="102">
+              <caret line="11" column="65" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -206,27 +170,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/service/impl/ProjectServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/service/ProjectService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+            <state relative-caret-position="170">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#765#766#0" expanded="true" />
-                <element signature="e#831#832#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/service/impl/UserServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#755#756#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -256,46 +205,29 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/service/TaskService.java" />
         <option value="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/controller/TaskController.java" />
         <option value="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/controller/StatusController.java" />
-        <option value="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/entity/Role.java" />
         <option value="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/entity/Sign.java" />
         <option value="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/entity/Status.java" />
-        <option value="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/service/impl/ProjectServiceImpl.java" />
         <option value="$PROJECT_DIR$/2front/myapp/src/app/model/project.ts" />
-        <option value="$PROJECT_DIR$/2front/myapp/src/app/shared/project.service.ts" />
-        <option value="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/controller/ProjectController.java" />
         <option value="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/repository/SignRepository.java" />
         <option value="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/repository/StatusRepository.java" />
         <option value="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/service/impl/SignServiceImpl.java" />
         <option value="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/service/impl/StatusServiceImpl.java" />
         <option value="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/service/impl/TaskServiceImpl.java" />
-        <option value="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/service/SignService.java" />
         <option value="$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/service/ProjectDataService.java" />
         <option value="$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/service/impl/ProjectDataServiceImpl.java" />
         <option value="$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/service/impl/TaskService.java" />
         <option value="$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/service/ProjectService.java" />
         <option value="$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/service/impl/ProjectServiceImpl.java" />
         <option value="$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/models/ProjectModel.java" />
-        <option value="$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/controller/ProjectController.java" />
         <option value="$PROJECT_DIR$/2front/myapp/src/app/home/table/table.component.html" />
         <option value="$PROJECT_DIR$/2front/myapp/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/2front/myapp/src/app/shared/service.ts" />
-        <option value="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/entity/Priority.java" />
-        <option value="$PROJECT_DIR$/0Beck/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/entity/Project.java" />
         <option value="$PROJECT_DIR$/2front/myapp/src/app/home/menu/middle/new-progect/new-progect.component.ts" />
-        <option value="$PROJECT_DIR$/2front/myapp/src/app/home/menu/middle/new-progect/new-progect.component.html" />
-        <option value="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/service/StatusService.java" />
-        <option value="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/repository/TaskRepository.java" />
-        <option value="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/service/TaskService.java" />
-        <option value="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/service/UserService.java" />
         <option value="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/BeckendApp.java" />
         <option value="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/repository/ProjectRepository.java" />
-        <option value="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/entity/Task.java" />
-        <option value="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/repository/UserRepository.java" />
         <option value="$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/service/impl/ProjectServiceImp.java" />
         <option value="$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/service/UserService.java" />
         <option value="$PROJECT_DIR$/2front/myapp/src/app/shared/user.service.ts" />
@@ -303,10 +235,27 @@
         <option value="$PROJECT_DIR$/2front/myapp/src/app/home/menu/middle/list-progect/list-progect.component.ts" />
         <option value="$PROJECT_DIR$/2front/myapp/src/app/home/menu/middle/list-progect/list-progect.component.html" />
         <option value="$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/controller/UserController.java" />
         <option value="$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/models/UserModel.java" />
-        <option value="$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/repository/TaskRepository.java" />
+        <option value="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/service/TaskService.java" />
+        <option value="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/service/StatusService.java" />
+        <option value="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/service/SignService.java" />
+        <option value="$PROJECT_DIR$/2front/myapp/src/app/shared/project.service.ts" />
+        <option value="$PROJECT_DIR$/2front/myapp/src/app/home/menu/middle/new-progect/new-progect.component.html" />
+        <option value="$PROJECT_DIR$/0Beck/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/entity/Priority.java" />
+        <option value="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/entity/Role.java" />
         <option value="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/entity/User.java" />
+        <option value="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/repository/UserRepository.java" />
+        <option value="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/service/UserService.java" />
+        <option value="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/service/impl/ProjectServiceImpl.java" />
+        <option value="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/service/ProjectService.java" />
+        <option value="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/entity/Project.java" />
+        <option value="$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/controller/ProjectController.java" />
+        <option value="$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/controller/ProjectController.java" />
       </list>
     </option>
   </component>
@@ -327,9 +276,9 @@
     <option name="skipTests" value="true" />
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="952" />
-    <option name="width" value="977" />
-    <option name="height" value="1038" />
+    <option name="x" value="950" />
+    <option name="width" value="979" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -340,6 +289,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -622,6 +572,18 @@
               <item name="myapp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="menu" type="462c0819:PsiDirectoryNode" />
+              <item name="middle" type="462c0819:PsiDirectoryNode" />
+              <item name="new-user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjectJira" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectJira" type="462c0819:PsiDirectoryNode" />
+              <item name="2front" type="462c0819:PsiDirectoryNode" />
+              <item name="myapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -637,7 +599,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -647,9 +608,9 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574333170847" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574421401452" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/1Jirafapi" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/0Beck" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -689,8 +650,9 @@
         </RuleState>
       </list>
     </option>
+    <option name="contentProportion" value="0.16210671" />
   </component>
-  <component name="RunManager" selected="Spring Boot.BeckendApp">
+  <component name="RunManager" selected="Spring Boot.FapiApp">
     <configuration name="BeckendApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="Beck" />
       <extension name="coverage">
@@ -757,12 +719,13 @@
       <workItem from="1573675367946" duration="7153000" />
       <workItem from="1573916937024" duration="50701000" />
       <workItem from="1574072671227" duration="25203000" />
-      <workItem from="1574231567156" duration="42697000" />
+      <workItem from="1574231567156" duration="52846000" />
+      <workItem from="1574426991038" duration="574000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="292962000" />
+    <option name="totallyTimeSpent" value="303685000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -775,8 +738,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27046978" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13489933" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -786,7 +750,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32808024" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932885" weight="0.52974504" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932885" weight="0.40651557" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.7025496" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -799,14 +763,14 @@
       <window_info anchor="bottom" id="Spring" order="12" weight="0.3286119" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="TypeScript" order="14" />
-      <window_info anchor="bottom" id="Messages" order="15" weight="0.13597734" />
-      <window_info active="true" anchor="bottom" id="Run Dashboard" order="16" visible="true" weight="0.5368272" />
+      <window_info anchor="bottom" id="Messages" order="15" weight="0.19263457" />
+      <window_info anchor="bottom" id="Run Dashboard" order="16" visible="true" weight="0.22237961" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24966443" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Maven" order="5" visible="true" weight="0.16577181" />
+      <window_info anchor="right" id="Maven" order="5" visible="true" weight="0.07986577" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Database" order="8" weight="0.3295302" />
@@ -862,168 +826,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/controller/TaskController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/config/WebConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-392">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2front/myapp/src/app/home/table/table.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2front/myapp/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="78" column="59" selection-start-line="78" selection-start-column="59" selection-end-line="78" selection-end-column="59" />
-          <folding>
-            <element signature="e#0#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2front/myapp/src/app/home/home.component.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2front/myapp/src/app/home/home.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/0Beck/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="56" selection-start-line="1" selection-start-column="56" selection-end-line="1" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2front/myapp/src/app/home/menu/middle/new-progect/new-progect.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2front/myapp/src/app/home/menu/middle/new-progect/new-progect.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="37" column="42" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/service/impl/TaskServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/repository/TaskRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/service/TaskService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/service/SignService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/service/StatusService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/service/ProjectService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/controller/TaskController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/BeckendApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#295#296#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/service/impl/TaskService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/service/TaskService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/service/impl/ProjectServiceImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" selection-start-line="14" selection-start-column="16" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#210#233#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/service/impl/TaskService.java" />
+    <entry file="file://$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/service/TaskService.java" />
+    <entry file="file://$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/service/impl/ProjectServiceImp.java" />
     <entry file="file://$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/models/ProjectModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="402">
@@ -1050,99 +855,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/controller/StatusController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/entity/Priority.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="13" column="55" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="13" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/entity/Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/entity/Sign.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/entity/Status.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/entity/Task.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3706">
-          <caret line="218" column="3" selection-start-line="218" selection-start-column="3" selection-end-line="218" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2front/myapp/src/app/shared/project.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2front/myapp/src/app/shared/service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2front/myapp/src/app/shared/user.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/2front/myapp/src/app/model/project.ts">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2front/myapp/src/app/model/user.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/2front/myapp/src/app/home/menu/middle/list-progect/list-progect.component.ts">
       <provider selected="true" editor-type-id="text-editor">
@@ -1150,23 +864,6 @@
           <caret line="47" column="48" selection-start-line="47" selection-start-column="40" selection-end-line="47" selection-end-column="48" />
           <folding>
             <element signature="e#0#114#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2front/myapp/src/app/home/menu/middle/list-progect/list-progect.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="51" column="27" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/controller/ProjectController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="25" selection-start-line="25" selection-end-line="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1191,62 +888,245 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/service/impl/UserServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/models/UserModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/service/impl/SignServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/service/impl/TaskServiceImpl.java" />
+    <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/service/impl/StatusServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/service/TaskService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/service/StatusService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/service/SignService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#370#393#1" expanded="true" />
-          </folding>
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/service/impl/ProjectServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/repository/SignRepository.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/repository/StatusRepository.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/repository/TaskRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/entity/Project.java">
+    <entry file="file://$PROJECT_DIR$/2front/myapp/src/app/home/menu/middle/list-progect/list-progect.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="19" column="3" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+        <state relative-caret-position="-70">
+          <caret line="51" column="27" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/BeckendApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#295#296#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/repository/ProjectRepository.java">
+    <entry file="file://$PROJECT_DIR$/2front/myapp/src/app/home/menu/middle/new-user/new-user.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2front/myapp/src/app/home/menu/middle/new-progect/new-progect.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="39" column="19" lean-forward="true" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/config/WebConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2front/myapp/src/app/model/user.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2front/myapp/src/app/shared/user.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2front/myapp/src/app/shared/service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2front/myapp/src/app/shared/project.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/controller/TaskController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2front/myapp/src/app/home/menu/middle/new-progect/new-progect.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="33" column="28" lean-forward="true" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/controller/StatusController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0Beck/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/entity/Task.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="20" column="16" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/entity/Status.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/entity/Sign.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/entity/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1277#1278#0" expanded="true" />
+            <element signature="e#1333#1334#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/repository/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="67" selection-start-line="10" selection-start-column="67" selection-end-line="10" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="369">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#708#709#0" expanded="true" />
             <element signature="e#755#756#0" expanded="true" />
+            <element signature="e#818#819#0" expanded="true" />
+            <element signature="e#863#864#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/service/impl/ProjectServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+        <state relative-caret-position="123">
+          <caret line="13" column="48" lean-forward="true" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#765#766#0" expanded="true" />
@@ -1255,20 +1135,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/repository/UserRepository.java">
+    <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/entity/Priority.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="102">
+          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/controller/ProjectController.java">
+    <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/entity/Project.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+        <state relative-caret-position="204">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1277,50 +1157,82 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-11">
+        <state relative-caret-position="408">
+          <caret line="32" column="28" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#493#494#0" expanded="true" />
-            <element signature="e#536#537#0" expanded="true" />
+            <element signature="e#541#542#0" expanded="true" />
+            <element signature="e#584#585#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/controller/ProjectController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="26" column="97" selection-start-line="26" selection-start-column="85" selection-end-line="26" selection-end-column="97" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="20" column="156" selection-start-line="20" selection-start-column="156" selection-end-line="20" selection-end-column="156" />
+        <state relative-caret-position="272">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/models/UserModel.java">
+    <entry file="file://$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/service/impl/ProjectServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+        <state relative-caret-position="119">
+          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/entity/User.java">
+    <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/repository/ProjectRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="102">
+          <caret line="11" column="65" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#530#531#0" expanded="true" />
-            <element signature="e#560#561#0" expanded="true" />
-            <element signature="e#591#592#0" expanded="true" />
-            <element signature="e#618#619#0" expanded="true" />
-            <element signature="e#646#647#0" expanded="true" />
-            <element signature="e#673#674#0" expanded="true" />
-            <element signature="e#717#718#0" expanded="true" />
-            <element signature="e#755#756#0" expanded="true" />
-            <element signature="e#795#796#0" expanded="true" />
-            <element signature="e#827#828#0" expanded="true" />
-            <element signature="e#864#865#0" expanded="true" />
-            <element signature="e#896#897#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0Beck/src/main/java/pakCkaner/service/ProjectService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1Jirafapi/src/main/java/scanpackage/controller/ProjectController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1415,7 +1327,7 @@
     </states>
   </component>
   <component name="mavenExecuteGoalHistory">
-    <option value="C:\Users\User\Desktop\ProjectJira\1Jirafapi" />
+    <option value="C:\Users\User\Desktop\ProjectJira\0Beck" />
     <option value="package" />
     <option value="clean" />
   </component>

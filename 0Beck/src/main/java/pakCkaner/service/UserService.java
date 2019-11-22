@@ -5,7 +5,7 @@ import pakCkaner.entity.User;
 
 public interface UserService {
     User addUser(User user);
-   User findById(Long id);
+   User findById(Integer id);
     Iterable<User> getAll();
-    void deleteUser(Long id);
+    void deleteUser(Integer id);
 }

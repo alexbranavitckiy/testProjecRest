@@ -20,6 +20,7 @@ public class Project {
        @NotNull
     private long idproject;
 
+
    @NotBlank
    @Size(min=4, max=50)
     private String summary;

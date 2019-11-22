@@ -24,6 +24,6 @@ public class ProjectController {
 
     @GetMapping(value = "/all")
     public Iterable<Project> getAll(){
-        System.out.println("работает peoject beck"+ projectService.getAll().get(0).getIdproject() +projectService.getAll().get(0).getSummary()+projectService.getAll().get(0).getNameproject());
+      //  System.out.println("работает peoject beck"+ projectService.getAll().get(0).getIdproject() +projectService.getAll().get(0).getSummary()+projectService.getAll().get(0).getNameproject());
         return projectService.getAll();}
 }

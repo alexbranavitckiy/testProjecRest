@@ -20,6 +20,7 @@ public class UserController {
         return userService.getAll();
     }
 
+
     @PostMapping
     public User newUser(@RequestBody User account) {
         return userService.addUser(account);
@@ -27,14 +28,14 @@ public class UserController {
 
 
     @GetMapping(value = "/{idUsers}")
-    public ResponseEntity<User> findUserById(@PathVariable(name = "idUsers") Long idUsers) {
+    public ResponseEntity<User> findUserById(@PathVariable(name = "idUsers") Integer idUsers) {
         User user = userService.findById(idUsers);
        return ResponseEntity.ok(user);
     }
 
 
    @DeleteMapping(value = "/{id}")
-    public ResponseEntity deleteUser(@PathVariable(name = "id") Long id) {
+    public ResponseEntity deleteUser(@PathVariable(name = "id") Integer id) {
         userService.deleteUser(id);
         return ResponseEntity.noContent().build();
    }

@@ -13,20 +13,18 @@
 
   <form [formGroup]="projectForm" (ngSubmit)="_createNewProject()">
     <div class="form-group">
-
       <label class="h5" for="validationCustom02">Project name</label>
       <input id="validationCustom02" type="text" class="form-control"  placeholder="Project Name" value="" formControlName="name">
-
       <div class="alert alert-danger"
            *ngIf="projectForm.controls['name'].invalid && projectForm.controls['name'].touched">
         <div *ngIf="projectForm.controls['name'].errors['required']">
-          Empty Project name
+        Project name
         </div>
         <div *ngIf="projectForm.controls['name'].errors['minlength']">
-          Minimum length = 3
+          Minimum
         </div>
         <div *ngIf="projectForm.controls['name'].errors['maxlength']">
-          Maximum length = 30
+          Maximum
         </div>
       </div>
       <div class="alert alert-danger" *ngIf="searchCreatedProject()">
@@ -40,15 +38,14 @@
       <div class="alert alert-danger"
            *ngIf="projectForm.controls['summary'].invalid && projectForm.controls['summary'].touched">
         <div *ngIf="projectForm.controls['summary'].errors['required']">
-          Empty Summary
+        Summary
         </div>
         <div *ngIf="projectForm.controls['summary'].errors['minlength']">
-          Minimum length = 5
+          Minimum  5
         </div>
         <div *ngIf="projectForm.controls['summary'].errors['maxlength']">
-          Maximum length = 50
+          Maximum  50
         </div>
-
       </div>
     </div>
 
@@ -80,8 +77,11 @@
     </div>
 
   </form>
-<div class="col-md-4 cardA ">
+<div data-toggle="tooltip" data-placement="top" title="Enter data" class="col-md-4 cardA ">
   <button type="submit" class="btn btn-dark text-white" [disabled]="projectForm.invalid || searchCreatedProject()" (click)="_createNewProject()">
     Create
   </button></div>
+
+
+
 </div>

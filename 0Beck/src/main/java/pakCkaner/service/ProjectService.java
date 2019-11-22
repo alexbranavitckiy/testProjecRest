@@ -9,5 +9,5 @@ public interface ProjectService {
     Project addProject(Project project);
     Optional<Project> findById(Long id);
     List<Project> getAll();
-    void deleteProject(Long id);
+    void deleteProject(Long Integer);
 }

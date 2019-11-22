@@ -8,7 +8,7 @@ import java.util.Objects;
 
 
 //@Entity
-@Table(name = "priority")
+//@Table(name = "priority")
 public class Priority {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

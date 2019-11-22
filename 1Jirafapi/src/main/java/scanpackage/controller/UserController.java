@@ -18,7 +18,7 @@ public class UserController {
 
     @GetMapping(value = "/all")
     public ResponseEntity getAllUser(){
-        System.out.println("работает peoject fapi "+ userService.getAll().get(1).getName() +userService.getAll().get(1).getRole()+userService.getAll().get(1).getIdUsers());
+      //  System.out.println("работает peoject fapi "+ userService.getAll().get(1).getName() +userService.getAll().get(1).getRole()+userService.getAll().get(1).getIdUsers());
 
         return ResponseEntity.ok(userService.getAll());
     }
