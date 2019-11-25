@@ -26,7 +26,7 @@ public class ProjectServiceImpl implements ProjectService {
     }
 
     @Override
-    public ProjectModel findById(long id) {
+    public ProjectModel findById(Integer id) {
         RestTemplate restTemplate = new RestTemplate();
         return restTemplate.getForObject(url + "/api/project/" + id, ProjectModel.class);
     }
@@ -34,10 +34,8 @@ public class ProjectServiceImpl implements ProjectService {
 
     @Override
     public ProjectModel save(ProjectModel project) {
-
-
+System.out.println(project.getIdproject()+project.getSummary()+project.getNameproject());
         RestTemplate restTemplate = new RestTemplate();
         return restTemplate.postForEntity(url+"/api/project", project, ProjectModel.class).getBody();
-
     }
 }

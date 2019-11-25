@@ -12,14 +12,13 @@ public class TaskModel {
         private Date createDate;
         private Date updateDate;
         private Date closedDate;
-      //  private Date resolvedDate;
-      private UserModel reporter;
-    private PriorityModel priority;
-    private ProjectModel project;
-    private String comments;
-    private String stories;
-    private String attachment;
-    private Integer status;
+        private UserModel reporter;
+        private PriorityModel priority;
+        private ProjectModel project;
+        private String comments;
+        private String stories;
+        private String attachment;
+        private Integer status;
 
     public long getId() {
         return id;

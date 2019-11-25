@@ -10,7 +10,7 @@ import pakCkaner.entity.User;
 public interface UserRepositoryBeck extends CrudRepository<User,Integer> {
 
 
-  //  Optional<UsersEntity> findBySign(Sign sign);
+
 
   //  Iterable<UsersEntity> findUsersEntitiesByRoleIdRole(long id);
 

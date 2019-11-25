@@ -3,7 +3,10 @@ package scanpackage.models;
 import java.util.Objects;
 
 public class PriorityModel {
-    private Integer id;
+
+
+
+    private Integer ID_PROJECT;
 
 
     private String name;
@@ -11,27 +14,16 @@ public class PriorityModel {
 
     private String summary;
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        PriorityModel that = (PriorityModel) o;
-        return Objects.equals(id, that.id) &&
-                Objects.equals(name, that.name) &&
-                Objects.equals(summary, that.summary);
+
+
+
+
+    public Integer getID_PROJECT() {
+        return ID_PROJECT;
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, name, summary);
-    }
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
+    public void setID_PROJECT(Integer ID_PROJECT) {
+        this.ID_PROJECT = ID_PROJECT;
     }
 
     public String getName() {
@@ -50,14 +42,18 @@ public class PriorityModel {
         this.summary = summary;
     }
 
-    public PriorityModel(Integer id, String name, String summary) {
-        this.id = id;
-        this.name = name;
-        this.summary = summary;
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        PriorityModel that = (PriorityModel) o;
+        return Objects.equals(ID_PROJECT, that.ID_PROJECT) &&
+                Objects.equals(name, that.name) &&
+                Objects.equals(summary, that.summary);
     }
 
-
-
-
-
+    @Override
+    public int hashCode() {
+        return Objects.hash(ID_PROJECT, name, summary);
+    }
 }

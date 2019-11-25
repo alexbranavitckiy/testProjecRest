@@ -26,7 +26,9 @@ export class NewProgectComponent implements OnInit {
 
   ngOnInit() {
   }
-
+//  //  this.loadingService.show();
+//     this.newProject.nameProject = this.projectForm.get('name').value;
+//     this.newProject.summary = this.projectForm.get('summary').value;
   projectForm = new FormGroup({
     name: new FormControl('', {validators: [Validators.required, Validators.minLength(3), Validators.maxLength(25)]}),
     summary: new FormControl('', {validators: [Validators.required, Validators.minLength(3), Validators.maxLength(80)]}),
@@ -34,9 +36,7 @@ export class NewProgectComponent implements OnInit {
 
 
   public _createNewProject(): void {
-  //  this.loadingService.show();
-    this.newProject.nameProject = this.projectForm.get('name').value;
-    this.newProject.summary = this.projectForm.get('summary').value;
+
     if(!this.searchCreatedProject())
       this.subscriptions.push(this.projectService.saveProject(this.newProject).subscribe(() => {
         this.newProject = new Project();

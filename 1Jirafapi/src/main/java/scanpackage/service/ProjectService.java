@@ -6,6 +6,6 @@ import java.util.List;
 
 public interface ProjectService {
     List<ProjectModel> getAll();
-    ProjectModel findById(long id);
+    ProjectModel findById(Integer id);
     ProjectModel save(ProjectModel project);
 }

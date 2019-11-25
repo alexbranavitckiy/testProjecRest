@@ -19,8 +19,9 @@ public class ProjectServiceImplBeck implements ProjectServiceBeck {
 
     @Override
     public Project addProject(Project project) {
-        Project nProject = projectRepository.save(project);
-        return nProject;
+        System.out.println(project.getId()+"_"+project.getSummary()+"_"+project.getName());
+        Project aProject = projectRepository.save(project);
+        return aProject;
     }
 
     @Override

@@ -5,43 +5,52 @@ import java.util.Collection;
 import java.util.Objects;
 
 @Entity
-@Table(name = "PRIOTITI")
+@Table(name = "priority")
 public class Priority
 {
     @Id
     @GeneratedValue    (strategy=GenerationType.SEQUENCE)
-    @Column (name="id_priotiti")
-    private Integer id_priotiti;
+    @Column (name="id_priority")
+    private Integer id;
 
-  //  @ManyToOne (fetch=FetchType.LAZY,
-    //            cascade=CascadeType.ALL)
-    //    @JoinColumn (name="PRIOTITI_TASK")
-    //    private Task task;
-
-   // @Column(name = "name_PRIOTITI")
-
-   // @OneToMany (mappedBy="PRIOTITI_TASK", fetch=FetchType.EAGER)
-    @Column(name = "name_PRIOTITI")
-    private String name_PRIOTITI;
-
-
-    //@OneToMany (mappedBy="PRIOTITI_TASK", fetch=FetchType.EAGER)
-    //    private Collection<Task> ID_PRIOTITI;
-
+   @Column(name = "name_priority")
+    private String name_priority;
 
     public Integer getId() {
-        return id_priotiti;
+        return id;
     }
 
     public void setId(Integer id) {
-        this.id_priotiti = id;
+        this.id = id;
     }
 
-    public String getName_PRIOTITI() {
-        return name_PRIOTITI;
+    public String getName_priority() {
+        return name_priority;
     }
 
-    public void setName_PRIOTITI(String name_PRIOTITI) {
-        this.name_PRIOTITI = name_PRIOTITI;
+    public void setName_priority(String name_priority) {
+        this.name_priority = name_priority;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Priority priority = (Priority) o;
+        return Objects.equals(id, priority.id) &&
+                Objects.equals(name_priority, priority.name_priority);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, name_priority);
+    }
+
+    @Override
+    public String toString() {
+        return "Priority{" +
+                "id=" + id +
+                ", name_priority='" + name_priority + '\'' +
+                '}';
     }
 }

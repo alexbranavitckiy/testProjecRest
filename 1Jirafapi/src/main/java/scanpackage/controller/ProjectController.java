@@ -16,6 +16,9 @@ public class ProjectController {
 
     @Autowired
     public ProjectController(ProjectService projectService) {
+
+
+
         this.projectService = projectService;
     }
 
@@ -30,6 +33,8 @@ public class ProjectController {
     @PostMapping
     public ResponseEntity<ProjectModel> saveProject(@RequestBody ProjectModel project) {
         if (project != null) {
+
+            System.out.println(projectService);
             return ResponseEntity.ok(projectService.save(project));
         }
         return null;

@@ -1,37 +1,25 @@
 package pakCkaner.entity;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
 import java.util.Objects;
 
 @Entity
-@Table(name = "USER")
+@Table(name = "user")
 public class User
 {
     @Id
-    @Column (name="ID_USER")
+    @Column (name="id_user")
     private Integer id;
 
-   // @ManyToOne (fetch=FetchType.LAZY)
-    //    @JoinColumn (name="reporter_USER")
-    //    private Task task;
-
-    @Column(name = "ROLE")
+    @Column(name = "roli")
     private String role;
 
-    @Column(name = "LOGIN")
+    @Column(name = "login")
     private String login;
-    @Column(name = "PASSWORD")
+
+    @Column(name = "password")
     private String password;
 
-    public User(){super();}
-    public User(Integer id, String role, String login, String password) {
-        this.id = id;
-       // this.task = task;
-        this.role = role;
-        this.login = login;
-        this.password = password;
-    }
 
     public Integer getId() {
         return id;
@@ -40,14 +28,6 @@ public class User
     public void setId(Integer id) {
         this.id = id;
     }
-
-  //  public Task getTask() {
-    //        return task;
-    //    }
-    //
-    //    public void setTask(Task task) {
-    //        this.task = task;
-    //    }
 
     public String getRole() {
         return role;
@@ -71,5 +51,31 @@ public class User
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", role='" + role + '\'' +
+                ", login='" + login + '\'' +
+                ", password='" + password + '\'' +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        User user = (User) o;
+        return Objects.equals(id, user.id) &&
+                Objects.equals(role, user.role) &&
+                Objects.equals(login, user.login) &&
+                Objects.equals(password, user.password);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, role, login, password);
     }
 }

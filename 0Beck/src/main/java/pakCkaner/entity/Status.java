@@ -3,27 +3,25 @@ import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
-@Table(name = "STATUS")
+@Table(name = "status_task")
 public class Status
 {
     @Id
     @GeneratedValue    (strategy=GenerationType.SEQUENCE)
-    @Column (name="ID_STATUS")
+    @Column (name="id_status")
     private Integer id;
 
-  //  @ManyToOne (fetch=FetchType.LAZY)
-    //    @JoinColumn (name="STATUS")
-    //    private Task task;
 
-    @Column(name = "name_STATUS")
+    @Column(name = "name_status")
     private String name;
 
 
-    public Status(){super();}
-
-    public Status(Task task, String name) {
-      //  this.task = task;
-        this.name = name;
+    @Override
+    public String toString() {
+        return "Status{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
     }
 
     @Override
@@ -32,7 +30,6 @@ public class Status
         if (o == null || getClass() != o.getClass()) return false;
         Status status = (Status) o;
         return Objects.equals(id, status.id) &&
-        //        Objects.equals(task, status.task) &&
                 Objects.equals(name, status.name);
     }
 
@@ -48,14 +45,6 @@ public class Status
     public void setId(Integer id) {
         this.id = id;
     }
-
-   // public Task getTask() {
-    //        return task;
-    //    }
-    //
-    //    public void setTask(Task task) {
-    //        this.task = task;
-    //    }
 
     public String getName() {
         return name;

@@ -1,9 +1,10 @@
 export class Project {
 
 
-  summary: string;
+
   idProject: string;
   nameProject: string;
+  summary: string;
 
 
    // id:String;
