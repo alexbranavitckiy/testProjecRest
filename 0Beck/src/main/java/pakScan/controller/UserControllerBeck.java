@@ -1,11 +1,11 @@
-package pakCkaner.controller;
+package pakScan.controller;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import pakCkaner.entity.User;
-import pakCkaner.service.UserServiceBeck;
+import pakScan.entity.User;
+import pakScan.service.UserServiceBeck;
 
 @RestController
 @RequestMapping("/api/user")

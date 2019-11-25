@@ -1,11 +1,11 @@
-package pakCkaner.service.impl;
+package pakScan.service.impl;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import pakCkaner.entity.Project;
-import pakCkaner.repository.ProjectRepositoryBeck;
-import pakCkaner.service.ProjectServiceBeck;
+import pakScan.entity.Project;
+import pakScan.repository.ProjectRepositoryBeck;
+import pakScan.service.ProjectServiceBeck;
 
 import java.util.List;
 import java.util.Optional;
@@ -19,7 +19,6 @@ public class ProjectServiceImplBeck implements ProjectServiceBeck {
 
     @Override
     public Project addProject(Project project) {
-        System.out.println(project.getId()+"_"+project.getSummary()+"_"+project.getName());
         Project aProject = projectRepository.save(project);
         return aProject;
     }

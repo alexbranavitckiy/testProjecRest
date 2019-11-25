@@ -1,12 +1,12 @@
-package pakCkaner.controller;
+package pakScan.controller;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import pakCkaner.entity.Status;
-import pakCkaner.service.StatusServiceBeck;
+import pakScan.entity.Status;
+import pakScan.service.StatusServiceBeck;
 
 @RestController
 @RequestMapping("/api/status")

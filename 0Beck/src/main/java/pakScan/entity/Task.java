@@ -1,7 +1,6 @@
-package pakCkaner.entity;
+package pakScan.entity;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
 import java.util.Date;
 import java.util.Objects;
 

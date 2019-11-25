@@ -1,11 +1,11 @@
-package pakCkaner.service.impl;
+package pakScan.service.impl;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import pakCkaner.entity.User;
-import pakCkaner.repository.UserRepositoryBeck;
-import pakCkaner.service.UserServiceBeck;
+import pakScan.entity.User;
+import pakScan.repository.UserRepositoryBeck;
+import pakScan.service.UserServiceBeck;
 
 
 @Service

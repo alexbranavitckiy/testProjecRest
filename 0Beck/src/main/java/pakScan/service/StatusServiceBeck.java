@@ -1,7 +1,7 @@
-package pakCkaner.service;
+package pakScan.service;
 
 
-import pakCkaner.entity.Status;
+import pakScan.entity.Status;
 
 public interface StatusServiceBeck {
     Iterable<Status> getAll();

@@ -1,7 +1,6 @@
-package pakCkaner.entity;
+package pakScan.entity;
 
 import javax.persistence.*;
-import java.util.Collection;
 import java.util.Objects;
 
 @Entity

@@ -1,10 +1,10 @@
-package pakCkaner.controller;
+package pakScan.controller;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import pakCkaner.entity.Task;
-import pakCkaner.service.TaskServiceBeck;
+import pakScan.entity.Task;
+import pakScan.service.TaskServiceBeck;
 
 @RestController
 @RequestMapping("/api/task")

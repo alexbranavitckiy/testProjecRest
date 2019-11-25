@@ -1,6 +1,6 @@
-package pakCkaner.service;
+package pakScan.service;
 
-import pakCkaner.entity.Project;
+import pakScan.entity.Project;
 
 import java.util.List;
 import java.util.Optional;

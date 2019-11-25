@@ -1,9 +1,9 @@
-package pakCkaner.repository;
+package pakScan.repository;
 
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
-import pakCkaner.entity.Project;
+import pakScan.entity.Project;
 
 
 @Repository

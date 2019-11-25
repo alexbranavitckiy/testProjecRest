@@ -1,11 +1,11 @@
-package pakCkaner.service.impl;
+package pakScan.service.impl;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import pakCkaner.entity.Status;
-import pakCkaner.repository.StatusRepositoryBeck;
-import pakCkaner.service.StatusServiceBeck;
+import pakScan.entity.Status;
+import pakScan.repository.StatusRepositoryBeck;
+import pakScan.service.StatusServiceBeck;
 
 @Service
 public class StatusServiceImplBeck implements StatusServiceBeck {
