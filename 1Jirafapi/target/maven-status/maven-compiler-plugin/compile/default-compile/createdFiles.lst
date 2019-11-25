@@ -1,4 +1,4 @@
-scanpackage\config\WebConfig.class
 scanpackage\models\ProjectModel.class
 scanpackage\FapiApp.class
+scanpackage\config\WebConfig.class
 scanpackage\controller\ProjectController.class

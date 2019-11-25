@@ -2,56 +2,47 @@ package pakCkaner.entity;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
 import java.util.Objects;
 
 
 
 
 
-
 @Entity
-@Table(name = "project")
-public class Project {
+@Table(name = "PROJECT")
+public class Project
+{
+    @Id
+    @GeneratedValue    (strategy=GenerationType.SEQUENCE)
+    @Column (name="ID_PROJECT")
+    private Integer id;
 
-        @Id
-        @GeneratedValue(strategy = GenerationType.IDENTITY)
-       @NotNull
-    private long idproject;
+   // @ManyToOne (fetch=FetchType.LAZY,
+   //            cascade=CascadeType.ALL)
+   //    @JoinColumn (name="PROJECT_TASK")
+   // private Task task;
 
+    @Column(name = "nameproject")
+    private String name;
 
-   @NotBlank
-   @Size(min=4, max=50)
+    @Column(name = "summary")
     private String summary;
 
-   @NotBlank
-   @Size(min=2, max=10)
-   @Column(unique = true)
-    private String nameproject;
-
-    public void setIdproject(long idproject) {
-        this.idproject = idproject;
+    public Project(){
+        super();
     }
 
-    public void setSummary(String summary) {
-        this.summary = summary;
-    }
-
-    public void setNameproject(String nameproject) {
-        this.nameproject = nameproject;
-    }
-
-    public long getIdproject() {
-        return idproject;
+    public Project( String name) {
+      //  this.task = task;
+        this.name = name;
     }
 
     public String getSummary() {
         return summary;
     }
 
-    public String getNameproject() {
-        return nameproject;
+    public void setSummary(String summary) {
+        this.summary = summary;
     }
 
     @Override
@@ -59,13 +50,30 @@ public class Project {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Project project = (Project) o;
-        return idproject == project.idproject &&
-                Objects.equals(summary, project.summary) &&
-                Objects.equals(nameproject, project.nameproject);
+        return Objects.equals(id, project.id) &&
+                Objects.equals(name, project.name);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(idproject, summary, nameproject);
+        return Objects.hash(id, name);
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

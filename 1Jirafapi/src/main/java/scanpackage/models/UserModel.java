@@ -2,33 +2,41 @@ package scanpackage.models;
 
 public class UserModel {
 
-        private long idUsers;
-        private String Name;
-        private int role;
+        private Integer id;
+        private String role;
+        private String login;
+        private String password;
 
-        public long getIdUsers() {
-            return idUsers;
-        }
+    public Integer getId() {
+        return id;
+    }
 
-        public void setIdUsers(long idUsers) {
-            this.idUsers = idUsers;
-        }
+    public String getLogin() {
+        return login;
+    }
 
-        public String getName() {
-            return Name;
-        }
+    public String getPassword() {
+        return password;
+    }
 
-        public void setName(String firstName) {
-            this.Name = firstName;
-        }
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
 
-        public int getRole() {
-            return role;
-        }
+    public String getRole() {
+        return role;
+    }
 
-        public void setRole(int role) {
-            this.role = role;
-        }
+    public void setRole(String role) {
+        this.role = role;
+    }
 
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 }

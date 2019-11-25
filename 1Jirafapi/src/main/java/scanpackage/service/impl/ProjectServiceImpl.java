@@ -34,6 +34,8 @@ public class ProjectServiceImpl implements ProjectService {
 
     @Override
     public ProjectModel save(ProjectModel project) {
+
+
         RestTemplate restTemplate = new RestTemplate();
         return restTemplate.postForEntity(url+"/api/project", project, ProjectModel.class).getBody();
 

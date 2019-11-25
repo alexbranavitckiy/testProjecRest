@@ -7,13 +7,9 @@ export class Status {
 
   idTask:Task;
 
-  congestion:User;//загруженность
 
   constructor(){
 
-this.idTask=new Task();
-this.congestion=new User();
-
-  }
+this.idTask=new Task();}
 
 }

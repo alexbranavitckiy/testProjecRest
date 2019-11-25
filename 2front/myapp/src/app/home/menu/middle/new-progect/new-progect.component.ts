@@ -5,6 +5,7 @@ import {Service} from "../../../../shared/service";
 import {Project} from "../../../../model/project";
 import {ProjectService} from "../../../../shared/project.service";
 import {Subscription} from "rxjs";
+import {Ng4LoadingSpinnerService} from "ng4-loading-spinner";
 
 @Component({
   selector: 'app-new-progect',
@@ -33,7 +34,7 @@ export class NewProgectComponent implements OnInit {
 
 
   public _createNewProject(): void {
-//    this.loadingService.show();
+  //  this.loadingService.show();
     this.newProject.nameProject = this.projectForm.get('name').value;
     this.newProject.summary = this.projectForm.get('summary').value;
     if(!this.searchCreatedProject())

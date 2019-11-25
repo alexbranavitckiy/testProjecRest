@@ -1,63 +1,75 @@
 package pakCkaner.entity;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
 import java.util.Objects;
 
 @Entity
-@Table(name = "user")
-public class User {
-
-   @Id
-   @GeneratedValue(strategy = GenerationType.IDENTITY)
+@Table(name = "USER")
+public class User
+{
+    @Id
+    @Column (name="ID_USER")
     private Integer id;
-// Unknown column 'user0_.id_users' in 'field list'
-    @NotBlank
-    private String name;
-//
-   // @ManyToOne(targetEntity = Role.class)
 
-   @NotNull
-    private int role;
+   // @ManyToOne (fetch=FetchType.LAZY)
+    //    @JoinColumn (name="reporter_USER")
+    //    private Task task;
+
+    @Column(name = "ROLE")
+    private String role;
+
+    @Column(name = "LOGIN")
+    private String login;
+    @Column(name = "PASSWORD")
+    private String password;
+
+    public User(){super();}
+    public User(Integer id, String role, String login, String password) {
+        this.id = id;
+       // this.task = task;
+        this.role = role;
+        this.login = login;
+        this.password = password;
+    }
 
     public Integer getId() {
         return id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public int getRole() {
-        return role;
     }
 
     public void setId(Integer id) {
         this.id = id;
     }
 
-    public void setName(String name) {
-        name = name;
+  //  public Task getTask() {
+    //        return task;
+    //    }
+    //
+    //    public void setTask(Task task) {
+    //        this.task = task;
+    //    }
+
+    public String getRole() {
+        return role;
     }
 
-    public void setRole(int role) {
-        role = role;
+    public void setRole(String role) {
+        this.role = role;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        User user = (User) o;
-        return id == user.id &&
-                role == user.role &&
-                Objects.equals(name, user.name);
+    public String getLogin() {
+        return login;
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, name, role);
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }

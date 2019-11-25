@@ -1,33 +1,28 @@
 package pakCkaner.entity;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
 import javax.persistence.*;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
-import java.util.Date;
 import java.util.Objects;
 
-//@Entity
-public class Status {
+@Entity
+@Table(name = "STATUS")
+public class Status
+{
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long idStatus;
+    @GeneratedValue    (strategy=GenerationType.SEQUENCE)
+    @Column (name="ID_STATUS")
+    private Integer id;
 
+  //  @ManyToOne (fetch=FetchType.LAZY)
+    //    @JoinColumn (name="STATUS")
+    //    private Task task;
+
+    @Column(name = "name_STATUS")
     private String name;
 
-    public long getIdStatus() {
-        return idStatus;
-    }
 
-    public void setIdStatus(long idStatus) {
-        this.idStatus = idStatus;
-    }
+    public Status(){super();}
 
-    public String getName() {
-        return name;
-    }
-    public void setName(String name) {
+    public Status(Task task, String name) {
+      //  this.task = task;
         this.name = name;
     }
 
@@ -36,12 +31,37 @@ public class Status {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Status status = (Status) o;
-        return idStatus == status.idStatus &&
+        return Objects.equals(id, status.id) &&
+        //        Objects.equals(task, status.task) &&
                 Objects.equals(name, status.name);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(idStatus, name);
+        return Objects.hash(id, name);
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+   // public Task getTask() {
+    //        return task;
+    //    }
+    //
+    //    public void setTask(Task task) {
+    //        this.task = task;
+    //    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

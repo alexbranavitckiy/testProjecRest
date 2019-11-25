@@ -7,6 +7,8 @@ import {ModalService} from "../../../../shared/modalService";
 import {ProjectService} from "../../../../shared/project.service";
 import {UserService} from "../../../../shared/user.service";
 import {User} from "../../../../model/user";
+import {TaskService} from "../../../../shared/task.service";
+import {Task} from "../../../../model/task";
 
 @Component({
   selector: 'app-list-progect',
@@ -28,6 +30,9 @@ export class ListProgectComponent implements OnInit,DoCheck{
   public newProject: Project = new Project();
   public allProject: Project[] =[];
 
+  public newTask: Task = new Task();
+  public allTask: Task[] =[];
+
   public allUsers: User[] =[];
   public newUsers: Project = new Project();
 
@@ -38,20 +43,24 @@ export class ListProgectComponent implements OnInit,DoCheck{
   templatesTasks: any[] = ['templatesTasks'];
 
 
-  constructor(private userService :UserService,private projectService:ProjectService, private router: Router, private service: Service, private modalServ :ModalService) {
+  constructor(private userService :UserService,private taskService :TaskService,private projectService:ProjectService, private router: Router, private service: Service, private modalServ :ModalService) {
     this.template(this.service.getIdiser() )
+
+
+ this.userService.getAllUser().subscribe((data: User[]) => {
+       data.forEach((user: User) => this.allUsers.push(user));
+      });
   }
-
-
   ngOnInit(): void {
-    this.userService.getAllUser().subscribe((data: User[]) => {
-      data.forEach((user: User) => this.allUsers.push(user));
-    });
 
+
+    this.taskService.getTask().subscribe((data: Task[]) => {
+      data.forEach((t: Task) => this.allTask.push(t));
+    });
 
     this.projectService.getAllProject().subscribe((data: Project[]) => {
-      data.forEach((p: Project) => this.allProject.push(p));
-    });
+          data.forEach((p: Project) => this.allProject.push(p));
+        });
   }
 
  // ngOnInit() {

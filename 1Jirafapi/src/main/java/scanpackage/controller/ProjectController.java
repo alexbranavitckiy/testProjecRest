@@ -23,10 +23,9 @@ public class ProjectController {
     @GetMapping(value = "/all")
     public ResponseEntity getAllProject()
     {
-      //  System.out.println("работает peoject fapi "+ projectService.getAll().get(0).getNameProject() +projectService.getAll().get(0).getSummary()+projectService.getAll().get(0).getNameProject());
-
         return ResponseEntity.ok(projectService.getAll());
     }
+
 
     @PostMapping
     public ResponseEntity<ProjectModel> saveProject(@RequestBody ProjectModel project) {

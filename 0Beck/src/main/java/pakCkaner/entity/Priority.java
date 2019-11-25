@@ -1,45 +1,47 @@
 package pakCkaner.entity;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
+import java.util.Collection;
 import java.util.Objects;
 
-
-//@Entity
-//@Table(name = "priority")
-public class Priority {
+@Entity
+@Table(name = "PRIOTITI")
+public class Priority
+{
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long idPriority;
-    private String namePriority;
+    @GeneratedValue    (strategy=GenerationType.SEQUENCE)
+    @Column (name="id_priotiti")
+    private Integer id_priotiti;
 
-    public long getIdPriority() {
-        return idPriority;
-    }
-    public void setIdPriority(long idPriority) {
-        this.idPriority = idPriority;
-    }
+  //  @ManyToOne (fetch=FetchType.LAZY,
+    //            cascade=CascadeType.ALL)
+    //    @JoinColumn (name="PRIOTITI_TASK")
+    //    private Task task;
 
-    public String getNamePriority() {
-        return namePriority;
-    }
-    public void setNamePriority(String namePriority) {
-        this.namePriority = namePriority;
-    }
+   // @Column(name = "name_PRIOTITI")
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Priority that = (Priority) o;
-        return idPriority == that.idPriority &&
-                Objects.equals(namePriority, that.namePriority);
+   // @OneToMany (mappedBy="PRIOTITI_TASK", fetch=FetchType.EAGER)
+    @Column(name = "name_PRIOTITI")
+    private String name_PRIOTITI;
+
+
+    //@OneToMany (mappedBy="PRIOTITI_TASK", fetch=FetchType.EAGER)
+    //    private Collection<Task> ID_PRIOTITI;
+
+
+    public Integer getId() {
+        return id_priotiti;
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(idPriority, namePriority);
+    public void setId(Integer id) {
+        this.id_priotiti = id;
+    }
+
+    public String getName_PRIOTITI() {
+        return name_PRIOTITI;
+    }
+
+    public void setName_PRIOTITI(String name_PRIOTITI) {
+        this.name_PRIOTITI = name_PRIOTITI;
     }
 }

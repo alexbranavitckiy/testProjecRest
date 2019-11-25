@@ -1,29 +1,29 @@
 import {Project} from "./project";
 import {User} from "./user";
+import {Status} from "./status";
+import {Priority} from "./Priority";
 
 export class Task {
-
   idTask: number;
   project: Project;
-  nameUserWork: User;// кто  назначен
-
   ticketCode: string;
+  description: string;
+  priority: string;
+  status: string;
   createDate: string;
-  dueData: Date;//срок сдачи
-
+  dueData: Date;
   updateDate: string;
-  closedDateDeveloper: string;
-  closedDateTester: string;
+  resolvedDate: string;
+  closedDate: string;
+  estimation: number;
+  assigne: string;
+  reporter: string;
   comments: string;
-  istorii: string;
-
+  history: string;
   constructor(){
-    this.project=new Project();
-    this.nameUserWork=new User();
-
 
   }
-
-
-
 }
+
+
+

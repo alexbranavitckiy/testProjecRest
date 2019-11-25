@@ -31,6 +31,9 @@ import { SettingsComponent } from './home/menu/middle/settings/settings.componen
 import { AddExecuterComponent } from './home/modal/add-executer/add-executer.component';
 import { HistoryComponent } from './home/modal/history/history.component';
 import { TableComponent } from './home/table/table.component';
+import {TaskService} from "./shared/task.service";
+import {ProjectService} from "./shared/project.service";
+import {UserService} from "./shared/user.service";
 
 
 
@@ -83,7 +86,7 @@ const appRoutes: Routes = [
     HttpClientModule,ModalModule.forRoot(),
     FormsModule, ReactiveFormsModule, ModalModule.forRoot(), TypeaheadModule.forRoot(), BrowserAnimationsModule
   ],
-  providers: [AuthGuardService,AuthService,Service,ModalService],
+  providers: [AuthGuardService,AuthService,Service,ModalService,TaskService,ProjectService,UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
