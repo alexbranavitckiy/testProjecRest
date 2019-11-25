@@ -14,6 +14,34 @@ public class ProjectModel {
     private String summary;
     private String nameproject;
 
+
+    public Integer getIdproject() {
+        return idproject;
+    }
+
+    public void setIdproject(Integer idproject) {
+        this.idproject = idproject;
+    }
+
+    public String getSummary() {
+        return summary;
+    }
+
+    public void setSummary(String summary) {
+        this.summary = summary;
+    }
+
+    public String getNameproject() {
+        return nameproject;
+    }
+
+    public void setNameproject(String nameproject) {
+        this.nameproject = nameproject;
+    }
+
+
+
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -28,38 +56,14 @@ public class ProjectModel {
     public int hashCode() {
         return Objects.hash(idproject, summary, nameproject);
     }
-
-    public Integer getIdproject() {
-        return    this.idproject = this.nameproject.hashCode();
+    public ProjectModel(){
+        super();
     }
-
-    public String getNameproject() {
-        return nameproject;
-    }
-
-    public void setIdproject() {
-        this.idproject = this.nameproject.hashCode();
-    }
-
-    public void setNameproject(String nameproject) {
+    public ProjectModel(Integer idproject, String summary, String nameproject) {
+        this.idproject = idproject;
+        this.summary = summary;
         this.nameproject = nameproject;
     }
-
-
-    public String getSummary() {
-        return summary;
-    }
-    public void setSummary(String summary) {
-        this.summary = summary;
-    }
-
-    public String getNameProject() {
-        return nameproject;
-    }
-    public void setNameProject(String nameProject) {
-        this.nameproject = nameProject;
-    }
-
 }
 
 
