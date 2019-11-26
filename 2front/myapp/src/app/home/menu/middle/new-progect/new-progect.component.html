@@ -1,42 +1,26 @@
 <div class="container textColor">
 <div class="h4 cardA">New project</div>
 
-  <form [formGroup]="projectForm" (ngSubmit)="_createNewProject()">
+
+<!--(ngSubmit)="createNewProject()"-->
+
+  <form  [formGroup]="myForm" >
     <div class="form-group">
-      <label class="h5" for="validationCustom02">Project name</label>
-      <input id="validationCustom02" type="text" class="form-control"  placeholder="Project Name" value="" formControlName="name">
-      <div class="alert alert-danger"
-           *ngIf="projectForm.controls['name'].invalid && projectForm.controls['name'].touched">
-        <div *ngIf="projectForm.controls['name'].errors['required']">
-        Project name
-        </div>
-        <div *ngIf="projectForm.controls['name'].errors['minlength']">
-          Minimum
-        </div>
-        <div *ngIf="projectForm.controls['name'].errors['maxlength']">
-          Maximum
-        </div>
-      </div>
-      <div class="alert alert-danger" *ngIf="searchCreatedProject()">
-        This name a created
-      </div>
-    </div>
-    <div class="form-group">
-      <label class="h5" for="exampleFormControlTextarea1" >Комментарии к проекту</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1"  formControlName="summary" rows="3"></textarea>
+      <label class="h5" >Project name</label>
+      <input  type="text" class="form-control"  placeholder="nameProject" value="" name="nameProject" formControlName="nameProject">
 
       <div class="alert alert-danger"
-           *ngIf="projectForm.controls['summary'].invalid && projectForm.controls['summary'].touched">
-        <div *ngIf="projectForm.controls['summary'].errors['required']">
-        Summary
-        </div>
-        <div *ngIf="projectForm.controls['summary'].errors['minlength']">
-          Minimum  5
-        </div>
-        <div *ngIf="projectForm.controls['summary'].errors['maxlength']">
-          Maximum  50
-        </div>
+           *ngIf="myForm.controls['nameProject'].invalid && myForm.controls['nameProject'].touched">
+        no project name
       </div>
+
+    </div>
+    <div class="form-group">
+      <label class="h5"  >Сomments</label>
+      <textarea class="form-control"   name="summary"  formControlName="summary" rows="3"></textarea>
+
+
+
     </div>
 
     <input class="btn-dark" type="file"  onchange="showFile(this)">
@@ -53,14 +37,14 @@
     <div class="container cardA row">
       <div class="col">
         <div class="h-50">Start date
-          <input type="date" class="form-control" id="date" name="date" placeholder="Дата" required>
+          <input type="date" class="form-control"  name="date" placeholder="Дата" required>
         </div>
       </div>
 
       <div class="col">
         <div>
           <div class="h-50">End date
-            <input type="date" class="form-control" id="date2" name="date" placeholder="Дата" required>
+            <input type="date" class="form-control"  name="date" placeholder="Дата" required>
           </div>
         </div>
       </div>
@@ -68,10 +52,7 @@
 
   </form>
 <div data-toggle="tooltip" data-placement="top" title="Enter data" class="col-md-4 cardA ">
-  <button type="submit" class="btn btn-dark text-white" [disabled]="projectForm.invalid || searchCreatedProject()" (click)="_createNewProject()">
+  <button type="submit" class="btn btn-dark text-white"  (click)="createNewProject()">
     Create
   </button></div>
-
-
-
 </div>

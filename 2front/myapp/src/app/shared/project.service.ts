@@ -17,6 +17,7 @@ export class ProjectService {
 
 
   saveProject(project: Project):Observable<Project>{
+    console.log(project);
     return this.http.post<Project>('api/project',project);
   }
   getAllProject():Observable<Project[]>{

@@ -21,7 +21,8 @@ public class TaskControllerB {
     }
 
     @GetMapping(value = "/all")
-    public Iterable<Task> getAll(){return taskService.getAll();}
+    public Iterable<Task> getAll(){
+        return taskService.getAll();}
 
     @PostMapping
     public Task newTask(@RequestBody Task task){ return taskService.addTask(task);}

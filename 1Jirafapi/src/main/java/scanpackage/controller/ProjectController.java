@@ -33,6 +33,10 @@ public class ProjectController {
     @PostMapping
     public ResponseEntity<ProjectModel> saveProject(@RequestBody ProjectModel project) {
         if (project != null) {
+         ProjectModel projectModel =  new ProjectModel();
+         projectModel.setName(project.getName());
+            projectModel.setName(project.getSummary());
+            projectModel.setCod_project(""+project.hashCode());
 
             System.out.println(projectService);
             return ResponseEntity.ok(projectService.save(project));

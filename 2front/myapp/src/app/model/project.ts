@@ -2,8 +2,8 @@ export class Project {
 
 
 
-  idProject: string;
-  nameProject: string;
+
+  name: string;
   summary: string;
 
 

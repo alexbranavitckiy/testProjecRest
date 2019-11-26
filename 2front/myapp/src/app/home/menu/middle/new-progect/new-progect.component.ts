@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnChanges, OnDestroy, OnInit} from '@angular/core';
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {Router} from "@angular/router";
 import {Service} from "../../../../shared/service";
@@ -6,53 +6,67 @@ import {Project} from "../../../../model/project";
 import {ProjectService} from "../../../../shared/project.service";
 import {Subscription} from "rxjs";
 import {Ng4LoadingSpinnerService} from "ng4-loading-spinner";
+import {tryCatch} from "rxjs/internal-compatibility";
+import {error} from "selenium-webdriver";
 
 @Component({
   selector: 'app-new-progect',
   templateUrl: './new-progect.component.html',
   styleUrls: ['./new-progect.component.css']
 })
-export class NewProgectComponent implements OnInit {
-//private loadingService: Ng4LoadingSpinnerService
+export class NewProgectComponent implements OnInit,OnDestroy ,OnChanges{
 
-  constructor( private  projectService:ProjectService,private router: Router,private service:Service) { }
+
   public newProject: Project = new Project();
   public allProject: Project[] =[];
-  public isNewProject: boolean = false;
-
-
   private subscriptions: Subscription[] = [];
 
 
-  ngOnInit() {
+
+  ngOnChanges(){
+    this.projectService.getAllProject().subscribe((data: Project[]) => {
+      data.forEach((p: Project) => this.allProject.push(p));
+    });
   }
-//  //  this.loadingService.show();
-//     this.newProject.nameProject = this.projectForm.get('name').value;
-//     this.newProject.summary = this.projectForm.get('summary').value;
-  projectForm = new FormGroup({
-    name: new FormControl('', {validators: [Validators.required, Validators.minLength(3), Validators.maxLength(25)]}),
-    summary: new FormControl('', {validators: [Validators.required, Validators.minLength(3), Validators.maxLength(80)]}),
-  })
+  constructor( private  projectService:ProjectService,private router: Router,private service:Service) {}
 
 
-  public _createNewProject(): void {
+  ngOnInit(): void {
+    this.projectService.getAllProject().subscribe((data: Project[]) => {
+      data.forEach((p: Project) => this.allProject.push(p));
+    });
+  }
+//,this.createNewProjectValidator
+  myForm : FormGroup = new FormGroup({
+    "nameProject": new FormControl("",[Validators.required]),
+    "summary": new FormControl(""),
+  });
+  public createNewProject(): void {
 
-    if(!this.searchCreatedProject())
-      this.subscriptions.push(this.projectService.saveProject(this.newProject).subscribe(() => {
-        this.newProject = new Project();
-       // this.activeRef.hide();
-      }));
-    console.log(this.newProject);
-   // this.loadingService.hide();
+if(this.SerchNewProjectValidator){
+    this.newProject.name = this.myForm.get('nameProject').value;
+    this.newProject.summary = this.myForm.get('summary').value;
+     this.subscriptions.push(this.projectService.saveProject(this.newProject).subscribe(() => {
+             this.newProject = new Project();
+           }));
+        console.log(this.newProject);
+    console.log(this.myForm)
+}
   }
 
-  public searchCreatedProject():boolean{
-    this.isNewProject = false;
-    this.allProject.forEach((u: Project)=> {
-        if (this.newProject.nameProject === u.nameProject)
-          this.isNewProject = true;
-      }
-    )
-    return this.isNewProject;
+  createNewProjectValidator(control: FormControl): {[s:string]:boolean}{
+      return {"nameProject": true};}
+
+  SerchNewProjectValidator():boolean{
+    this.allProject.forEach((project: Project)=> {
+      if (this.newProject.name === project.name){
+        return {"nameProject": false};}})
+    return  true};
+
+
+
+  ngOnDestroy () {
+
   }
+
 }

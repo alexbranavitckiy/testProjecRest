@@ -21,10 +21,9 @@ export class NewUserComponent implements OnInit {
   private subscriptions: Subscription[] = [];
   public isNewUser:boolean = false;
 
-  constructor(public userService: UserService,
+  constructor(public userService: UserService,public http: HttpClient) {
 
-              public http: HttpClient,
-           ) {
+
   }
 
   ngOnInit(): void {

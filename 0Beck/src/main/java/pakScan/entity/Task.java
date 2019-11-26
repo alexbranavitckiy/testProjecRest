@@ -47,6 +47,7 @@ public class Task
 
     //@ManyToOne (optional=false, cascade=CascadeType.ALL)
    // @JoinColumn (name="ID_USER")
+   // @ManyToOne(targetEntity = User.class)
     @Column(name = "reporter_user")
     private Integer reporter_user;
 
