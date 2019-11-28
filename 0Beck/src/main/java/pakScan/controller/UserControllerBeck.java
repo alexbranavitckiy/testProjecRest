@@ -15,6 +15,8 @@ public class UserControllerBeck {
    @Autowired
    public UserControllerBeck(UserServiceBeck userService) {this.userService = userService; }
 
+
+
     @GetMapping(value = "/all")
    public Iterable<User> getAll() {
         return userService.getAll();

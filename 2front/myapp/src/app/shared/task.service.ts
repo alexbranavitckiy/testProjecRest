@@ -28,27 +28,4 @@ export class TaskService {
   updateTask(task: Task): Observable<Task> {
     return this.http.put<Task>('api/task/' + task.idTask, task);
   }
-
-  getPageTask(page: number, size: number, sort: string, direction: string): Observable<any> {
-    return this.http.get<any>('/api/task/page?page=' + page
-      + "&size=" + size
-      + "&sort=" + sort
-      + "&direction=" + direction);
-  }
-
-  getAllByAssignee(idUser: number): Observable<Task[]> {
-    return this.http.get<Task[]>('api/task/assignee?user=' + idUser);
-  }
-
-  getOpenForTestTasks():Observable<Task[]>{
-    return this.http.get<Task[]>('api/task/openForTest');
-  }
-
-  getAllByReporter(idUser: number): Observable<Task[]> {
-    return this.http.get<Task[]>('api/task/reporter?user=' + idUser);
-  }
-
-  getAllStatus(): Observable<Status[]> {
-    return this.http.get<Status[]>('http://localhost:8080/api/status/all');
-  }
 }

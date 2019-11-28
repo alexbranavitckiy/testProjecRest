@@ -1,70 +1,45 @@
 <div class="container color">
-  <form class="was-validated cardA">
+  <form  [formGroup]="fomUser" class="was-validated cardA">
     <div class="h3">New user</div>
 
-    <div class="">
-      <label class="h6" for="validationCustom02">User name</label>
-      <input type="text" class="form-control" id="validationCustom02" placeholder="User name" value="" required>
+
+
+    <div class="cardA" >
+      <label class="h6" >User name</label>
+      <input type="text" class="form-control" id="login" formControlName="login" name="login" required >
     </div>
 
     <div class="form-group cardA">
-      <label class="h6" for="custom-select">Role</label>
-      <select ID="custom-select" class="custom-select" required>
-        <option value="">Role</option>
+      <label class="h6" >Role</label>
+      <select name="role" formControlName="role" class="custom-select" required>
+        <option value="">Open this select menu</option>
         <option value="1">Developer</option>
         <option value="2">Tester</option>
         <option value="3">Project Manager</option>
+        <option value="3">Admin</option>
+
       </select>
       <div class="invalid-feedback">Example invalid custom select feedback</div>
     </div>
 
 
     <div class="cardA" >
-
-      <label class="h6" for="exampleFormControlInput2">Password</label>
-      <input type="password" class="form-control" id="exampleFormControlInput2" placeholder="" value="" required >
-
+      <label class="h6" >Password</label>
+      <input name="password" formControlName="passwordOne" type="password" class="form-control"  placeholder="" value="" required >
     </div>
+
     <div class="cardA" >
-
-      <label class="h6" for="exampleFormControlInput1">Confirm password</label>
-      <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="" value="" required >
+      <label class="h6">Confirm password</label>
+      <input type="password" formControlName="password" type="password"  class="form-control" placeholder="" value="" required >
 
     </div>
   </form>
+  <br>
+  <div   class=" cardA ">
+    <button type="submit" class="btn btn-dark text-white cardA"  (click)="createNewUser()">
+      Create
+    </button></div>
+
 </div>
-  <form>
-    <div class="form-group">
-      <label class="col-form-label">Login:</label>
-      <input type="text" class="form-control"
-             required minlength="4" maxlength="15"
-             placeholder="Login"
-             [ngModel]="newUser.login"
-             (ngModelChange)="newUser.login = $event"
-             [ngModelOptions]="{standalone: true}">
-    </div>
-    <div class="form-group">
-      <label class="col-form-label">Password:</label>
-      <input type="text" class="form-control"
-             placeholder="Password"
-             required minlength="4" maxlength="15"
-             [ngModel]="newUser.password"
-             (ngModelChange)="newUser.password = $event"
-             [ngModelOptions]="{standalone: true}">
-    </div>
-    <div class="form-group">
-      <label class="col-form-label">Role:</label>
-      <select class="custom-select d-block"
-              required
-              [ngModel]="newUser.role"
-              (ngModelChange)="newUser.role = $event"
-              [ngModelOptions]="{standalone: true}">
-        <option value="2">Project manager</option>
-        <option value="3">Developer</option>
-        <option value="4">Tester</option>
-      </select>
-    </div>
 
-  </form>
-  <button type="button" class="btn btn-dark text-white"(click)="_createNewUser()">Create</button>
 

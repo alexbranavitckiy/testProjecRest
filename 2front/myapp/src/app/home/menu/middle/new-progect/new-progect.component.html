@@ -4,27 +4,33 @@
 
 <!--(ngSubmit)="createNewProject()"-->
 
-  <form  [formGroup]="myForm" >
+  <form class="is-valid" [formGroup]="myForm" >
     <div class="form-group">
       <label class="h5" >Project name</label>
-      <input  type="text" class="form-control"  placeholder="nameProject" value="" name="nameProject" formControlName="nameProject">
-
-      <div class="alert alert-danger"
-           *ngIf="myForm.controls['nameProject'].invalid && myForm.controls['nameProject'].touched">
-        no project name
+      <input  type="text" class="form-control"  placeholder="Project name" value="" name="nameProject" formControlName="nameProject">
+      <div  class="alert alert-danger "
+         *ngIf="myForm.controls['nameProject'].invalid && myForm.controls['nameProject'].touched ">
+             Error name   Minimum length = 4 and max 100
       </div>
+      <!--
+      <div class="alert alert-danger" *ngIf="searchProject()">
+        This name a created
+      </div>
+-->
+ </div>
 
-    </div>
+
+
+
     <div class="form-group">
       <label class="h5"  >Сomments</label>
       <textarea class="form-control"   name="summary"  formControlName="summary" rows="3"></textarea>
-
-
-
     </div>
 
-    <input class="btn-dark" type="file"  onchange="showFile(this)">
 
+
+<!--
+    <input class="btn-dark" type="file"  onchange="showFile(this)">
     <div id="Priority" class="form-group cardA" >
       <label class="h5" for="Priority">Status RFT</label>
       <select class="custom-select" >
@@ -34,13 +40,16 @@
       <div class="invalid-feedback">Example invalid custom select feedback</div>
     </div>
 
+
+
+-->
+  <!--
     <div class="container cardA row">
       <div class="col">
         <div class="h-50">Start date
           <input type="date" class="form-control"  name="date" placeholder="Дата" required>
         </div>
       </div>
-
       <div class="col">
         <div>
           <div class="h-50">End date
@@ -49,10 +58,11 @@
         </div>
       </div>
     </div>
+  -->
 
   </form>
 <div data-toggle="tooltip" data-placement="top" title="Enter data" class="col-md-4 cardA ">
-  <button type="submit" class="btn btn-dark text-white"  (click)="createNewProject()">
+  <button [disabled]="myForm.invalid  " type="submit" class="btn btn-dark text-white"  (click)="createProject()">
     Create
   </button></div>
 </div>

@@ -1,8 +1,8 @@
 
 
-export enum enumRole{
-  ADMINISTRATOR = 1,
-  PROJECT_MANAGER = 2,
+export enum Role{
+  PROJECT_MANAGER = 1,
+  ADMINISTRATOR = 2,
   DEVELOPER = 3,
   TESTER = 4
 }

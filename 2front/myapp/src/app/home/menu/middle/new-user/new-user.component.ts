@@ -3,6 +3,7 @@ import {User} from "../../../../model/user";
 import {Subscription} from "rxjs";
 import {UserService} from "../../../../shared/user.service";
 import {HttpClient} from "@angular/common/http";
+import {FormControl, FormGroup, Validators} from "@angular/forms";
 
 
 
@@ -13,17 +14,12 @@ import {HttpClient} from "@angular/common/http";
 })
 export class NewUserComponent implements OnInit {
 
-
-
-  public test: string = " ";
+  private subscriptions: Subscription[] = [];
   public newUser: User = new User();
   public allUsers: User[] = [];
-  private subscriptions: Subscription[] = [];
-  public isNewUser:boolean = false;
-
-  constructor(public userService: UserService,public http: HttpClient) {
 
 
+  constructor(public userService: UserService, public http: HttpClient) {
   }
 
   ngOnInit(): void {
@@ -33,24 +29,22 @@ export class NewUserComponent implements OnInit {
   }
 
 
-  public _createNewUser(): void {
-   // this.loadingService.show();
-    this.subscriptions.push(this.userService.saveUser(this.newUser).subscribe(() => {
+  fomUser: FormGroup = new FormGroup(
+    {
+      "passwordOne": new FormControl("", Validators.required),
+      "password": new FormControl("", Validators.required),
+      "login": new FormControl("",Validators.required),
+      "role": new FormControl("",Validators.required)
+    })
+
+
+  public createNewUser(): void {
+    this.newUser.role=this.fomUser.get("role").value;
+     this.newUser.login=this.fomUser.get("login").value;
+     this.newUser.password=this.fomUser.get("password").value;
+     console.log( this.fomUser )
+     this.subscriptions.push(this.userService.saveUser(this.newUser).subscribe(() => {
       this.newUser = new User();
-
-      console.log("Task created");
-     // this.activeRef.hide();
-    }));
-    console.log(this.newUser);
-   // this.loadingService.hide();
-  }
-
- // public searchCreatedUser():boolean{
-  //    // this.isNewUser = false;
-  //     //     this.allUsers.forEach((u:User)=> {
-  //     //       // if (this.newUser.sign.login === u.sign.login)
-  //     //       //  this.isNewUser = true;
-  //     //     }    )
-  //     return true//this.isNewUser;
-  //   }
+     })); console.log(this.newUser);
+     }
 }

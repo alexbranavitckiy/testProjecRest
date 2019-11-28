@@ -7,6 +7,10 @@ public class UserModel {
         private String login;
         private String password;
 
+
+
+
+
     public Integer getId() {
         return id;
     }
@@ -22,7 +26,6 @@ public class UserModel {
     public void setId(Integer id) {
         this.id = id;
     }
-
 
     public String getRole() {
         return role;

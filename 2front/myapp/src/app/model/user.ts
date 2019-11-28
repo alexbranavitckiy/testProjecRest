@@ -1,14 +1,13 @@
 
-import {Parol} from "./parol";
 import {Status} from "./status";
+import {Role} from "./role";
 
 export class User {
 
-  id?: number;
+  id: number;
+  role:string;
+  login:string;
   password:string;
-  login:string
-
-  role: String;
 
 
 

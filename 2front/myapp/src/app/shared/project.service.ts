@@ -15,12 +15,18 @@ export class ProjectService {
 
 
 
-
   saveProject(project: Project):Observable<Project>{
-    console.log(project);
+    console.log("работает saveProject")
     return this.http.post<Project>('api/project',project);
   }
+
+
+
+
   getAllProject():Observable<Project[]>{
+    console.log("работает getAllProject")
     return this.http.get<Project[]>('api/project/all');
   }
+
+
 }

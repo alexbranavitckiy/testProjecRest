@@ -37,7 +37,6 @@ public class ProjectController {
          projectModel.setName(project.getName());
             projectModel.setName(project.getSummary());
             projectModel.setCod_project(""+project.hashCode());
-
             System.out.println(projectService);
             return ResponseEntity.ok(projectService.save(project));
         }

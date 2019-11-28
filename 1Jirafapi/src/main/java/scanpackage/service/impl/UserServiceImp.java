@@ -19,6 +19,7 @@ public class UserServiceImp  implements UserServic {
 
     @Override
     public UserModel save(UserModel user) {
+        user.setId(12);
         RestTemplate restTemplate = new RestTemplate();
         return restTemplate.postForEntity(backendServerUrl+"/api/user", user, UserModel.class).getBody();
     }

@@ -20,9 +20,7 @@ export class Task {
   reporter: string;
   comments: string;
   history: string;
-  constructor(){
-
-  }
+  constructor(){}
 }
 
 

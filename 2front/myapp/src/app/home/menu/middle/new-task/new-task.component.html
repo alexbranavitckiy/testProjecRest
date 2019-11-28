@@ -1,35 +1,44 @@
 <div class="container textColor">
-  <form class="was-validated cardA">
-      <div class="col h4 cardA">New task</div>
+  <form  [formGroup]="taskForm" class="was-validated cardA">
+      <div class="row col h4 cardA">New task</div>
 
-    <div class="row">
+
+
+    <div class="row form-group">
       <div class="col">
-      <label class="h5" for="validationCustom02">Task name</label>
-      <input type="text" class="form-control" id="validationCustom02" placeholder="Project Name" value="" required>
+      <label class="h5"  >Project name</label>
+      <input class="form-control"  value="Project name"  name="projectName"  formControlName="projectName" rows="3">
       </div>
     </div>
 
-    <div class="row">
-        <div id="ProjectName" class=" form-group cardA">
-          <div class="col cardA">
-            <label class="h5" for="ProjectName">Project name</label>
-        <form class="form-inline">
-          <input class="form-control " type="search" placeholder="Search" aria-label="Search">
-        </form>
-      </div>
-          <div class="col cardA">
-      <select class="custom-select" required>
-        <option value="">Project name</option>
-        <option value="1">Project59</option>
-        <option value="2">Project253</option>
-        <option value="3">Project2</option>
-      </select>
-      <div class="invalid-feedback">Example invalid custom select feedback</div>
+
+    <div class="row form-group">
+   <div class="col">
+      <label class="h5"  >Task name</label>
+      <input class="form-control" value="Task name"   name="nameTask"  formControlName="nameTask" rows="3">
+   </div>
+      <div class="col form-group">
+        <label class="h5"> Reporter user name:Admin</label>
+        <div class="h5">
+          <div class="input-group">
+            <input  name="assigne" placeholder="Admin"  formControlName="assigne" class="form-control">
+            <div class="">
+              <button class="btn btn-dark text-white"  type="button">Assignee</button>
+            </div>
           </div>
-     </div>
-
-
+      </div>
+      </div>
     </div>
+
+
+
+
+
+
+
+
+
+
 <div class="row ">
   <!--<div class="col">
     <label class="h5" >Developer:</label>
@@ -50,84 +59,99 @@
     </div>
   </div>
   -->
-
-
-
-
 </div>
 
 <div class="row cardA">
   <div class="col">
-    <label class="h5  cardA" >Status:</label>
-    <select  class="custom-select" required>
-      <option value="1">__________</option>
-      <option value="4">is open</option>
-    </select></div>
+  <div  class="form-group cardA">
+    <label class="h5" >Status:</label>
+    <select   formControlName="status"  name="status"   class="custom-select" required>
+      <option value="3">__________</option>
+      <option value="">Is open</option>
+    </select>
+  </div>
+  </div>
+
+
   <div class="col">
     <div id="Priority" class="form-group cardA">
       <label class="h5" for="Priority">Priority</label>
-      <select class="custom-select" required>
-        <option value="3">__________</option>
-        <option value="">Blocker</option>
-        <option value="1">Critical</option>
-        <option value="2">Major</option>
-        <option value="3">Trivial</option>
+      <select  name="priority"  formControlName="priority"   class="custom-select" required>
+        <option value="1">Blocker</option>
+        <option value="2">Critical</option>
+        <option value="3">Major</option>
+        <option value="4">Trivial</option>
       </select>
       <div class="invalid-feedback h5" >Example invalid custom select feedback</div>
     </div>
   </div>
   <div class="col">
-    <label for="example-number-input" class="col-xs-2 col-form-label h5">Estimated lead time</label>
+    <label   for="example-number-input" class="col-xs-2 col-form-label h5">Estimated lead time</label>
     <div class="col-xs-10">
-      <input class="form-control" type="number" value="3" id="example-number-input">
+      <input name="estimation"  formControlName="estimation" class="form-control" type="number" value="3" id="example-number-input">
     </div>
   </div>
-
 </div>
-
-
-  </form>
-  <div class="form-group">
-    <label class="h5" for="exampleFormControlTextarea1">Комментарии к задачи</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  </div>
-
-  <div class="custom-file">
-    <input type="file" class="custom-file-input" id="" required>
-    <label class="custom-file-label h5" for="">Choose file...</label>
-  </div>
-
-  <div class="container cardA row">
-
-    <div class="col">
-      <div>
-        <div class="h-50">End date
-          <input type="date" class="form-control" id="date2" name="date" placeholder="Дата" required>
+<div class="row">
+    <div class="col form-group">
+      <label class="h5 ">Due Data</label>
+      <div class="input-group">
+        <input  name="dueDate"  formControlName="dueDate" class="form-control"
+               placeholder="yyyy-mm-dd"
+               [displayMonths]="2"
+               [startDate]="today"
+               [minDate]="{year: today.getFullYear(), month: today.getMonth()+1, day: today.getDate()+1}"
+               ngbDatepicker #d="ngbDatepicker">
+        <div class="input-group-append">
+          <button class="btn btn-dark text-white " (click)="d.toggle()" type="button">Choose</button>
+        </div>
+      </div>
+      <div class="alert alert-danger"
+           *ngIf="taskForm.controls['dueDate'].invalid && taskForm.controls['dueDate'].touched">
+        <div *ngIf="taskForm.controls['dueDate'].errors['required']">
+          Empty dueDate
         </div>
       </div>
     </div>
+  <div class="col form-group">
+    <label class="h5"> Created date</label>
+    <div class="">
+{{today.getDate()}}/{{today.getMonth()}}/{{today.getFullYear()}}
+    </div>
   </div>
-  <button (click)="service.goComponent('Home/ProjectView')" type="button" class=" btn btn-secondary cardA ">Add</button>
-  <button (click)="modalServ.openLgCentered(content)" type="button" class=" btn btn-secondary cardA ">Add and render</button>
+  <div class="col form-group">
+    <label class="h5"> Updated date </label>
+    <div class="">
+      {{today.getDate()}}/{{today.getMonth()}}/{{today.getFullYear()}}
+    </div>
+  </div>
 </div>
 
 
+    <div class="form-group">
+    <label class="h5" for="exampleFormControlTextarea1">Comments</label>
+    <textarea name="description"  formControlName="description" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+
+<!--   <div class="custom-file">
+    <input type="file" class="custom-file-input" id="" required>
+    <label class="custom-file-label h5" for="">Choose file...</label>
+  </div>
+-->
+
+  </form>
+  <div class="row"></div>
+  <button type="submit" class=" btn btn-dark text-white"  (click)="createNewTask()">
+    Create
+  </button>
+</div>
+
+
+<!--
+<button (click)="service.goComponent('Home/ProjectView')" type="button" class=" btn btn-secondary cardA ">Add</button>
 <ng-template  #content let-modal   >
   <app-add-executer [title]="modal"></app-add-executer>
 </ng-template>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+-->
 

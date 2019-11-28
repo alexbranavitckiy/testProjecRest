@@ -18,9 +18,12 @@ public class UserServiceImplBeck implements UserServiceBeck {
     @Override
     public User addUser(User user) {
 
-        User nUser = userRepository.save(user);
-
-        return nUser;
+//        Sign sign = signRepository.save(user.getSign());
+//        sign.setPassword(encoder().encode(user.getSign().getPassword()));
+//        user.setSign(sign);
+        user.setId(12);
+         userRepository.save(user);
+        return user;
     }
 
     @Override
