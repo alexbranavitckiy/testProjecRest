@@ -1,10 +1,10 @@
 export class Project {
 
 
-
+  cod_project:string;
+  summary: string;
 
   name: string;
-  summary: string;
 
 
    // id:String;

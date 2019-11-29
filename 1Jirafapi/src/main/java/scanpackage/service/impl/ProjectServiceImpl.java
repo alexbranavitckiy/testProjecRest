@@ -16,7 +16,12 @@ public class ProjectServiceImpl implements ProjectService {
     @Value("${backend.server.url}")
     private String url;
 
-    // System.out.println("работает флапи контроллер");
+
+    @Override
+    public String getExepshion(String name) {
+        return name;
+    }
+
     @Override
     public List<ProjectModel> getAll() {
         System.out.println("работает флапи сервис");

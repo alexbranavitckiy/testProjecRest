@@ -69,11 +69,19 @@ export class NewTaskComponent implements OnInit {
   public createNewTask(): void {
     console.log(this.taskForm)
     this.newTask.project=this.taskForm.get('projectName').value;
-    this.newTask.project=this.taskForm.get('projectName').value;
-    this.newTask.project=this.taskForm.get('projectName').value;
-    this.newTask.project=this.taskForm.get('projectName').value;
-    this.newTask.project=this.taskForm.get('projectName').value;
-    this.newTask.project=this.taskForm.get('projectName').value;
+    this.newTask.description=this.taskForm.get('description').value;
+    this.newTask.priority=this.taskForm.get('priority').value;
+    this.newTask.status=this.taskForm.get('status').value;
+    this.newTask.dueData=this.taskForm.get('dueData').value;
+    this.newTask.estimation=this.taskForm.get('estimation').value;
+    this.newTask.assigne=this.taskForm.get('assigne').value;
+    this.newTask.ticketCode="fdsf12";
+    this.newTask.reporter="Admin";
+    this.newTask.dueData=this.today;
+    this.newTask.createDate=this.today.toString();
+    this.newTask.updateDate=this.today.toString();
+    this.newTask.resolvedDate=this.today.toString();
+    this.newTask.closedDate=this.today.toString();
     this.subscriptions.push(this.taskServer.saveTask(this.newTask).subscribe(() => {
       this.newTask = new Task();
       console.log("Task created");

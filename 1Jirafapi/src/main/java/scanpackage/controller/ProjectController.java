@@ -14,6 +14,7 @@ import java.util.List;
 public class ProjectController {
     public ProjectService projectService;
 
+
     @Autowired
     public ProjectController(ProjectService projectService) {
 
@@ -32,15 +33,15 @@ public class ProjectController {
 
     @PostMapping
     public ResponseEntity<ProjectModel> saveProject(@RequestBody ProjectModel project) {
-        if (project != null) {
-         ProjectModel projectModel =  new ProjectModel();
-         projectModel.setName(project.getName());
-            projectModel.setName(project.getSummary());
-            projectModel.setCod_project(""+project.hashCode());
-            System.out.println(projectService);
+        if (project != null && projectService.getAll().lastIndexOf(project)==-1) {
+            project.setCod_project(project.getName().hashCode()+"");
+            System.out.println(project.getCod_project());
+            System.out.println( projectService.getAll().indexOf(project));
             return ResponseEntity.ok(projectService.save(project));
         }
-        return null;
+        else {
+            return null;
+        }
     }
 }
 

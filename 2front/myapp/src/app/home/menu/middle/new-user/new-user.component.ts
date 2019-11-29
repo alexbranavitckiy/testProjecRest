@@ -36,8 +36,6 @@ export class NewUserComponent implements OnInit {
       "login": new FormControl("",Validators.required),
       "role": new FormControl("",Validators.required)
     })
-
-
   public createNewUser(): void {
     this.newUser.role=this.fomUser.get("role").value;
      this.newUser.login=this.fomUser.get("login").value;
@@ -46,5 +44,4 @@ export class NewUserComponent implements OnInit {
      this.subscriptions.push(this.userService.saveUser(this.newUser).subscribe(() => {
       this.newUser = new User();
      })); console.log(this.newUser);
-     }
-}
+     }}

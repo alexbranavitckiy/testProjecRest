@@ -26,6 +26,6 @@ export class TaskService {
   }
 
   updateTask(task: Task): Observable<Task> {
-    return this.http.put<Task>('api/task/' + task.idTask, task);
+    return this.http.put<Task>('api/task/' + task.id, task);
   }
 }

@@ -23,6 +23,8 @@ public class ProjectModel {
 
     private String name;
 
+    private String status;
+
     public String getCod_project() {
         return cod_project;
     }
@@ -53,13 +55,12 @@ public class ProjectModel {
         if (this == o) return true;
         if (!(o instanceof ProjectModel)) return false;
         ProjectModel that = (ProjectModel) o;
-        return getSummary().equals(that.getSummary()) &&
-                getName().equals(that.getName());
+        return  getName().equals(that.getName());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getSummary(), getName());
+        return Objects.hash(getName());
     }
 
     @Override

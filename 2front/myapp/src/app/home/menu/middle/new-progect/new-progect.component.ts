@@ -24,17 +24,15 @@ export class NewProgectComponent implements OnInit,OnDestroy ,OnChanges{
 
 
   ngOnChanges(){
-    this.projectService.getAllProject().subscribe((data: Project[]) => {
-      data.forEach((p: Project) => this.allProject.push(p));
-    });
+  //  this.projectService.getAllProject().subscribe((data: Project[]) => {
+  //    data.forEach((p: Project) => this.allProject.push(p));
+  //  });
   }
   constructor( private  projectService:ProjectService,private router: Router,private service:Service) {}
 
 
   ngOnInit(): void {
   }
-
-
 
   myForm : FormGroup = new FormGroup({
     "nameProject": new FormControl("",[Validators.required,Validators.minLength(4), Validators.maxLength(100)]),
@@ -64,38 +62,37 @@ export class NewProgectComponent implements OnInit,OnDestroy ,OnChanges{
   //     }
 
 
-  createNewProjectValidator2(flag:boolean,name:string): {[s:string]:boolean}{
-    return {name: flag};
-    }
-
   createNewProjectValidator(control: FormControl): {[s:string]:boolean}{
       return {"nameProject": true}; }
 
-  ErrorNewProject:boolean= false;
   public createProject(): void {
+//    this.projectService.getAllProject().subscribe((data: Project[]) => {
+//       data.forEach((p: Project) => this.allProject.push(p));});
 
-
-
+    console.log(this.allProject);
     this.newProject.name = this.myForm.get('nameProject').value;
     this.newProject.summary = this.myForm.get('summary').value;
-    if(!this.searchProject())
+   // console.log(this.allProject.indexOf(this.myForm.get('nameProject').value));
+ //   console.log(this.allProject.lastIndexOf.name.indexOf(this.newProject.name ));
+    // (typeof $scope.dataCheck.email !== "undefined")
+
+   // (roles.indexOf(expectedRole) == -1);
       this.subscriptions.push(this.projectService.saveProject(this.newProject).subscribe(() => {
-        this.ErrorNewProject=false;
-        this.newProject = new Project();
-      }));
-    this.allProject.push(this.newProject)
-    console.log(this.newProject);
+             this.newProject = new Project();
+          }));
+
+  //  this.allProject.lastIndexOf(this.newProject)
+  //  this.allProject.push(this.newProject)
+  //  console.log(this.newProject);
+
   }
 
-  public searchProject():boolean{
-    this.ErrorNewProject = false;
+  public searchProject(){
     this.allProject.forEach((u: Project)=> {
         if (this.newProject.name === u.name)
-          this.ErrorNewProject = true;
         stop();
       }
     )
-    return this.ErrorNewProject;
   }
 
   ngOnDestroy () {}
