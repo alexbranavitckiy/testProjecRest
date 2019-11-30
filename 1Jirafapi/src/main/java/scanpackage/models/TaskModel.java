@@ -10,7 +10,7 @@ public class TaskModel {
         private Integer id;
         private String description;
         private Date dueData;
-        private Date estimation;
+        private int estimation;
         private String assigne;
         private String codtask;
         private Date createDate;
@@ -22,7 +22,7 @@ public class TaskModel {
         private String comments;
         private String stories;
         private String attachment;
-        private Integer status;
+        private StatusModel status;
 
     public long getId() {
         return id;
@@ -48,11 +48,11 @@ public class TaskModel {
         this.dueData = dueData;
     }
 
-    public Date getEstimation() {
+    public int getEstimation() {
         return estimation;
     }
 
-    public void setEstimation(Date estimation) {
+    public void setEstimation(int estimation) {
         this.estimation = estimation;
     }
 
@@ -144,11 +144,11 @@ public class TaskModel {
         this.attachment = attachment;
     }
 
-    public Integer getStatus() {
+    public StatusModel getStatus() {
         return status;
     }
 
-    public void setStatus(Integer status) {
+    public void setStatus(StatusModel status) {
         this.status = status;
     }
 }

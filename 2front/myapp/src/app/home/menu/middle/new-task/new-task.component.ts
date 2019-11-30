@@ -75,13 +75,13 @@ export class NewTaskComponent implements OnInit {
     this.newTask.dueData=this.taskForm.get('dueData').value;
     this.newTask.estimation=this.taskForm.get('estimation').value;
     this.newTask.assigne=this.taskForm.get('assigne').value;
-    this.newTask.ticketCode="fdsf12";
-    this.newTask.reporter="Admin";
-    this.newTask.dueData=this.today;
-    this.newTask.createDate=this.today.toString();
-    this.newTask.updateDate=this.today.toString();
-    this.newTask.resolvedDate=this.today.toString();
-    this.newTask.closedDate=this.today.toString();
+  //  this.newTask.ticketCode="fdsf12";
+    //     this.newTask.reporter="Admin";
+    //     this.newTask.dueData=this.today;
+    //     this.newTask.createDate=this.today.toString();
+    //     this.newTask.updateDate=this.today.toString();
+    //     this.newTask.resolvedDate=this.today.toString();
+    //     this.newTask.closedDate=this.today.toString();
     this.subscriptions.push(this.taskServer.saveTask(this.newTask).subscribe(() => {
       this.newTask = new Task();
       console.log("Task created");

@@ -40,21 +40,35 @@ export class Task {
 
 
   id: number;
-  project: Project;
-  ticketCode: string;
   description: string;
-  priority: string;
-  status: string;
-  createDate: string;
   dueData: Date;
-  updateDate: string;
-  resolvedDate: string;
-  closedDate: string;
-  estimation: number;
-  assigne: string;
-  reporter: string;
-  history: string;
-  constructor(){}
+  estimation:number;
+
+  assigne: User;
+  codtask: string;
+  createDate: Date;
+  updateDate: Date;
+  closedDate: Date;
+  reporter: User;
+  priority: Priority;
+  project: Project;
+  comments: string;
+  stories: string;
+  attachment:string;
+  status: Status;
+
+  constructor(){
+
+
+    this.status = new Status();
+    this.assigne = new User();
+    this.reporter = new User();
+    this.project = new Project();
+    this.priority = new Priority();
+
+
+
+  }
 }
 
 

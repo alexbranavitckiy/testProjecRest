@@ -31,6 +31,14 @@
 <div class="row">
   <app-pagination *ngIf="service.getIdUser()"></app-pagination>
 </div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <app-card [Data]="allTask" [list]="['Projects','','Status RFT','','']"></app-card>
+  </div>
+</div>
+
 <!--
 <div [ngSwitch]="service.flagUserList"  class="row cardA">
   <button *ngSwitchCase="true" class="btn botonCardColor" (click)=modalServ._openModal(templeyt,true)>Settings</button>

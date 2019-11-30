@@ -8,8 +8,6 @@ export class Status {
   idTask:Task;
 
 
-  constructor(){
 
-this.idTask=new Task();}
 
 }

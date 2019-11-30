@@ -3,9 +3,9 @@ package scanpackage.models;
 import java.util.Objects;
 
 public class StatusModel {
-    private long id;
+    public long id;
 
-    private String name;
+    public String name;
 
     public long getId() {
         return id;
@@ -22,22 +22,5 @@ public class StatusModel {
         this.name = name;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        StatusModel that = (StatusModel) o;
-        return id == that.id &&
-                Objects.equals(name, that.name);
-    }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, name);
-    }
-
-    public StatusModel(long id, String name) {
-        this.id = id;
-        this.name = name;
-    }
 }

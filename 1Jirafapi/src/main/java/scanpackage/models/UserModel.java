@@ -2,10 +2,10 @@ package scanpackage.models;
 
 public class UserModel {
 
-        private Integer id;
-        private String role;
-        private String login;
-        private String password;
+         Integer id;
+         String role;
+         String login;
+         String password;
 
 
 

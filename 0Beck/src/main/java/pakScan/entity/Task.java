@@ -21,8 +21,7 @@ public class Task
     private Date due;
 
     @Column (name="estimation")
-    @Temporal(TemporalType.DATE)
-    private Date estimation;
+    private int estimation;
 
 
     @Column (name="assigne")
@@ -115,11 +114,11 @@ public class Task
         this.due = due;
     }
 
-    public Date getEstimation() {
+    public int getEstimation() {
         return estimation;
     }
 
-    public void setEstimation(Date estimation) {
+    public void setEstimation(int estimation) {
         this.estimation = estimation;
     }
 
@@ -219,7 +218,7 @@ public class Task
         this.statustask = statustask;
     }
     public Task(){}
-    public Task(Integer id, String description, Date due, Date estimation, String assigne, String codtas, Date creat, Date updat, Date clos, Integer reporter_user, Integer prioritytask, String projecttask, String comments, String attachment, String stories, String statustask) {
+    public Task(Integer id, String description, Date due, int estimation, String assigne, String codtas, Date creat, Date updat, Date clos, Integer reporter_user, Integer prioritytask, String projecttask, String comments, String attachment, String stories, String statustask) {
         this.id = id;
         this.description = description;
         this.due = due;
