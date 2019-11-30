@@ -1,34 +1,28 @@
-
-
-
-
-
 <div class=" fon">
-  <div  class="row">
+  <div class="row">
     <div class="col">
       <br>
-    <button class="bottonExit btn btn-outline-primary mb-2 mr-2" (click)="modalServ.openVerticallyCentered(content)"><ng-container class="h4">{{authService.nameLogin}}</ng-container></button>
+      <button class="bottonExit btn btn-outline-primary mb-2 mr-2" (click)="modalServ.openVerticallyCentered(content)">
+        <ng-container class="h4">{{authService.nameLogin}}</ng-container>
+      </button>
     </div>
   </div>
-<div  class="container-fluid">
+  <div class="container-fluid">
     <div class=" row">
       <div class=" col colorcol3 ">
-<app-sidebar></app-sidebar>
+        <app-sidebar></app-sidebar>
       </div>
-      <div class="col-md-8 colorcol9" >
-
-        <router-outlet ></router-outlet>
-
+      <div class="col-md-8 colorcol9">
+        <router-outlet></router-outlet>
       </div>
-      <div class="col colorcol9" >
-<app-sidemenu></app-sidemenu>
-      </div>
+      <div class="col colorcol9">
+        <app-sidemenu></app-sidemenu>
       </div>
     </div>
   </div>
-
-<ng-template  #content let-modal   >
-<app-login [title]="modal"></app-login>
+</div>
+<ng-template #content let-modal>
+  <app-login [title]="modal"></app-login>
 </ng-template>
 
 

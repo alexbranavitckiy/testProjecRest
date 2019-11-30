@@ -1,40 +1,68 @@
 <table class="table table-hover">
-    <thead class="thead-light">
+  <thead class="thead-light">
   <tr>
     <ng-container *ngFor="let country of list; index as j" scope="col">
-    <th  class="h5">
-      {{country}}
-    </th>
+      <th class="h5">
+        {{country}}
+      </th>
     </ng-container>
   </tr>
-  </thead >
+  </thead>
   <tbody>
+  <ng-container *ngFor="let  data of Data of service.dataBase  let i= index">
+    <tr class="cardA">
+      <ng-container>
+        <td>{{data?.idUsers | json }}</td>
+      </ng-container>
+      <ng-container>
+        <td>{{data?.name | json }}</td>
+      </ng-container>
+      <ng-container>
+        <td>{{data?.role | json }}</td>
+      </ng-container>
+      <ng-container>
+        <td>{{data?.login | json }}</td>
+      </ng-container>
+      <ng-container>
+        <td>{{data?.password | json }}</td>
+      </ng-container>
+      <ng-container>
+        <td>{{data?.idProject | json }}</td>
+      </ng-container>
+      <ng-container>
+        <td>{{data?.nameProject | json }}</td>
+      </ng-container>
+      <ng-container>
+        <td>{{data?.summary | json }}</td>
+      </ng-container>
+      <ng-container>
+        <td>{{data?.nameproject | json }}</td>
+      </ng-container>
+      <ng-container>
+        <td>{{data?.nameproject | json }}</td>
+      </ng-container>
+      <ng-container>
+        <td>{{data?.istorii | json }}</td>
+      </ng-container>
+      <ng-container>
+        <td>{{data?.task | json }}</td>
+      </ng-container>
+      <ng-container>
+        <td>{{data?.comments | json }}</td>
+      </ng-container>
+      <ng-container>
+        <td>{{data?.customeremail | json }}</td>
+      </ng-container>
+    </tr>
 
-  <ng-container  *ngFor="let  data of Data of service.dataBase  let i= index" >
-  <tr   class="cardA">
-    <ng-container ><td>{{data?.idUsers | json }}</td></ng-container>
-    <ng-container ><td>{{data?.name | json }}</td></ng-container>
-    <ng-container ><td>{{data?.role | json }}</td></ng-container>
-    <ng-container ><td>{{data?.login | json }}</td></ng-container>
-    <ng-container ><td>{{data?.password | json }}</td></ng-container>
-
-
-
-
-
-    <ng-container ><td>{{data?.idProject | json }}</td></ng-container>
-    <ng-container ><td>{{data?.nameProject | json }}</td></ng-container>
-    <ng-container ><td>{{data?.summary | json }}</td></ng-container>
-    <ng-container ><td>{{data?.nameproject | json }}</td></ng-container>
-    <ng-container ><td>{{data?.nameproject | json }}</td></ng-container>
-    <ng-container ><td>{{data?.istorii | json }}</td></ng-container>
-   <ng-container ><td>{{data?.task | json }}</td></ng-container>
-    <ng-container ><td>{{data?.comments | json }}</td></ng-container>
-    <ng-container ><td>{{data?.customeremail | json }}</td></ng-container> </tr>
-    <ng-container > <td> <button (click)="modalServ.openLgCentered(content)" type="button" class=" btn btn-danger ">Delete</button>
-    <button (click)="modalServ.openLgCentered(content)" type="button" class=" btn btn-secondary ">Render</button>
-    <button (click)="modalServ.openScrollableContent(history)" type="button" class=" btn btn-secondary ">History</button>
-    </td></ng-container>
+    <ng-container>
+      <td>
+        <button (click)="modalServ.openLgCentered(content)" type="button" class=" btn btn-danger ">Delete</button>
+        <button (click)="modalServ.openLgCentered(content)" type="button" class=" btn btn-secondary ">Render</button>
+        <button (click)="modalServ.openScrollableContent(history)" type="button" class=" btn btn-secondary ">History
+        </button>
+      </td>
+    </ng-container>
   </ng-container>
   </tbody>
 </table>

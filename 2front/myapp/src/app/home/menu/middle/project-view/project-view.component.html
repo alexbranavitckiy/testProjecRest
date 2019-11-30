@@ -1,5 +1,4 @@
-<div class="container textColor" >
-
+<div class="container textColor">
   <div class="row">
     <div class="col form-group cardA">
       <label for="exampleFormControlInput1" class="h4">Project name</label>
@@ -10,9 +9,9 @@
         <option value="3">Project2</option>
       </select>
     </div>
-    <div id="Priority" class="col form-group cardA" >
+    <div id="Priority" class="col form-group cardA">
       <label class="h5" for="Priority">Status RFT</label>
-      <select class="custom-select" disabled >
+      <select class="custom-select" disabled>
         <option value="0">Open</option>
         <option value="1">InProgress</option>
         <option value="2">Ressolved</option>
@@ -22,147 +21,132 @@
       <div class="invalid-feedback">Example invalid custom select feedback</div>
     </div>
   </div>
-
-  <table *ngIf="service.getIdiser()!=(3||4)" class="table table-hover ">
-  <thead class="table-light  ">
-  <tr>
-    <th scope="col"><button (click)="modalServ._openModal(sorting)" type="button " class="btn btn-secondary">&rArr;Sorting</button></th>
-    <th scope="col"> <form class="form-inline"><input class="form-control " type="search" placeholder="Search" aria-label="Search"></form></th>
-    <th scope="col">    <select  class="custom-select" required>
-      <option value="1">__________</option>
-      <option value="2">Closed</option>
-      <option value="3">Returned task</option>
-      <option value="4">In developing</option>
-      <option value="5">is open</option>
-    </select></th>
-    <th scope="col">    <select  class="custom-select" required>
-      <option value="3">__________</option>
-      <option value="">Blocker</option>
-      <option value="1">Critical</option>
-      <option value="2">Major</option>
-      <option value="3">Trivial</option>
-    </select></th>
-  </tr>
-  </thead>
+  <table *ngIf="service.getIdUser()!=(3||4)" class="table table-hover ">
+    <thead class="table-light  ">
+    <tr>
+      <th scope="col">
+        <button (click)="modalServ._openModal(sorting)" type="button " class="btn btn-secondary">&rArr;Sorting</button>
+      </th>
+      <th scope="col">
+        <form class="form-inline"><input class="form-control " type="search" placeholder="Search" aria-label="Search">
+        </form>
+      </th>
+      <th scope="col"><select class="custom-select" required>
+        <option value="1">__________</option>
+        <option value="2">Closed</option>
+        <option value="3">Returned task</option>
+        <option value="4">In developing</option>
+        <option value="5">is open</option>
+      </select></th>
+      <th scope="col"><select class="custom-select" required>
+        <option value="3">__________</option>
+        <option value="">Blocker</option>
+        <option value="1">Critical</option>
+        <option value="2">Major</option>
+        <option value="3">Trivial</option>
+      </select></th>
+    </tr>
+    </thead>
     <thead class="thead-light">
     <tr>
-      <th scope="col h6">Tasks </th>
+      <th scope="col h6">Tasks</th>
       <th scope="col h6">Executor</th>
       <th scope="col h6">Status</th>
       <th scope="col h6">Priority</th>
       <th scope="col h6">Option</th>
-
     </tr>
     </thead>
     <tbody>
     <tr>
-      <td> <button type="button" class="btn btnMyColor btn-dark"  (click)="modalServ._openModal(task)">Task1</button>
+      <td>
+        <button type="button" class="btn btnMyColor btn-dark" (click)="modalServ._openModal(task)">Task1</button>
       <td><a href="#">Tom</a></td>
       <td><a href="#">Tom</a></td>
       <td><a href="#">Priority</a></td>
-      <td  >
-        <div  class="row cardA">
-
+      <td>
+        <div class="row cardA">
           <button (click)="modalServ.openLgCentered(content)" type="button" class=" btn btn-danger ">Delete</button>
           <button (click)="modalServ.openLgCentered(content)" type="button" class=" btn btn-secondary ">Render</button>
-          <button (click)="modalServ.openScrollableContent(history)" type="button" class=" btn btn-secondary ">History</button>
+          <button (click)="modalServ.openScrollableContent(history)" type="button" class=" btn btn-secondary ">History
+          </button>
         </div>
       </td>
     </tr>
     <tr>
-      <td> <button type="button" class="btn btnMyColor btn-dark"  (click)="modalServ._openModal(task)">Task2</button>
+      <td>
+        <button type="button" class="btn btnMyColor btn-dark" (click)="modalServ._openModal(task)">Task2</button>
       <td><a href="#">Tom</a></td>
       <td><a href="#">Tom</a></td>
       <td><a href="#">Priority</a></td>
-      <td  >
-        <div  class="row cardA">
+      <td>
+        <div class="row cardA">
           <button (click)="modalServ.openLgCentered(content)" type="button" class="col btn btn-danger ">Delete</button>
-          <button (click)="modalServ.openLgCentered(content)" type="button" class="col btn btn-secondary ">Render</button>
-          <button (click)="modalServ.openScrollableContent(history)" type="button" class="col btn btn-secondary ">History</button>
+          <button (click)="modalServ.openLgCentered(content)" type="button" class="col btn btn-secondary ">Render
+          </button>
+          <button (click)="modalServ.openScrollableContent(history)" type="button" class="col btn btn-secondary ">
+            History
+          </button>
         </div>
       </td>
     </tr>
     <tr>
-      <td> <button type="button" class="btn btnMyColor btn-dark"  (click)="modalServ._openModal(task)">Task3</button>
+      <td>
+        <button type="button" class="btn btnMyColor btn-dark" (click)="modalServ._openModal(task)">Task3</button>
       <td><a href="#">Tom</a></td>
       <td><a href="#">Tom</a></td>
       <td><a href="#">Priority</a></td>
-      <td  >
-        <div  class="row cardA">
+      <td>
+        <div class="row cardA">
           <button (click)="modalServ.openLgCentered(content)" type="button" class="col btn btn-danger ">Delete</button>
-          <button (click)="modalServ.openLgCentered(content)" type="button" class="col btn btn-secondary ">Render</button>
-          <button (click)="modalServ.openScrollableContent(history)" type="button" class="col btn btn-secondary ">History</button>
+          <button (click)="modalServ.openLgCentered(content)" type="button" class="col btn btn-secondary ">Render
+          </button>
+          <button (click)="modalServ.openScrollableContent(history)" type="button" class="col btn btn-secondary ">
+            History
+          </button>
         </div>
       </td>
     </tr>
     </tbody>
   </table>
-
   <div class=" <col-md-9 card-deck">
-
-
-<div class="container cardA">
-
-  <div class="row">
-    <div class="col form-group cardA">
-      <label for="exampleFormControlTextarea3" class="h5">Summary</label>
-      <textarea class="form-control" id="exampleFormControlTextarea3" rows="3"></textarea>
-    </div>
-  </div>
-
-
-
-  <div class="custom-file">
-    <input type="file" class="custom-file-input" id="" required>
-    <label class="custom-file-label h5" for="">Choose file...</label>
-  </div>
-
-  <div class="container cardA row">
-
-
-    <div class="container cardA row">
-
-      <div class="col">
-        <div class="h6">Start date
-          <input type="date" class="form-control" id="date" name="date" placeholder="Дата" required disabled>
+    <div class="container cardA">
+      <div class="row">
+        <div class="col form-group cardA">
+          <label for="exampleFormControlTextarea3" class="h5">Summary</label>
+          <textarea class="form-control" id="exampleFormControlTextarea3" rows="3"></textarea>
         </div>
       </div>
-
-
-
-    <div class="col">
-      <div>
-        <div class="h6">End date
-          <input type="date" class="form-control" id="date2" name="date" placeholder="Дата" required disabled>
+      <div class="custom-file">
+        <input type="file" class="custom-file-input" id="" required>
+        <label class="custom-file-label h5" for="">Choose file...</label>
+      </div>
+      <div class="container cardA row">
+        <div class="container cardA row">
+          <div class="col">
+            <div class="h6">Start date
+              <input type="date" class="form-control" id="date" name="date" placeholder="Дата" required disabled>
+            </div>
+          </div>
+          <div class="col">
+            <div>
+              <div class="h6">End date
+                <input type="date" class="form-control" id="date2" name="date" placeholder="Дата" required disabled>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-
 </div>
-
-</div>
-</div>
-
-
-
-
-</div>
-
-
-<ng-template #sorting >
+<ng-template #sorting>
 </ng-template>
-
-<ng-template #task >
+<ng-template #task>
   <app-task-work></app-task-work>
 </ng-template>
-
-<ng-template  #content let-modal   >
+<ng-template #content let-modal>
   <app-add-executer [title]="modal"></app-add-executer>
 </ng-template>
-
-
-
 <ng-template #history let-modal>
   <div class="modal-header">
     <h4 class="modal-title">History</h4>
@@ -171,24 +155,42 @@
     </button>
   </div>
   <div class="modal-body">
-    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-    <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-    <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-    <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-    <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-    <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-    <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+      Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet
+      rutrum faucibus dolor auctor.</p>
+    <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur
+      et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+      Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet
+      rutrum faucibus dolor auctor.</p>
+    <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur
+      et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+      Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet
+      rutrum faucibus dolor auctor.</p>
+    <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur
+      et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+      Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet
+      rutrum faucibus dolor auctor.</p>
+    <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur
+      et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+      Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet
+      rutrum faucibus dolor auctor.</p>
+    <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur
+      et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+      Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet
+      rutrum faucibus dolor auctor.</p>
+    <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur
+      et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
   </div>
   <div class="modal-footer">
     <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>

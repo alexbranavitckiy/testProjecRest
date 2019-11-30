@@ -9,7 +9,7 @@ public class Priority
 {
     @Id
     @GeneratedValue    (strategy=GenerationType.SEQUENCE)
-    @Column (name="id_priority")
+    @Column (name="id")
     private Integer id;
 
    @Column(name = "name_priority")

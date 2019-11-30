@@ -43,7 +43,7 @@ export interface DataBase {// для левых данных
 export  class Service {
 public flagUserList:boolean;
   private idnabber:number;// для защитника
-  public  getIdiser(){// для защитника
+  public  getIdUser(){// для защитника
   return  this.idnabber;
    }
   public setIdiser(number:number){// для защитника

@@ -8,7 +8,7 @@ import java.util.Objects;
 public class User
 {
     @Id
-    @Column (name="id_user")
+    @Column (name="id")
     private Integer id;
 
     @Column(name = "roli")

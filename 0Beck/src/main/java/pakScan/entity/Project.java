@@ -14,7 +14,7 @@ public class Project
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_project")
+    @Column(name = "id")
     private Integer id;
 
 
@@ -25,7 +25,7 @@ public class Project
     @Column(name = "summary")
     private String summary;
 
-    @Column(name = "nameproject")
+    @Column(name = "name_project")
     private String name;
 
 

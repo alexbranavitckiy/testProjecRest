@@ -44,7 +44,7 @@ export class ListProgectComponent implements OnInit,DoCheck{
 
 
   constructor(private userService :UserService,private taskService :TaskService,private projectService:ProjectService, private router: Router, private service: Service, private modalServ :ModalService) {
-    this.template(this.service.getIdiser() )
+    this.template(this.service.getIdUser() )
 
 
  this.userService.getAllUser().subscribe((data: User[]) => {
@@ -52,8 +52,6 @@ export class ListProgectComponent implements OnInit,DoCheck{
       });
   }
   ngOnInit(): void {
-
-
     this.taskService.getTask().subscribe((data: Task[]) => {
       data.forEach((t: Task) => this.allTask.push(t));
     });
@@ -71,7 +69,7 @@ export class ListProgectComponent implements OnInit,DoCheck{
 
   ngDoCheck(){
 
-    this.template(this.service.getIdiser())}
+    this.template(this.service.getIdUser())}
 
 
   onLogin (template: TemplateRef<any>){

@@ -1,6 +1,5 @@
 
 import {Status} from "./status";
-import {Role} from "./role";
 
 export class User {
 

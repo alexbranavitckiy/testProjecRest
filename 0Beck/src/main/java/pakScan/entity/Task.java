@@ -9,7 +9,7 @@ import java.util.Objects;
 public class Task
 {
     @Id
-    @Column(name="id_task")
+    @Column(name="id")
     private Integer  id;
 
     @Column (name="description")
@@ -63,14 +63,14 @@ public class Task
 
 
    // @ManyToOne(targetEntity = Priority.class)
-   @Column(name = "prioritytask")
+   @Column(name = "priority_task")
     private Integer prioritytask;
 
    // @OneToMany(targetEntity = Project.class)
  //  @Column(name = "PROJECT_TASK")
   // @ManyToOne (optional=false, cascade=CascadeType.ALL)
   // @JoinColumn (name="project_t")
-   @Column(name = "projecttask")
+   @Column(name = "project_task")
     private String  projecttask;
 
    @Column (name="comments")
@@ -84,7 +84,7 @@ public class Task
     private String  stories;
 
 
-    @Column (name="statustask")
+    @Column (name="status_task")
     private String  statustask;
 
 

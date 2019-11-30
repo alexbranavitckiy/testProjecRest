@@ -1,0 +1,50 @@
+<ng-container *ngFor="let  data of Data of service.dataBase  let i= index" class="col">
+  <div class="card bg-light cardA">
+    <a class="btn ">
+      <div class="card-body">
+        <div class="row">
+          <div class="col h4">
+            <ng-container>
+              {{data?.login | json }}
+              {{data?.name | json }}
+            </ng-container>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col h6">
+            <ng-container>
+              {{data?.summary | json }}
+              {{data?.role | json }}
+            </ng-container>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col h6">
+            <button class="btn btn-secondary" (click)="goComponent('Home/ProjectView',i)">Просмотр/Редактирование
+            </button>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+</ng-container>
+
+
+<!--<ng-container *ngFor="let  data of Data of service.dataBase  let i= index" class="col ">
+  <div class="card   mb-3 cardA " style="max-width: 18rem;">
+    <div class="">
+        <div class="card-header">  <ng-container>
+          {{data?.name| json }}
+        </ng-container></div>
+        <div class="card-body">
+          <h5 class="card-title">
+
+          </h5>
+
+          <p style="max-width: 18rem;min-width: 18rem;" class="card-text">sad</p>
+        </div>
+        <button type="button" class="btn btn-dark">Темный</button>
+    </div>
+  </div>
+</ng-container>
+ -->

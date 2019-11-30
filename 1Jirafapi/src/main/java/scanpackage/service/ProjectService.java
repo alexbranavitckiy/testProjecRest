@@ -9,5 +9,5 @@ public interface ProjectService {
     List<ProjectModel> getAll();
     ProjectModel findById(Integer id);
     ProjectModel save(ProjectModel project);
-
+    String getExepshion(String name);
 }
