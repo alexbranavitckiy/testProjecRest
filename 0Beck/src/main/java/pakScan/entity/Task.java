@@ -6,88 +6,83 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "task")
-public class Task
-{
+public class Task {
     @Id
-    @Column(name="id")
-    private Integer  id;
+    @Column(name = "id")
+    private Integer id;
 
-    @Column (name="description")
+    @Column(name = "description")
     private String description;
 
 
-    @Column (name="due")
+    @Column(name = "due")
     @Temporal(TemporalType.DATE)
     private Date due;
 
-    @Column (name="estimation")
+    @Column(name = "estimation")
     private int estimation;
 
 
-    @Column (name="assigne")
-    private String  assigne;
+    @Column(name = "assigne")
+    private String assigne;
 
-    @Column (name="codtas")
-    private String  codtas;
+    @Column(name = "codtas")
+    private String codtas;
 
-    @Column (name="creat")
+    @Column(name = "creat")
     @Temporal(TemporalType.DATE)
     private Date creat;
 
 
-    @Column (name="updat")
+    @Column(name = "updat")
     @Temporal(TemporalType.DATE)
     private Date updat;
 
-    @Column (name="clos")
+    @Column(name = "clos")
     @Temporal(TemporalType.DATE)
     private Date clos;
 
 
     //@ManyToOne (optional=false, cascade=CascadeType.ALL)
-   // @JoinColumn (name="ID_USER")
-   // @ManyToOne(targetEntity = User.class)
+    // @JoinColumn (name="ID_USER")
+    // @ManyToOne(targetEntity = User.class)
     @Column(name = "reporter_user")
     private Integer reporter_user;
 
-  // @Column(name = "reporter_USER")
+    // @Column(name = "reporter_USER")
 
- //    @Column(name = "PRIOTITI_TASK")
- //   @ManyToOne (optional=false, cascade=CascadeType.ALL)
- //
-   // @Column(name = "PRIOTITI_TASK")
+    //    @Column(name = "PRIOTITI_TASK")
+    //   @ManyToOne (optional=false, cascade=CascadeType.ALL)
+    //
+    // @Column(name = "PRIOTITI_TASK")
 //   @ManyToOne (optional=false, cascade=CascadeType.ALL)
 //   @JoinColumn (name="ID_PRIOTITI")
 
 
-
-   // @ManyToOne(targetEntity = Priority.class)
-   @Column(name = "priority_task")
+    // @ManyToOne(targetEntity = Priority.class)
+    @Column(name = "priority_task")
     private Integer prioritytask;
 
-   // @OneToMany(targetEntity = Project.class)
- //  @Column(name = "PROJECT_TASK")
-  // @ManyToOne (optional=false, cascade=CascadeType.ALL)
-  // @JoinColumn (name="project_t")
-   @Column(name = "project_task")
-    private String  projecttask;
+    // @OneToMany(targetEntity = Project.class)
+    //  @Column(name = "PROJECT_TASK")
+    // @ManyToOne (optional=false, cascade=CascadeType.ALL)
+    // @JoinColumn (name="project_t")
+    @Column(name = "project_task")
+    private String projecttask;
 
-   @Column (name="comments")
-    private String  comments;
+    @Column(name = "comments")
+    private String comments;
 
-    @Column (name="attachment")
-    private String  attachment;
-
-
-    @Column (name="stories")
-    private String  stories;
+    @Column(name = "attachment")
+    private String attachment;
 
 
-    @Column (name="status_task")
-    private String  statustask;
+    @Column(name = "stories")
+    private String stories;
 
 
-
+    @Column(name = "status_task")
+    private String statustask;
 
 
     public Integer getId() {
@@ -217,7 +212,10 @@ public class Task
     public void setStatustask(String statustask) {
         this.statustask = statustask;
     }
-    public Task(){}
+
+    public Task() {
+    }
+
     public Task(Integer id, String description, Date due, int estimation, String assigne, String codtas, Date creat, Date updat, Date clos, Integer reporter_user, Integer prioritytask, String projecttask, String comments, String attachment, String stories, String statustask) {
         this.id = id;
         this.description = description;

@@ -13,15 +13,22 @@ public class ProjectControllerBeck {
     public ProjectServiceBeck projectService;
 
     @Autowired
-    public ProjectControllerBeck(ProjectServiceBeck projectService){this.projectService = projectService;}
+    public ProjectControllerBeck(ProjectServiceBeck projectService) {
+        this.projectService = projectService;
+    }
 
     @PostMapping
-    public Project newProject(@RequestBody Project project){return projectService.addProject(project);}
+    public Project newProject(@RequestBody Project project) {
+        return projectService.addProject(project);
+    }
 
     @GetMapping(value = "/{id}")
-    public Project findProjectById(@PathVariable(name = "id") Integer id){return projectService.findById(id).get();}
+    public Project findProjectById(@PathVariable(name = "id") Integer id) {
+        return projectService.findById(id).get();
+    }
 
     @GetMapping(value = "/all")
-    public Iterable<Project> getAll(){
-        return projectService.getAll();}
+    public Iterable<Project> getAll() {
+        return projectService.getAll();
+    }
 }

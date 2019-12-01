@@ -1,14 +1,14 @@
 package pakScan.entity;
+
 import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
 @Table(name = "status_task")
-public class Status
-{
+public class Status {
     @Id
-    @GeneratedValue    (strategy=GenerationType.SEQUENCE)
-    @Column (name="id")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @Column(name = "id")
     private Integer id;
 
 

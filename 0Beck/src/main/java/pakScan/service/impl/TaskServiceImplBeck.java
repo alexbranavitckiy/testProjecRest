@@ -10,6 +10,7 @@ import pakScan.service.TaskServiceBeck;
 
 import java.util.List;
 import java.util.Optional;
+
 @Service
 public class TaskServiceImplBeck implements TaskServiceBeck {
 
@@ -32,10 +33,6 @@ public class TaskServiceImplBeck implements TaskServiceBeck {
     public List<Task> getAll() {
         return taskRepository.findAll();
     }
-
-
-
-
 
 
 }

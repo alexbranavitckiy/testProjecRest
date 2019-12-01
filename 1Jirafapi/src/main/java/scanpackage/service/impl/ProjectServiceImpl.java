@@ -17,7 +17,6 @@ public class ProjectServiceImpl implements ProjectService {
     private String url;
 
 
-    @Override
     public String getExepshion(String name) {
         return name;
     }
@@ -39,8 +38,10 @@ public class ProjectServiceImpl implements ProjectService {
 
     @Override
     public ProjectModel save(ProjectModel project) {
-System.out.println(project.getSummary()+project.getName());
+        System.out.println(project.getSummary() + project.getName());
         RestTemplate restTemplate = new RestTemplate();
-        return restTemplate.postForEntity(url+"/api/project", project, ProjectModel.class).getBody();
+        return restTemplate.postForEntity(url + "/api/project", project, ProjectModel.class).getBody();
     }
+
+
 }

@@ -3,6 +3,7 @@ package scanpackage.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import scanpackage.models.StatusModel;
 import scanpackage.models.TaskModel;
 import scanpackage.service.TaskService;
 
@@ -23,8 +24,11 @@ public class TaskController {
         return ResponseEntity.ok(taskService.getAll());
     }
 
-    @GetMapping(value = "/{id}")
-    public ResponseEntity<TaskModel> findTaskById(@PathVariable(name = "id") long id) {
+
+  //  getAllStatus(): Observable<Status[]> {return this.http.get<Status[]>('api/status/all');}
+
+    @GetMapping(value = "status/{id}")
+    public ResponseEntity<TaskModel> findTaskById(@PathVariable(name = "id") Integer id) {
         TaskModel task = taskService.findById(id);
         if (task != null) {
             return ResponseEntity.ok(task);
@@ -33,9 +37,16 @@ public class TaskController {
         }
     }
 
+
+
     @PostMapping
     public ResponseEntity<TaskModel> saveTask(@RequestBody TaskModel task) {
+       System.out.println(task);
         if (task != null) {
+
+
+
+
             return ResponseEntity.ok(taskService.save(task));
         }
         return null;

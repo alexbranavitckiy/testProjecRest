@@ -5,14 +5,13 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "priority")
-public class Priority
-{
+public class Priority {
     @Id
-    @GeneratedValue    (strategy=GenerationType.SEQUENCE)
-    @Column (name="id")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @Column(name = "id")
     private Integer id;
 
-   @Column(name = "name_priority")
+    @Column(name = "name_priority")
     private String name_priority;
 
     public Integer getId() {

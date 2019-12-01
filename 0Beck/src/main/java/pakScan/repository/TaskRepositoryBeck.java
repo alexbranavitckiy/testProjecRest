@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import pakScan.entity.Task;
 
 @Repository
-public interface TaskRepositoryBeck extends JpaRepository<Task,Integer> {
+public interface TaskRepositoryBeck extends JpaRepository<Task, Integer> {
 
 }

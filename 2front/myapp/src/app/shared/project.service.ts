@@ -5,6 +5,7 @@ import {Project} from "../model/project";
 import {tap} from "rxjs/operators";
 import {DataBase} from "./service";
 import {Router} from "@angular/router";
+import {Task} from "../model/task";
 
 @Injectable({
   providedIn: 'root'
@@ -20,7 +21,9 @@ export class ProjectService {
     return this.http.post<Project>('api/project',project);
   }
 
-
+  getById(id: string): Observable<Project> {
+    return this.http.get<Project>('api/project/'+id);
+  }
 
 
   getAllProject():Observable<Project[]>{

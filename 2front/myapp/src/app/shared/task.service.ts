@@ -3,6 +3,7 @@ import {Injectable} from "@angular/core";
 import {Observable} from "rxjs";
 import {Task} from "../model/task";
 import {Status} from "../model/status";
+import {Priority} from "../model/Priority";
 
 
 @Injectable({
@@ -28,4 +29,18 @@ export class TaskService {
   updateTask(task: Task): Observable<Task> {
     return this.http.put<Task>('api/task/' + task.id, task);
   }
+
+  getAllStatus(): Observable<Status[]> {return this.http.get<Status[]>('api/status/all');}
+
+  getByIdStatus(id: string): Observable<Status> {
+    return this.http.get<Status>('api/status/' + id);
+  }
+
+  getByIdPriority(id: string): Observable<Priority> {
+    return this.http.get<Priority>('api/priority/' + id);
+  }
+
+  getAllPriority(): Observable<Priority[]> {return this.http.get<Priority[]>('api/priority/all');}
+
+
 }

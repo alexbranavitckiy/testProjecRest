@@ -6,5 +6,5 @@ import org.springframework.stereotype.Repository;
 import pakScan.entity.Status;
 
 @Repository
-public interface StatusRepositoryBeck extends CrudRepository<Status,Integer> {
+public interface StatusRepositoryBeck extends CrudRepository<Status, Integer> {
 }

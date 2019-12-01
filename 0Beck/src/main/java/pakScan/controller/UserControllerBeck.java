@@ -12,13 +12,14 @@ import pakScan.service.UserServiceBeck;
 public class UserControllerBeck {
     private UserServiceBeck userService;
 
-   @Autowired
-   public UserControllerBeck(UserServiceBeck userService) {this.userService = userService; }
-
+    @Autowired
+    public UserControllerBeck(UserServiceBeck userService) {
+        this.userService = userService;
+    }
 
 
     @GetMapping(value = "/all")
-   public Iterable<User> getAll() {
+    public Iterable<User> getAll() {
         return userService.getAll();
     }
 
@@ -32,14 +33,14 @@ public class UserControllerBeck {
     @GetMapping(value = "/{idUsers}")
     public ResponseEntity<User> findUserById(@PathVariable(name = "idUsers") Integer idUsers) {
         User user = userService.findById(idUsers);
-       return ResponseEntity.ok(user);
+        return ResponseEntity.ok(user);
     }
 
 
-   @DeleteMapping(value = "/{id}")
+    @DeleteMapping(value = "/{id}")
     public ResponseEntity deleteUser(@PathVariable(name = "id") Integer id) {
         userService.deleteUser(id);
         return ResponseEntity.noContent().build();
-   }
+    }
 
 }

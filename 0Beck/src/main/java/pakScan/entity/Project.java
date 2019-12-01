@@ -4,19 +4,14 @@ import javax.persistence.*;
 import java.util.Objects;
 
 
-
-
-
 @Entity
 @Table(name = "project")
-public class Project
-{
+public class Project {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Integer id;
-
 
 
     @Column(name = "cod_project")

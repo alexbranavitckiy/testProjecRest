@@ -6,7 +6,6 @@ public class TaskModel {
 
 
 
-
         private Integer id;
         private String description;
         private Date dueData;
@@ -23,6 +22,9 @@ public class TaskModel {
         private String stories;
         private String attachment;
         private StatusModel status;
+
+
+
 
     public long getId() {
         return id;

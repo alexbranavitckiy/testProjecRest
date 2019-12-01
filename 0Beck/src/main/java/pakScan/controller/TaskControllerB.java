@@ -13,7 +13,9 @@ public class TaskControllerB {
     public TaskServiceBeck taskService;
 
     @Autowired
-    public TaskControllerB(TaskServiceBeck taskService) {this.taskService = taskService; }
+    public TaskControllerB(TaskServiceBeck taskService) {
+        this.taskService = taskService;
+    }
 
     @GetMapping(value = "/{id}")
     public Task findTaskById(@PathVariable(name = "id") Integer id) {
@@ -21,11 +23,14 @@ public class TaskControllerB {
     }
 
     @GetMapping(value = "/all")
-    public Iterable<Task> getAll(){
-        return taskService.getAll();}
+    public Iterable<Task> getAll() {
+        return taskService.getAll();
+    }
 
     @PostMapping
-    public Task newTask(@RequestBody Task task){ return taskService.addTask(task);}
+    public Task newTask(@RequestBody Task task) {
+        return taskService.addTask(task);
+    }
 
 
 }

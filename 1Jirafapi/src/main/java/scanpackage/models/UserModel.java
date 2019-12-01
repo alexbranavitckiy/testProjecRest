@@ -1,5 +1,7 @@
 package scanpackage.models;
 
+import java.util.Objects;
+
 public class UserModel {
 
          Integer id;
@@ -8,8 +10,21 @@ public class UserModel {
          String password;
 
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof UserModel)) return false;
+        UserModel userModel = (UserModel) o;
+        return Objects.equals(getId(), userModel.getId()) &&
+                Objects.equals(getRole(), userModel.getRole()) &&
+                Objects.equals(getLogin(), userModel.getLogin()) &&
+                Objects.equals(getPassword(), userModel.getPassword());
+    }
 
-
+    @Override
+    public int hashCode() {
+        return Objects.hash(getLogin());
+    }
 
     public Integer getId() {
         return id;

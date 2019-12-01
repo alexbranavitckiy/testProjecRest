@@ -7,7 +7,7 @@ import pakScan.entity.User;
 
 
 @Repository
-public interface UserRepositoryBeck extends CrudRepository<User,Integer> {
+public interface UserRepositoryBeck extends CrudRepository<User, Integer> {
 
 
 }

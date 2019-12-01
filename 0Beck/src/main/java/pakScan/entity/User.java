@@ -5,10 +5,9 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "user")
-public class User
-{
+public class User {
     @Id
-    @Column (name="id")
+    @Column(name = "id")
     private Integer id;
 
     @Column(name = "roli")
@@ -78,9 +77,6 @@ public class User
     public int hashCode() {
         return Objects.hash(id, role, login, password);
     }
-
-
-
 
 
 }

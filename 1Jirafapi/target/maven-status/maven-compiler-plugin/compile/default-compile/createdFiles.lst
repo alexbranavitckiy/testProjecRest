@@ -1,4 +1,7 @@
 scanpackage\models\ProjectModel.class
+scanpackage\service\impl\PriorityServicelmlp.class
 scanpackage\FapiApp.class
-scanpackage\config\WebConfig.class
+scanpackage\service\GenericsService.class
 scanpackage\controller\ProjectController.class
+scanpackage\controller\PriorityController.class
+scanpackage\config\WebConfig.class

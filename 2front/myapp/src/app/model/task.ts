@@ -17,34 +17,13 @@ export class Task {
 
 
 
-//  private Date estimation;
-//   private String assigne;
-//   private String codtask;
-//   private Date createDate;
-//   private Date updateDate;
-//   private Date closedDate;
-//   private UserModel reporter;
-//   private PriorityModel priority;
-//   private ProjectModel project;
-//   private String comments;
-//   private String stories;
-//   private String attachment;
-//   private Integer status;
-
-
-
-
-
-
-
 
 
   id: number;
   description: string;
   dueData: Date;
   estimation:number;
-
-  assigne: User;
+  assigne: string;
   codtask: string;
   createDate: Date;
   updateDate: Date;
@@ -59,13 +38,10 @@ export class Task {
 
   constructor(){
 
-
     this.status = new Status();
-    this.assigne = new User();
     this.reporter = new User();
     this.project = new Project();
     this.priority = new Priority();
-
 
 
   }

@@ -8,7 +8,9 @@ import java.util.Optional;
 
 public interface TaskServiceBeck {
     Task addTask(Task task);
+
     Optional<Task> findById(Integer id);
+
     List<Task> getAll();
 
 }

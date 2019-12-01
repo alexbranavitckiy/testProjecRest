@@ -28,9 +28,12 @@ public class UserController {
 
     @PostMapping
     public ResponseEntity<UserModel> saveUser(@RequestBody UserModel user) {
-        if (user != null) {
+        if (user != null&& userService.getAll().lastIndexOf(user) == -1) {
+            user.setId(user.getLogin().hashCode());
             return ResponseEntity.ok(userService.save(user));
         }
         return null;
     }
+
+
 }

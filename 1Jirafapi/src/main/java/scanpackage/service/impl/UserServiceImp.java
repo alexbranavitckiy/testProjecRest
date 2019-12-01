@@ -12,7 +12,7 @@ import java.util.List;
 
 
 @Service
-public class UserServiceImp  implements UserServic {
+public class UserServiceImp implements UserServic {
 
     @Value("${backend.server.url}")
     private String backendServerUrl;
@@ -21,13 +21,13 @@ public class UserServiceImp  implements UserServic {
     public UserModel save(UserModel user) {
         user.setId(12);
         RestTemplate restTemplate = new RestTemplate();
-        return restTemplate.postForEntity(backendServerUrl+"/api/user", user, UserModel.class).getBody();
+        return restTemplate.postForEntity(backendServerUrl + "/api/user", user, UserModel.class).getBody();
     }
 
     @Override
     public List<UserModel> getAll() {
         RestTemplate restTemplate = new RestTemplate();
-        UserModel[] users = restTemplate.getForObject(backendServerUrl + "/api/user/all",UserModel[].class);
+        UserModel[] users = restTemplate.getForObject(backendServerUrl + "/api/user/all", UserModel[].class);
         return users == null ? Collections.emptyList() : Arrays.asList(users);
     }
 
@@ -36,7 +36,6 @@ public class UserServiceImp  implements UserServic {
         RestTemplate restTemplate = new RestTemplate();
         return restTemplate.getForObject(backendServerUrl + "/api/user/" + id, UserModel.class);
     }
-
 
 
 }

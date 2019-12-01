@@ -21,8 +21,8 @@ public class UserServiceImplBeck implements UserServiceBeck {
 //        Sign sign = signRepository.save(user.getSign());
 //        sign.setPassword(encoder().encode(user.getSign().getPassword()));
 //        user.setSign(sign);
-        user.setId(12);
-         userRepository.save(user);
+        //   user.setId(12);
+        userRepository.save(user);
         return user;
     }
 
@@ -31,11 +31,6 @@ public class UserServiceImplBeck implements UserServiceBeck {
         User user = userRepository.findById(id).get();
         return user;
     }
-
-
-
-
-
 
 
     @Override

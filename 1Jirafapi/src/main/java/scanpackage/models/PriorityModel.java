@@ -6,54 +6,46 @@ public class PriorityModel {
 
 
 
-    private Integer ID_PROJECT;
+    private Integer id;
 
 
-    private String name;
+    private String name_priority;
 
-
-    private String summary;
-
-
-
-
-
-    public Integer getID_PROJECT() {
-        return ID_PROJECT;
+    public Integer getId() {
+        return id;
     }
 
-    public void setID_PROJECT(Integer ID_PROJECT) {
-        this.ID_PROJECT = ID_PROJECT;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getName_priority() {
+        return name_priority;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getSummary() {
-        return summary;
-    }
-
-    public void setSummary(String summary) {
-        this.summary = summary;
+    public void setName_priority(String name_priority) {
+        this.name_priority = name_priority;
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (!(o instanceof PriorityModel)) return false;
         PriorityModel that = (PriorityModel) o;
-        return Objects.equals(ID_PROJECT, that.ID_PROJECT) &&
-                Objects.equals(name, that.name) &&
-                Objects.equals(summary, that.summary);
+        return Objects.equals(getId(), that.getId()) &&
+                Objects.equals(getName_priority(), that.getName_priority());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(ID_PROJECT, name, summary);
+        return Objects.hash(getId(), getName_priority());
+    }
+
+    @Override
+    public String toString() {
+        return "PriorityModel{" +
+                "id=" + id +
+                ", name_priority='" + name_priority + '\'' +
+                '}';
     }
 }
