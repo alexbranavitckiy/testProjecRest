@@ -13,13 +13,14 @@ import java.util.List;
 @Service
 public class ProjectServiceImpl implements ProjectService {
 
+
+
+
+
     @Value("${backend.server.url}")
     private String url;
 
 
-    public String getExepshion(String name) {
-        return name;
-    }
 
     @Override
     public List<ProjectModel> getAll() {
@@ -34,7 +35,19 @@ public class ProjectServiceImpl implements ProjectService {
         RestTemplate restTemplate = new RestTemplate();
         return restTemplate.getForObject(url + "/api/project/" + id, ProjectModel.class);
     }
+    @Override
+    public ProjectModel findBycodId(Integer cod_project) {
+        RestTemplate restTemplate = new RestTemplate();
+        return restTemplate.getForObject(url + "/api/project/" + cod_project, ProjectModel.class);
+    }
 
+
+    @Override
+    public List<ProjectModel> findAllByName(String name) {
+        System.out.println("findAllByName");
+        RestTemplate restTemplate = new RestTemplate();
+        ProjectModel[] projectModels = restTemplate.getForObject(url + "/api/project/allName/"+name, ProjectModel[].class);
+        return projectModels == null ? Collections.emptyList() : Arrays.asList(projectModels);}
 
     @Override
     public ProjectModel save(ProjectModel project) {

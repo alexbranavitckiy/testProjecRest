@@ -13,7 +13,8 @@ export class HistoryComponent implements OnInit {
   @Input() history: string;
 
   constructor(private authService: AuthService,
-              private router: Router,private  modalServ :ModalService,private ngbModal:NgbModal) {}
+              private router: Router, private  modalServ: ModalService, private ngbModal: NgbModal) {
+  }
 
   ngOnInit() {
   }

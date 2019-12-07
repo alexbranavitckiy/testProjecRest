@@ -11,12 +11,12 @@ import {BsModalRef, BsModalService} from "ngx-bootstrap";
 })
 export class TaskWorkComponent implements OnInit {
 
-  constructor(private authService: AuthService,private modalService: BsModalService,
-              private router: Router,private  modalServ :ModalService) { }
+  constructor(private authService: AuthService, private modalService: BsModalService,
+              private router: Router, private  modalServ: ModalService) {
+  }
 
   ngOnInit() {
   }
-
 
 
   onFormSubmit(loginForm) {
@@ -24,7 +24,8 @@ export class TaskWorkComponent implements OnInit {
     this.authService.login(loginForm.value.username, loginForm.value.password);
 
   }
-  goComponent(str:string){
+
+  goComponent(str: string) {
     this.router.navigate([str]);
   }
 

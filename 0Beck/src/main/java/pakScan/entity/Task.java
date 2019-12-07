@@ -7,24 +7,26 @@ import java.util.Objects;
 @Entity
 @Table(name = "task")
 public class Task {
+
+
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Integer id;
 
     @Column(name = "description")
     private String description;
 
-
     @Column(name = "due")
     @Temporal(TemporalType.DATE)
     private Date due;
 
     @Column(name = "estimation")
-    private int estimation;
-
+    private Date estimation;
 
     @Column(name = "assigne")
-    private String assigne;
+    private Integer assigne;
+
 
     @Column(name = "codtas")
     private String codtas;
@@ -32,7 +34,6 @@ public class Task {
     @Column(name = "creat")
     @Temporal(TemporalType.DATE)
     private Date creat;
-
 
     @Column(name = "updat")
     @Temporal(TemporalType.DATE)
@@ -43,32 +44,11 @@ public class Task {
     private Date clos;
 
 
-    //@ManyToOne (optional=false, cascade=CascadeType.ALL)
-    // @JoinColumn (name="ID_USER")
-    // @ManyToOne(targetEntity = User.class)
-    @Column(name = "reporter_user")
-    private Integer reporter_user;
-
-    // @Column(name = "reporter_USER")
-
-    //    @Column(name = "PRIOTITI_TASK")
-    //   @ManyToOne (optional=false, cascade=CascadeType.ALL)
-    //
-    // @Column(name = "PRIOTITI_TASK")
-//   @ManyToOne (optional=false, cascade=CascadeType.ALL)
-//   @JoinColumn (name="ID_PRIOTITI")
-
-
-    // @ManyToOne(targetEntity = Priority.class)
     @Column(name = "priority_task")
-    private Integer prioritytask;
+    private Integer priority_task;
 
-    // @OneToMany(targetEntity = Project.class)
-    //  @Column(name = "PROJECT_TASK")
-    // @ManyToOne (optional=false, cascade=CascadeType.ALL)
-    // @JoinColumn (name="project_t")
     @Column(name = "project_task")
-    private String projecttask;
+    private Integer project_task;
 
     @Column(name = "comments")
     private String comments;
@@ -80,9 +60,8 @@ public class Task {
     @Column(name = "stories")
     private String stories;
 
-
     @Column(name = "status_task")
-    private String statustask;
+    private Integer status_task;
 
 
     public Integer getId() {
@@ -109,19 +88,19 @@ public class Task {
         this.due = due;
     }
 
-    public int getEstimation() {
+    public Date getEstimation() {
         return estimation;
     }
 
-    public void setEstimation(int estimation) {
+    public void setEstimation(Date estimation) {
         this.estimation = estimation;
     }
 
-    public String getAssigne() {
+    public Integer getAssigne() {
         return assigne;
     }
 
-    public void setAssigne(String assigne) {
+    public void setAssigne(Integer assigne) {
         this.assigne = assigne;
     }
 
@@ -157,28 +136,20 @@ public class Task {
         this.clos = clos;
     }
 
-    public Integer getReporter_user() {
-        return reporter_user;
+    public Integer getPriority_task() {
+        return priority_task;
     }
 
-    public void setReporter_user(Integer reporter_user) {
-        this.reporter_user = reporter_user;
+    public void setPriority_task(Integer priority_task) {
+        this.priority_task = priority_task;
     }
 
-    public Integer getPrioritytask() {
-        return prioritytask;
+    public Integer getProject_task() {
+        return project_task;
     }
 
-    public void setPrioritytask(Integer prioritytask) {
-        this.prioritytask = prioritytask;
-    }
-
-    public String getProjecttask() {
-        return projecttask;
-    }
-
-    public void setProjecttask(String projecttask) {
-        this.projecttask = projecttask;
+    public void setProject_task(Integer project_task) {
+        this.project_task = project_task;
     }
 
     public String getComments() {
@@ -205,35 +176,14 @@ public class Task {
         this.stories = stories;
     }
 
-    public String getStatustask() {
-        return statustask;
+    public Integer getStatus_task() {
+        return status_task;
     }
 
-    public void setStatustask(String statustask) {
-        this.statustask = statustask;
+    public void setStatus_task(Integer status_task) {
+        this.status_task = status_task;
     }
 
-    public Task() {
-    }
-
-    public Task(Integer id, String description, Date due, int estimation, String assigne, String codtas, Date creat, Date updat, Date clos, Integer reporter_user, Integer prioritytask, String projecttask, String comments, String attachment, String stories, String statustask) {
-        this.id = id;
-        this.description = description;
-        this.due = due;
-        this.estimation = estimation;
-        this.assigne = assigne;
-        this.codtas = codtas;
-        this.creat = creat;
-        this.updat = updat;
-        this.clos = clos;
-        this.reporter_user = reporter_user;
-        this.prioritytask = prioritytask;
-        this.projecttask = projecttask;
-        this.comments = comments;
-        this.attachment = attachment;
-        this.stories = stories;
-        this.statustask = statustask;
-    }
 
     @Override
     public String toString() {
@@ -242,46 +192,44 @@ public class Task {
                 ", description='" + description + '\'' +
                 ", due=" + due +
                 ", estimation=" + estimation +
-                ", assigne='" + assigne + '\'' +
+                ", assigne=" + assigne +
                 ", codtas='" + codtas + '\'' +
                 ", creat=" + creat +
                 ", updat=" + updat +
                 ", clos=" + clos +
-                ", reporter_user=" + reporter_user +
-                ", prioritytask=" + prioritytask +
-                ", projecttask=" + projecttask +
+                ", priority_task=" + priority_task +
+                ", project_task=" + project_task +
                 ", comments='" + comments + '\'' +
                 ", attachment='" + attachment + '\'' +
                 ", stories='" + stories + '\'' +
-                ", statustask='" + statustask + '\'' +
+                ", status_task=" + status_task +
                 '}';
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (!(o instanceof Task)) return false;
         Task task = (Task) o;
-        return Objects.equals(id, task.id) &&
-                Objects.equals(description, task.description) &&
-                Objects.equals(due, task.due) &&
-                Objects.equals(estimation, task.estimation) &&
-                Objects.equals(assigne, task.assigne) &&
-                Objects.equals(codtas, task.codtas) &&
-                Objects.equals(creat, task.creat) &&
-                Objects.equals(updat, task.updat) &&
-                Objects.equals(clos, task.clos) &&
-                Objects.equals(reporter_user, task.reporter_user) &&
-                Objects.equals(prioritytask, task.prioritytask) &&
-                Objects.equals(projecttask, task.projecttask) &&
-                Objects.equals(comments, task.comments) &&
-                Objects.equals(attachment, task.attachment) &&
-                Objects.equals(stories, task.stories) &&
-                Objects.equals(statustask, task.statustask);
+        return Objects.equals(getId(), task.getId()) &&
+                Objects.equals(getDescription(), task.getDescription()) &&
+                Objects.equals(getDue(), task.getDue()) &&
+                Objects.equals(getEstimation(), task.getEstimation()) &&
+                Objects.equals(getAssigne(), task.getAssigne()) &&
+                Objects.equals(getCodtas(), task.getCodtas()) &&
+                Objects.equals(getCreat(), task.getCreat()) &&
+                Objects.equals(getUpdat(), task.getUpdat()) &&
+                Objects.equals(getClos(), task.getClos()) &&
+                Objects.equals(getPriority_task(), task.getPriority_task()) &&
+                Objects.equals(getProject_task(), task.getProject_task()) &&
+                Objects.equals(getComments(), task.getComments()) &&
+                Objects.equals(getAttachment(), task.getAttachment()) &&
+                Objects.equals(getStories(), task.getStories()) &&
+                Objects.equals(getStatus_task(), task.getStatus_task());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, description, due, estimation, assigne, codtas, creat, updat, clos, reporter_user, prioritytask, projecttask, comments, attachment, stories, statustask);
+        return Objects.hash(getId(), getDescription(), getDue(), getEstimation(), getAssigne(), getCodtas(), getCreat(), getUpdat(), getClos(), getPriority_task(), getProject_task(), getComments(), getAttachment(), getStories(), getStatus_task());
     }
 }

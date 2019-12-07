@@ -23,7 +23,7 @@ export class TaskService {
   }
 
   saveTask(task: Task): Observable<Task> {
-    return this.http.post<Task>('http://localhost:8081/api/task', task);
+    return this.http.post<Task>('http://localhost:8081/api/task/saveTask', task);
   }
 
   updateTask(task: Task): Observable<Task> {
@@ -39,6 +39,8 @@ export class TaskService {
   getByIdPriority(id: string): Observable<Priority> {
     return this.http.get<Priority>('api/priority/' + id);
   }
+
+
 
   getAllPriority(): Observable<Priority[]> {return this.http.get<Priority[]>('api/priority/all');}
 

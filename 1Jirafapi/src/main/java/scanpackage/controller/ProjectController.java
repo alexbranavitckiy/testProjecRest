@@ -1,43 +1,41 @@
 package scanpackage.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.context.request.WebRequest;
-import org.springframework.web.servlet.NoHandlerFoundException;
-import scanpackage.exceptionMessage.ApiError;
-import scanpackage.exceptionMessage.EntityNotFoundException;
 import scanpackage.models.ProjectModel;
 import scanpackage.service.ProjectService;
-
-import javax.validation.Valid;
-import java.util.List;
 
 //@RequestMapping("/api/ba")
 @RestController
 @RequestMapping("/api/project")
 public class ProjectController {
-    public ProjectService projectService;
 
+
+    private ProjectService projectService;
 
     @Autowired
     public ProjectController(ProjectService projectService) {
-
-
         this.projectService = projectService;
     }
 
 
     @GetMapping(value = "/all")
     public ResponseEntity getAllProject() {
+
+
         return ResponseEntity.ok(projectService.getAll());
+    }
+
+    @GetMapping(value = "/name/{name}")
+    public ResponseEntity findAllByName(@PathVariable(name = "name") String name) {
+        // ArrayList arrayList=new ArrayList();
+        //        arrayList.add((projectService.findAllByName(name)));
+        return ResponseEntity.ok(projectService.findAllByName(name));
     }
 
 
     @PostMapping
-    //  @ResponseStatus(HttpStatus.BAD_REQUEST) @Valid
     public ResponseEntity<ProjectModel> saveProject(@RequestBody ProjectModel project) {
         if (project != null && projectService.getAll().lastIndexOf(project) == -1) {
             project.setCod_project(project.getName().hashCode() + "");
@@ -49,6 +47,17 @@ public class ProjectController {
         }
     }
 
+    @GetMapping(value = "/{cod_project}")
+    public ResponseEntity<ProjectModel> findTaskBycod_project(@PathVariable(name = "cod_project") Integer cod_project) {
+        ProjectModel projectModel = projectService.findById(cod_project);
+        if (projectModel != null) {
+            return ResponseEntity.ok(projectModel);
+        } else {
+            return ResponseEntity.notFound().build();
+        }
+    }
+
+
     @GetMapping(value = "/{id}")
     public ResponseEntity<ProjectModel> findTaskById(@PathVariable(name = "id") Integer id) {
         ProjectModel task = projectService.findById(id);
@@ -58,7 +67,6 @@ public class ProjectController {
             return ResponseEntity.notFound().build();
         }
     }
-
 
 }
 

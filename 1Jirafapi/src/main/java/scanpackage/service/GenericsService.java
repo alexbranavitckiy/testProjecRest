@@ -1,6 +1,5 @@
 package scanpackage.service;
 
-import scanpackage.models.ProjectModel;
 
 import java.util.List;
 

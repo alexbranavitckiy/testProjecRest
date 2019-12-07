@@ -1,17 +1,17 @@
 <div class="container">
 
-<div class="modal-header">
-  <h4 class="modal-title">Render user</h4>
-</div>
-
-<div class="row">
-  <div  class=" form-group cardA">
-    <div class="col cardA">
-      <form class="form-inline">
-        <input class="form-control " type="search" placeholder="Search" aria-label="Search">
-      </form>
-    </div>
+  <div class="modal-header">
+    <h4 class="modal-title">Render user</h4>
   </div>
+
+  <div class="row">
+    <div class=" form-group cardA">
+      <div class="col cardA">
+        <form class="form-inline">
+          <input class="form-control " type="search" placeholder="Search" aria-label="Search">
+        </form>
+      </div>
+    </div>
     <div class="col cardA">
       <select class="custom-select" required>
         <option value="">User</option>
@@ -21,24 +21,25 @@
       <div class="invalid-feedback">Example invalid custom select feedback</div>
     </div>
 
-</div>
+  </div>
 
-<div class="container-fluid">
-</div><table class="table table-striped">
-  <thead>
-  <tr>
-    <th scope="col">Users</th>
-    <th scope="col" sortable="name" (sort)="onSort($event)">Number of tasks
-      <button type="button" class=" btn btn-dark">&uArr;</button>
-      <button type="button " class="btn btn-dark btnPadding">&dArr;</button>
+  <div class="container-fluid">
+  </div>
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th scope="col">Users</th>
+      <th scope="col" sortable="name" (sort)="onSort($event)">Number of tasks
+        <button type="button" class=" btn btn-dark">&uArr;</button>
+        <button type="button " class="btn btn-dark btnPadding">&dArr;</button>
 
 
-    </th>
-    <th scope="col" sortable="area" (sort)="onSort($event)">Status</th>
-    <th scope="col" sortable="area">Options</th>
-  </tr>
-  </thead>
-  <tbody><!--
+      </th>
+      <th scope="col" sortable="area" (sort)="onSort($event)">Status</th>
+      <th scope="col" sortable="area">Options</th>
+    </tr>
+    </thead>
+    <tbody><!--
   <tr *ngFor="let country of countries">
     <th scope="row">{{ country.id }}</th>
     <td>
@@ -53,43 +54,43 @@
   </tbody>
 </table>-->
 
-  <tr>
-    <td>Ivan</td>
-    <td><a href="#">12</a></td>
-    <td><a href="#">Developer</a></td>
-    <td  >
-      <div  class="row cardA">
-        <button (click)="modalServ.openXl(templeyt)"  class="btn btn-danger" >Render task</button>
-      </div>
-    </td>
-  </tr>
-  <tr>
-    <td> Tom</td>
-    <td><a href="#">33</a></td>
-    <td><a href="#">Tester</a></td>
-    <td  >
-      <div  class="row cardA">
-        <button (click)="modalServ.openXl(templeyt)"  class="btn btn-danger" >Render task</button>
-      </div>
-    </td>
-  </tr>
-  <tr>
-    <td> Vasa</td>
-    <td><a href="#">12</a></td>
-    <td><a href="#">Developer</a></td>
-    <td  >
-      <div  class="row cardA">
-        <button (click)="modalServ.openXl(templeyt)"  class="btn btn-danger" >Render task</button>
-      </div>
-    </td>
-  </tr>
+    <tr>
+      <td>Ivan</td>
+      <td><a href="#">12</a></td>
+      <td><a href="#">Developer</a></td>
+      <td>
+        <div class="row cardA">
+          <button (click)="modalServ.openXl(templeyt)" class="btn btn-danger">Render task</button>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td> Tom</td>
+      <td><a href="#">33</a></td>
+      <td><a href="#">Tester</a></td>
+      <td>
+        <div class="row cardA">
+          <button (click)="modalServ.openXl(templeyt)" class="btn btn-danger">Render task</button>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td> Vasa</td>
+      <td><a href="#">12</a></td>
+      <td><a href="#">Developer</a></td>
+      <td>
+        <div class="row cardA">
+          <button (click)="modalServ.openXl(templeyt)" class="btn btn-danger">Render task</button>
+        </div>
+      </td>
+    </tr>
 
-  </tbody>
-</table>
+    </tbody>
+  </table>
 
-<div class="modal-footer">
-  <button type="button" class="btn btn-light"   (click)="title.close('Close click')">Close</button>
-</div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-light" (click)="title.close('Close click')">Close</button>
+  </div>
 </div>
 
 

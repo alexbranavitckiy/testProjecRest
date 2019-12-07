@@ -1,9 +1,9 @@
-<div *ngIf="authService.getisloggedIn"  class=" cardA container card-deck">
-  <div *ngFor="let  pathsSideBar of service.pathsSideBar;">
-      <div class="col-sm">
-        <div class="row">
+<div *ngIf="authService.getisloggedIn" class=" cardA container card-deck">
+  <div *ngFor="let  pathsSideBar of service.pathsSideBar ">
+    <div class="col-sm">
+      <div class="row">
         <div *ngIf="service.getIdUser()==pathsSideBar.Role" type="button" class="cardA card colorCard">
-          <a  (click)="service.goComponent(pathsSideBar.nameRout,pathsSideBar.booleanCheckOpenList)" class="btn">
+          <a (click)="service.goComponent(pathsSideBar.nameRout,pathsSideBar.booleanCheckOpenList)" class="btn">
             <div class="card-body">
               <h4 class="card-title h4">&rArr;{{pathsSideBar.nameForm}}</h4>
             </div>

@@ -7,7 +7,6 @@ import {ModalConfig} from "ngb-modal";
 import {NgbModal} from "@ng-bootstrap/ng-bootstrap";
 
 
-
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -19,21 +18,20 @@ export class LoginComponent implements OnInit {
   @Input() title: string;
 
   constructor(private authService: AuthService,
-              private router: Router,private  modalServ :ModalService,private ngbModal:NgbModal) {
+              private router: Router, private  modalServ: ModalService, private ngbModal: NgbModal) {
 
   }
+
   ngOnInit() {
   }
 
 
+  onFormSubmit(loginForm) {
+    this.authService.login(loginForm.value.username, loginForm.value.password)
+    this.ngbModal.dismissAll();
+  }
 
-
- onFormSubmit(loginForm) {
- this.authService.login(loginForm.value.username, loginForm.value.password)
-   this.ngbModal.dismissAll();
- }
-
-  goComponent(str:string){
+  goComponent(str: string) {
     this.router.navigate([str]);
   }
 }

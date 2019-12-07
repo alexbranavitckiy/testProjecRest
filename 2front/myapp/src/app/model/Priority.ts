@@ -1,4 +1,4 @@
 export class Priority{
-  idPriority: number;
+  id: number;
   name_priority: string;
 }

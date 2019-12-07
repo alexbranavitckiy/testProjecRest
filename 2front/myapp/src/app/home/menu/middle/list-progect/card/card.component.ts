@@ -14,16 +14,23 @@ import {ProjectService} from "../../../../../shared/project.service";
 export class CardComponent implements OnInit {
   @Input() list: String[];// лист титул
   @Input() Data: String[];// входные данные
-  ngOnInit() {}
-
-  constructor(private userService :UserService,private taskService :TaskService,private projectService:ProjectService, private router: Router, private service: Service, private modalServ :ModalService) {
+  ngOnInit() {
   }
-    goComponent(str: string,index :number) {
-      this.router.navigate([str]);
-      console.log(index);
-      console.log(this.list);
+
+  constructor(private userService: UserService,
+              private taskService: TaskService,
+              private projectService: ProjectService,
+              private router: Router,
+              private service: Service,
+              private modalServ: ModalService) {
+  }
+
+  goComponent(str: string, index: JSON) {
+    //['item', '5']
+    this.router.navigate([str, index]);
+    if (JSON) {
     }
-
-
-
+    console.log(index);
+    console.log(this.list.values()[JSON.parse("cod_project")]);
+  }
 }

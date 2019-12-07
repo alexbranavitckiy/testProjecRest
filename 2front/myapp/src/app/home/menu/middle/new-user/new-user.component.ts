@@ -7,7 +7,6 @@ import {FormControl, FormGroup, FormGroupDirective, NgForm, Validators} from "@a
 import validate = WebAssembly.validate;
 
 
-
 @Component({
   selector: 'app-new-user',
   templateUrl: './new-user.component.html',
@@ -16,8 +15,8 @@ import validate = WebAssembly.validate;
 export class NewUserComponent implements OnInit {
 
 
-   password:string;
-   topassword:string;
+  password: string;
+  topassword: string;
 
   private subscriptions: Subscription[] = [];
   public newUser: User = new User();
@@ -29,26 +28,23 @@ export class NewUserComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log(this.password+this.topassword)
-    this.userService.getAllUser().subscribe((data: User[]) => {
-      data.forEach((user: User) => this.allUsers.push(user));
-    });
+    console.log(this.password + this.topassword)
+
   }
 
 
   fomUser: FormGroup = new FormGroup(
     {
       "passwordOne": new FormControl("", Validators.required),
-      "password": new FormControl("", [ Validators.required]),
+      "password": new FormControl("", [Validators.required]),
       "login": new FormControl("", Validators.required),
       "role": new FormControl("", [Validators.required]),
-      "role2": new FormControl("", [ Validators.required])
+      "role2": new FormControl("", [Validators.required])
     })
 
 
-
   public createNewUser(): void {
-    this.newUser.role = this.fomUser.get("role").value;
+    this.newUser.roli = this.fomUser.get("role").value;
     this.newUser.login = this.fomUser.get("login").value;
     this.newUser.password = this.fomUser.get("password").value;
     console.log(this.fomUser)
@@ -60,21 +56,16 @@ export class NewUserComponent implements OnInit {
   }
 
 
-
-
-
-    createNewUserValidator12(control: FormControl): {[s:string]:boolean}{
-         if(this.fomUser.get("passwordOne").value!=this.fomUser.get("password").value){
-          return {"password": false};
-        }
-        else {
-        return {"password": true};} }
-
-
-
-
-
+  createNewUserValidator12(control: FormControl): { [s: string]: boolean } {
+    if (this.fomUser.get("passwordOne").value != this.fomUser.get("password").value) {
+      return {"password": false};
+    } else {
+      return {"password": true};
+    }
   }
+
+
+}
 
 
 

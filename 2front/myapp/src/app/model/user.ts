@@ -5,13 +5,11 @@ export class User {
 
 
   id: number;
-  role:string;
+  roli:string;
   login:string;
   password:string;
 
-
   constructor(){
-
 
 
   }

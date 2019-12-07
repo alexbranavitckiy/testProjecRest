@@ -4,12 +4,12 @@ package scanpackage.service.impl;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
+import scanpackage.models.TaskKonvert;
 import scanpackage.models.TaskModel;
 import scanpackage.service.TaskService;
 
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.Date;
 import java.util.List;
 
 @Service
@@ -19,13 +19,12 @@ public class TaskServiceImpl implements TaskService {
     @Value("${backend.server.url}")
     private String backendServerUrl;
 
-    private RestTemplate restTemplate = new RestTemplate();
 
     @Override
-    public List<TaskModel> getAll() {
+    public List<TaskKonvert> getAll() {
         RestTemplate restTemplate = new RestTemplate();
-        TaskModel[] taskModels = restTemplate.getForObject(backendServerUrl + "/api/task/all", TaskModel[].class);
-        return taskModels == null ? Collections.emptyList() : Arrays.asList(taskModels);
+        TaskKonvert[] taskKonverts = restTemplate.getForObject(backendServerUrl + "/api/task/all", TaskKonvert[].class);
+        return taskKonverts == null ? Collections.emptyList() : Arrays.asList(taskKonverts);
     }
 
 
@@ -37,12 +36,11 @@ public class TaskServiceImpl implements TaskService {
 
 
     @Override
-    public TaskModel save(TaskModel task) {
+    public TaskModel save(TaskKonvert task) {
 
-        System.out.println(task);
-
-        // RestTemplate restTemplate = new RestTemplate();
-        return null; //restTemplate.postForEntity(backendServerUrl+"/api/task", task, TaskModel.class).getBody();
+        System.out.println(task.toString());
+        RestTemplate restTemplate = new RestTemplate();
+        return  restTemplate.postForEntity(backendServerUrl+"/api/task", task, TaskModel.class).getBody();
     }
 
     @Override
@@ -51,6 +49,5 @@ public class TaskServiceImpl implements TaskService {
         restTemplate.put(backendServerUrl + "/api/task/" + task.getId(), task);
         return task;
     }
-
 
 }

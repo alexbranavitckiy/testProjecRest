@@ -1,4 +1,13 @@
-import {AfterViewChecked, Component, DoCheck, OnChanges, OnInit, SimpleChanges, TemplateRef} from '@angular/core';
+import {
+  AfterViewChecked,
+  Component,
+  DoCheck,
+  OnChanges,
+  OnDestroy,
+  OnInit,
+  SimpleChanges,
+  TemplateRef
+} from '@angular/core';
 import {Service} from "../../../../shared/service";
 import {Router} from "@angular/router";
 import {Project} from "../../../../model/project";
@@ -15,25 +24,25 @@ import {Task} from "../../../../model/task";
   templateUrl: './list-progect.component.html',
   styleUrls: ['./list-progect.component.css']
 })
-export class ListProgectComponent implements OnInit,DoCheck{
+export class ListProgectComponent implements OnInit, DoCheck, OnDestroy {
 
   public projects: Project[];
   private subscriptions: Subscription[] = [];
 
 
-  table1: string=" ";
-  table2: string=" ";
-  table3: string=" ";
-  table4: string=" ";
+  table1: string = " ";
+  table2: string = " ";
+  table3: string = " ";
+  table4: string = " ";
 
 
   public newProject: Project = new Project();
-  public allProject: Project[] =[];
+  public allProject: Project[] = [];
 
   public newTask: Task = new Task();
-  public allTask: Task[] =[];
+  public allTask: Task[] = [];
 
-  public allUsers: User[] =[];
+  public allUsers: User[] = [];
   public newUsers: Project = new Project();
 
 
@@ -43,36 +52,41 @@ export class ListProgectComponent implements OnInit,DoCheck{
   templatesTasks: any[] = ['templatesTasks'];
 
 
-  constructor(private userService :UserService,private taskService :TaskService,private projectService:ProjectService, private router: Router, private service: Service, private modalServ :ModalService) {
-    this.template(this.service.getIdUser() )
+  constructor(private userService: UserService, private taskService: TaskService, private projectService: ProjectService, private router: Router, private service: Service, private modalServ: ModalService) {
+    this.template(this.service.getIdUser())
 
-
- this.userService.getAllUser().subscribe((data: User[]) => {
-       data.forEach((user: User) => this.allUsers.push(user));
-      });
+    this.userService.getAllUser().subscribe((data: User[]) => {
+      data.forEach((user: User) => this.allUsers.push(user));
+    });
   }
+
   ngOnInit(): void {
     this.taskService.getTask().subscribe((data: Task[]) => {
       data.forEach((t: Task) => this.allTask.push(t));
     });
 
     this.projectService.getAllProject().subscribe((data: Project[]) => {
-          data.forEach((p: Project) => this.allProject.push(p));
-        });
+      data.forEach((p: Project) => this.allProject.push(p));
+    });
   }
 
- // ngOnInit() {
+  // ngOnInit() {
   //     this.loadBillingAccounts()// загруска таблицы
   //     this.service.fethDataBase().subscribe(() => {
   //     })
   //   }
+  ngOnDestroy(): void {
 
-  ngDoCheck(){
+    //this.subscriptions[0].unsubscribe();
+  }
 
-    this.template(this.service.getIdUser())}
+  ngDoCheck() {
+
+    this.template(this.service.getIdUser())
+  }
 
 
-  onLogin (template: TemplateRef<any>){
+  onLogin(template: TemplateRef<any>) {
     this.modalServ._openModal(template);
   }
 
@@ -81,38 +95,38 @@ export class ListProgectComponent implements OnInit,DoCheck{
     switch (number) {
       case 1: {
         // this.templates = this.templatesProject;
-          // this.templates = this.templatesProject;
-          this.table1 = "Projects"
-          this.table2 = " "
-          this.table3 = "Status RFT"
-          this.table4 = " "
-          break;
+        // this.templates = this.templatesProject;
+        this.table1 = "Projects"
+        this.table2 = " "
+        this.table3 = "Status RFT"
+        this.table4 = " "
+        break;
         break;
       }
       case 2: {
-      //  console.log(this.service.flagUserList)
+        //  console.log(this.service.flagUserList)
         switch (this.service.flagUserList) {
-          case false:{
+          case false: {
             this.table1 = "Tasks"
             this.table2 = " "
             this.table3 = "Status RFT"
             this.table4 = " "
-         //   this.templates = this.templatesProject;
+            //   this.templates = this.templatesProject;
             break
           }
-          case true:{
+          case true: {
             this.table1 = "Users"
             this.table2 = " "
             this.table3 = "Number of tasks"
             this.table4 = " "
-         //   this.templates = this.templatesUsers;
+            //   this.templates = this.templatesUsers;
             break
           }
         }
         break
       }
       case 3: {
-     //   this.templates = this.templatesTasks;
+        //   this.templates = this.templatesTasks;
         this.table1 = "Tasks"
         this.table2 = " "
         this.table3 = "Status RFT"
@@ -120,7 +134,7 @@ export class ListProgectComponent implements OnInit,DoCheck{
         break
       }
       case 4: {
-     //   this.templates = this.templatesTasks;
+        //   this.templates = this.templatesTasks;
         this.table1 = "Tasks"
         this.table2 = " "
         this.table3 = "Status RFT"
@@ -150,8 +164,6 @@ export class ListProgectComponent implements OnInit,DoCheck{
   goComponent(str: string) {
     this.router.navigate([str]);
   }
-
-
 
 
 }

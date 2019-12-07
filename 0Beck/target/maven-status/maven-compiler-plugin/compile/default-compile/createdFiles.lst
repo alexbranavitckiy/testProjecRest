@@ -1,0 +1,10 @@
+pakScan\entity\Status.class
+pakScan\entity\User.class
+pakScan\entity\Priority.class
+pakScan\repository\PriorityRepository.class
+pakScan\entity\Project.class
+pakScan\controller\PriorityController.class
+pakScan\controller\StatusController.class
+pakScan\service\impl\PriorityServicelmpl.class
+pakScan\entity\Task.class
+pakScan\BeckendApp.class

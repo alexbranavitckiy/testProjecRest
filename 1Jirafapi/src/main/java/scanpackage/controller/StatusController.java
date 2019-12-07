@@ -12,7 +12,7 @@ import scanpackage.service.GenericsService;
 @RequestMapping("/api/status")
 public class StatusController {
 
-    public GenericsService<StatusModel>  statusService;
+    private GenericsService<StatusModel>  statusService;
 
     @Autowired
     public StatusController(GenericsService<StatusModel> statusService) {

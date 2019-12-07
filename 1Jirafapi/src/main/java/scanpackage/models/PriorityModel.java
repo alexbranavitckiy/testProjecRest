@@ -5,9 +5,7 @@ import java.util.Objects;
 public class PriorityModel {
 
 
-
     private Integer id;
-
 
     private String name_priority;
 
@@ -27,6 +25,15 @@ public class PriorityModel {
         this.name_priority = name_priority;
     }
 
+
+    @Override
+    public String toString() {
+        return "PriorityModel{" +
+                "id=" + id +
+                ", name_priority='" + name_priority + '\'' +
+                '}';
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -41,11 +48,5 @@ public class PriorityModel {
         return Objects.hash(getId(), getName_priority());
     }
 
-    @Override
-    public String toString() {
-        return "PriorityModel{" +
-                "id=" + id +
-                ", name_priority='" + name_priority + '\'' +
-                '}';
-    }
+
 }

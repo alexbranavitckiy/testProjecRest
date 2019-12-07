@@ -1,20 +1,16 @@
 package pakScan.service.impl;
 
 
-
-
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import pakScan.entity.Priority;
 import pakScan.repository.PriorityRepository;
-import pakScan.repository.StatusRepositoryBeck;
-import pakScan.service.PriorityServiceBeck;
+import pakScan.service.PriorityService;
 
 import java.util.Optional;
 
 @Service
-public class PriorityServicelmpl implements PriorityServiceBeck {
+public class PriorityServicelmpl implements PriorityService {
 
     private PriorityRepository priorityRepository;
 
@@ -27,8 +23,6 @@ public class PriorityServicelmpl implements PriorityServiceBeck {
     public Iterable<Priority> getAll() {
         return priorityRepository.findAll();
     }
-
-
 
 
     @Override

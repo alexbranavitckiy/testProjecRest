@@ -16,7 +16,7 @@ import {RouterModule, Routes} from "@angular/router";
 import {Service} from "./shared/service";
 import {AuthService} from "./shared/AuthService";
 import {AuthGuardService} from "./shared/AuthGuardService";
-import {BsDropdownModule, BsModalService} from "ngx-bootstrap";
+import {BsDropdownModule, BsModalService, PaginationComponent} from "ngx-bootstrap";
 import { ModalModule } from 'ngx-bootstrap/modal';
 import {ModalService} from "./shared/modalService";
 import { TypeaheadModule } from 'ngx-bootstrap/typeahead';
@@ -36,7 +36,7 @@ import {ProjectService} from "./shared/project.service";
 import {UserService} from "./shared/user.service";
 import {SortMenuComponent} from "./home/menu/middle/list-progect/sort-menu/sort-menu.component";
 import {CardComponent} from "./home/menu/middle/list-progect/card/card.component";
-import { PaginationComponent } from './home/pagination/pagination.component';
+
 
 
 
@@ -49,7 +49,7 @@ const appRoutes: Routes = [
       {path: 'ListProject',component: ListProgectComponent},
       {path: 'NewProject', component: NewProgectComponent},
       {path: 'NewTasks',component: NewTaskComponent},
-      {path: 'ProjectView',component: ProjectViewComponent},
+      {path: 'ProjectView/:id',component: ProjectViewComponent},
       {path: 'NewUser', component: NewUserComponent},
       {path: 'WorkTask', component: WorkTaskComponent},
       { path: 'Login',component : LoginComponent},

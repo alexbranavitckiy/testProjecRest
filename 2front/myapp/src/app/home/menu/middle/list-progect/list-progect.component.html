@@ -25,19 +25,28 @@
       </div>
     </div>
   </ng-container>
-  <ng-container *ngSwitchCase="3">3</ng-container>
-  <ng-container *ngSwitchCase="4">4</ng-container>
+  <ng-container *ngSwitchCase="3">
+    <div class="container-fluid">
+      <div class="row">
+        <app-card [Data]="allTask" [list]="['Projects','','Status RFT','','']"></app-card>
+      </div>
+    </div>
+  </ng-container>
+  <ng-container *ngSwitchCase="4">
+    <div class="container-fluid">
+      <div class="row">
+        <app-card [Data]="allTask" [list]="['Projects','','Status RFT','','']"></app-card>
+      </div>
+    </div>
+  </ng-container>
 </div>
+<!--
+
 <div class="row">
   <app-pagination *ngIf="service.getIdUser()"></app-pagination>
 </div>
 
-<div class="container-fluid">
-  <div class="row">
-    <app-card [Data]="allTask" [list]="['Projects','','Status RFT','','']"></app-card>
-  </div>
-</div>
-
+-->
 
 <!--
 <div [ngSwitch]="service.flagUserList"  class="row cardA">

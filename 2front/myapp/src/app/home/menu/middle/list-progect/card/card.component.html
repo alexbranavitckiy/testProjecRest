@@ -1,28 +1,28 @@
-<ng-container *ngFor="let  data of Data of service.dataBase  let i= index" class="col">
+<ng-container *ngFor="let  data of Data;  let i= index" class="col">
   <div class="card bg-light cardA">
     <a class="btn ">
       <div class="card-body">
         <div class="row">
           <div class="col h4">
             <ng-container>
-              {{data?.login | json }}
-              {{data?.name | json }}
-              {{data?.Status | json }}
+              {{data?.login }}
+              {{data?.name }}
+              {{data?.Status }}
             </ng-container>
           </div>
         </div>
         <div class="row">
           <div class="col h6">
             <ng-container>
-              {{data?.summary | json }}
-              {{data?.createDate | json }}
-              {{data?.role | json }}
+              {{data?.summary  }}
+              {{data?.createDate }}
+              {{data?.role  }}
             </ng-container>
           </div>
         </div>
         <div class="row">
           <div class="col h6">
-            <button class="btn btn-secondary" (click)="goComponent('Home/ProjectView',i)">Просмотр/Редактирование
+            <button class="btn btn-secondary" (click)="goComponent('Home/ProjectView',data?.cod_project )">Просмотр/Редактирование
             </button>
           </div>
         </div>

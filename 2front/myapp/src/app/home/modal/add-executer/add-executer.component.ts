@@ -9,12 +9,11 @@ import {ModalService} from "../../../shared/modalService";
 export class AddExecuterComponent implements OnInit {
 
 
-
-
   @Input() title: string;
 
 
-  constructor(private  modalServ:ModalService) { }
+  constructor(private  modalServ: ModalService) {
+  }
 
   ngOnInit() {
   }

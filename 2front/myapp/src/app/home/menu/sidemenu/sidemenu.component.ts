@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Router} from "@angular/router";
 import {Service} from "../../../shared/service";
 import {ModalService} from "../../../shared/modalService";
@@ -10,7 +10,8 @@ import {ModalService} from "../../../shared/modalService";
 })
 export class SidemenuComponent implements OnInit {
 
-  constructor(private router: Router, private service: Service, private modalServ :ModalService) { }
+  constructor(private router: Router, private service: Service, private modalServ: ModalService) {
+  }
 
   ngOnInit() {
   }

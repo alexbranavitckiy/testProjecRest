@@ -7,16 +7,17 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import pakScan.entity.Status;
-import pakScan.service.StatusServiceBeck;
+import pakScan.service.StatusService;
 
 @RestController
 @RequestMapping("/api/status")
 public class StatusController {
 
-    public StatusServiceBeck statusService;
+
+    private StatusService statusService;
 
     @Autowired
-    public StatusController(StatusServiceBeck statusService) {
+    public StatusController(StatusService statusService) {
         this.statusService = statusService;
     }
 

@@ -20,11 +20,20 @@ export class ProjectService {
     console.log("работает saveProject")
     return this.http.post<Project>('api/project',project);
   }
-
-  getById(id: string): Observable<Project> {
-    return this.http.get<Project>('api/project/'+id);
+  getById(cod_project: number): Observable<Project> {
+    return this.http.get<Project>('api/project/'+cod_project);
   }
 
+  getByName(name: String): Observable<Project[]> {
+    return this.http.get<Project[]>('api/project/name/'+name);
+  }
+
+
+
+
+  getallNameProject(name:String):Observable<Project[]>{
+    return this.http.get<Project[]>('api/project/allName/'+name);
+  }
 
   getAllProject():Observable<Project[]>{
     console.log("работает getAllProject")

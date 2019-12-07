@@ -12,7 +12,7 @@ import scanpackage.service.GenericsService;
 @RequestMapping("/api/priority")
 public class PriorityController {
 
-    public GenericsService<PriorityModel> priorityService;
+    private GenericsService<PriorityModel> priorityService;
 
     @Autowired
     public PriorityController(GenericsService<PriorityModel> priorityService) {
@@ -20,7 +20,7 @@ public class PriorityController {
     }
 
     @GetMapping(value = "/all")
-    public ResponseEntity getAllStatus() {
+    public ResponseEntity getAllPriority() {
         return ResponseEntity.ok(priorityService.getAll());
     }
 

@@ -6,18 +6,16 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import pakScan.entity.Priority;
-import pakScan.entity.Status;
-import pakScan.service.PriorityServiceBeck;
-import pakScan.service.StatusServiceBeck;
+import pakScan.service.PriorityService;
 
 @RestController
 @RequestMapping("/api/priority")
 public class PriorityController {
 
-    public PriorityServiceBeck priorityService;
+    private PriorityService priorityService;
 
     @Autowired
-    public PriorityController(PriorityServiceBeck statusService) {
+    public PriorityController(PriorityService statusService) {
         this.priorityService = statusService;
     }
 

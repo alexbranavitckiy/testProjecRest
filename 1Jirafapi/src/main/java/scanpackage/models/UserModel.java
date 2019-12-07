@@ -4,10 +4,10 @@ import java.util.Objects;
 
 public class UserModel {
 
-         Integer id;
-         String role;
-         String login;
-         String password;
+    private Integer id;
+    private String roli;
+    private String login;
+    private String password;
 
 
     @Override
@@ -19,6 +19,36 @@ public class UserModel {
                 Objects.equals(getRole(), userModel.getRole()) &&
                 Objects.equals(getLogin(), userModel.getLogin()) &&
                 Objects.equals(getPassword(), userModel.getPassword());
+    }
+
+    UserModel() {
+    }
+
+
+    public UserModel(Integer id, String roli, String login, String password) {
+        this.id = id;
+        this.roli = roli;
+        this.login = login;
+        this.password = password;
+    }
+
+    public String getRoli() {
+        return roli;
+    }
+
+    public void setRoli(String roli) {
+        this.roli = roli;
+    }
+
+
+    @Override
+    public String toString() {
+        return "UserModel{" +
+                "id=" + id +
+                ", roli='" + roli + '\'' +
+                ", login='" + login + '\'' +
+                ", password='" + password + '\'' +
+                '}';
     }
 
     @Override
@@ -43,11 +73,11 @@ public class UserModel {
     }
 
     public String getRole() {
-        return role;
+        return roli;
     }
 
-    public void setRole(String role) {
-        this.role = role;
+    public void setRole(String roli) {
+        this.roli = roli;
     }
 
     public void setLogin(String login) {

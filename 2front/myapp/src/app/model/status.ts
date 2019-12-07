@@ -3,11 +3,13 @@ import {Task} from "./task";
 
 export class Status {
 
-  idStatus:number;
+  id:number;
 
-  idTask:Task;
+  name:Task;
 
-
+// public long id;
+//
+//   public String name;
 
 
 }

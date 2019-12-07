@@ -9,6 +9,4 @@ public class BeckendApp {
     public static void main(String[] args) {
         SpringApplication.run(BeckendApp.class, args);
     }
-
-
 }

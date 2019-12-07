@@ -11,7 +11,8 @@ import scanpackage.service.UserServic;
 @RestController
 @RequestMapping("/api/user")
 public class UserController {
-    public UserServic userService;
+
+    private UserServic userService;
 
     @Autowired
     public UserController(UserServic userService) {this.userService = userService; }

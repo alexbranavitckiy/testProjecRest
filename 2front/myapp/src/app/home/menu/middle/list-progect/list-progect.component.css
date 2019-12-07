@@ -1,33 +1,37 @@
-.textColor{
+.textColor {
   /*
   color: #e9ecef;
    */
 }
 
-.btnPadding{
+.btnPadding {
 
 
   margin-left: 49%;
 }
-.progress-bar{
-background-color: #4e555b;
+
+.progress-bar {
+  background-color: #4e555b;
 }
-.coloCHek{
- /*
-  color: #e9ecef;
-   */
+
+.coloCHek {
+  /*
+   color: #e9ecef;
+    */
   font-family: "ARIAL BLACK";
 }
-.progress-barTime{
+
+.progress-barTime {
   background-color: #006bff;
 }
 
-.progress{
+.progress {
   background-color: #11110b2e;
   color: #101010;
 
 }
-.fon{
+
+.fon {
   margin-bottom: 1%;
   /* color: #fbffff;
    /*
@@ -35,32 +39,39 @@ background-color: #4e555b;
      */
   background-color: rgba(1, 1, 1, 0);
 }
+
 .header-h1 {
   padding: 5%;
   position: relative;
   margin-bottom: .5rem;
 }
-.buttonColorHeader{
 
-  background-color:#7448f8;
+.buttonColorHeader {
+
+  background-color: #7448f8;
 
 }
+
 .header-h1-center {
   text-align: center;
 }
+
 .header-h1-center h1 {
   padding-left: 1rem;
 }
+
 /*----*/
-.botonCardColor{
+.botonCardColor {
 
   color: #ffffff;
   background-color: #929495;
 }
-.card{
+
+.card {
   background-color: #7e765c5e;
   color: #ffffff;
 }
+
 /*
 списки
  */
@@ -72,7 +83,7 @@ background-color: #4e555b;
   overflow: hidden;
 }
 
-.list-counter-square>li {
+.list-counter-square > li {
   position: relative;
   display: block;
   height: 2rem;
@@ -87,22 +98,24 @@ background-color: #4e555b;
   border-radius: .25rem
 }
 
-.list-counter-square>li:last-child {
+.list-counter-square > li:last-child {
   margin-bottom: 0;
 }
-.cardA{
+
+.cardA {
   margin-top: 2%;
   margin-bottom: 2%;
 
 }
 
-.bottonExit{
+.bottonExit {
   margin-left: 91%;
   margin-right: 91%;
 
 
 }
-.list-counter-square>li::before {
+
+.list-counter-square > li::before {
   content: counter(list);
   counter-increment: list;
   position: absolute;
