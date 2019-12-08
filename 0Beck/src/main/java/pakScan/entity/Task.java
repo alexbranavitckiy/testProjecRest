@@ -14,6 +14,9 @@ public class Task {
     @Column(name = "id")
     private Integer id;
 
+    @Column(name = "code")
+    private String code;
+
     @Column(name = "description")
     private String description;
 
@@ -22,14 +25,11 @@ public class Task {
     private Date due;
 
     @Column(name = "estimation")
-    private Date estimation;
+    private Integer estimation;
 
     @Column(name = "assigne")
     private Integer assigne;
 
-
-    @Column(name = "codtas")
-    private String codtas;
 
     @Column(name = "creat")
     @Temporal(TemporalType.DATE)
@@ -43,18 +43,12 @@ public class Task {
     @Temporal(TemporalType.DATE)
     private Date clos;
 
-
     @Column(name = "priority_task")
     private Integer priority_task;
 
     @Column(name = "project_task")
     private Integer project_task;
 
-    @Column(name = "comments")
-    private String comments;
-
-    @Column(name = "attachment")
-    private String attachment;
 
 
     @Column(name = "stories")
@@ -63,6 +57,13 @@ public class Task {
     @Column(name = "status_task")
     private Integer status_task;
 
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
 
     public Integer getId() {
         return id;
@@ -88,11 +89,11 @@ public class Task {
         this.due = due;
     }
 
-    public Date getEstimation() {
+    public Integer getEstimation() {
         return estimation;
     }
 
-    public void setEstimation(Date estimation) {
+    public void setEstimation(Integer estimation) {
         this.estimation = estimation;
     }
 
@@ -102,14 +103,6 @@ public class Task {
 
     public void setAssigne(Integer assigne) {
         this.assigne = assigne;
-    }
-
-    public String getCodtas() {
-        return codtas;
-    }
-
-    public void setCodtas(String codtas) {
-        this.codtas = codtas;
     }
 
     public Date getCreat() {
@@ -152,21 +145,8 @@ public class Task {
         this.project_task = project_task;
     }
 
-    public String getComments() {
-        return comments;
-    }
 
-    public void setComments(String comments) {
-        this.comments = comments;
-    }
 
-    public String getAttachment() {
-        return attachment;
-    }
-
-    public void setAttachment(String attachment) {
-        this.attachment = attachment;
-    }
 
     public String getStories() {
         return stories;
@@ -193,14 +173,11 @@ public class Task {
                 ", due=" + due +
                 ", estimation=" + estimation +
                 ", assigne=" + assigne +
-                ", codtas='" + codtas + '\'' +
                 ", creat=" + creat +
                 ", updat=" + updat +
                 ", clos=" + clos +
                 ", priority_task=" + priority_task +
                 ", project_task=" + project_task +
-                ", comments='" + comments + '\'' +
-                ", attachment='" + attachment + '\'' +
                 ", stories='" + stories + '\'' +
                 ", status_task=" + status_task +
                 '}';
@@ -216,20 +193,17 @@ public class Task {
                 Objects.equals(getDue(), task.getDue()) &&
                 Objects.equals(getEstimation(), task.getEstimation()) &&
                 Objects.equals(getAssigne(), task.getAssigne()) &&
-                Objects.equals(getCodtas(), task.getCodtas()) &&
                 Objects.equals(getCreat(), task.getCreat()) &&
                 Objects.equals(getUpdat(), task.getUpdat()) &&
                 Objects.equals(getClos(), task.getClos()) &&
                 Objects.equals(getPriority_task(), task.getPriority_task()) &&
                 Objects.equals(getProject_task(), task.getProject_task()) &&
-                Objects.equals(getComments(), task.getComments()) &&
-                Objects.equals(getAttachment(), task.getAttachment()) &&
                 Objects.equals(getStories(), task.getStories()) &&
                 Objects.equals(getStatus_task(), task.getStatus_task());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getId(), getDescription(), getDue(), getEstimation(), getAssigne(), getCodtas(), getCreat(), getUpdat(), getClos(), getPriority_task(), getProject_task(), getComments(), getAttachment(), getStories(), getStatus_task());
+        return Objects.hash(getId(), getDescription(), getDue(), getEstimation(), getAssigne(), getCreat(), getUpdat(), getClos(), getPriority_task(), getProject_task(), getStories(), getStatus_task());
     }
 }

@@ -4,7 +4,6 @@ package scanpackage.service.impl;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
-import scanpackage.models.TaskKonvert;
 import scanpackage.models.TaskModel;
 import scanpackage.service.TaskService;
 
@@ -21,9 +20,9 @@ public class TaskServiceImpl implements TaskService {
 
 
     @Override
-    public List<TaskKonvert> getAll() {
+    public List<TaskModel> getAll() {
         RestTemplate restTemplate = new RestTemplate();
-        TaskKonvert[] taskKonverts = restTemplate.getForObject(backendServerUrl + "/api/task/all", TaskKonvert[].class);
+        TaskModel[] taskKonverts = restTemplate.getForObject(backendServerUrl + "/api/task/all", TaskModel[].class);
         return taskKonverts == null ? Collections.emptyList() : Arrays.asList(taskKonverts);
     }
 
@@ -36,8 +35,7 @@ public class TaskServiceImpl implements TaskService {
 
 
     @Override
-    public TaskModel save(TaskKonvert task) {
-
+    public TaskModel save(TaskModel task) {
         System.out.println(task.toString());
         RestTemplate restTemplate = new RestTemplate();
         return  restTemplate.postForEntity(backendServerUrl+"/api/task", task, TaskModel.class).getBody();

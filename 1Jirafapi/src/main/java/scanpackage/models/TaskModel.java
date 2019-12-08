@@ -1,35 +1,76 @@
 package scanpackage.models;
 
 import java.util.Date;
-import java.util.Objects;
 
 
 public class TaskModel {
 
 
-    private Integer id;
-    private String description;
-    private Date due;
-    private Date estimation;
-    private UserModel assigne;
-    private String codtas;
-    private Date createDate;
-    private Date updateDate;
-    private Date closedDate;
-    private PriorityModel priority_task;
-    private ProjectModel project_task;
-    private String comments;
-    private String stories;
-    private String attachment;
-    private StatusModel status_task;
+    private int id;
+    private String code;//
+    private String description;//
+    private Date due;//
+    private int estimation;//
+    private int assigne;//
+    private Date createDate;//
+    private Date updateDate;//
+    private Date closedDate;//
+    private int priority_task;//
+    private int project_task;//
+    private String stories;//
+    private int status_task;//
 
 
-    public Integer getId() {
+    TaskModel(TaskKonvert taskKonvert) {
+        TaskModel taskModel = new TaskModel();
+        taskModel.setDescription(taskKonvert.getDescription());
+        taskModel.setStatus_task(taskKonvert.getStatus_task());
+        taskModel.setAssigne(taskKonvert.getAssigne().getId());
+        taskModel.setCode(taskKonvert.getProject_task().getName() + taskKonvert.getEstimation());
+        taskModel.setEstimation(taskKonvert.getEstimation());
+        taskModel.setPriority_task(taskKonvert.getPriority_task());
+        taskModel.setDue(taskKonvert.getDue());
+        taskModel.setCreateDate(taskKonvert.getCreateDate());
+        taskModel.setClosedDate(taskKonvert.getClosedDate());
+        taskModel.setUpdateDate(taskKonvert.getUpdateDate());
+        taskModel.setStories(taskKonvert.getStories());
+        taskModel.setProject_task(taskKonvert.getProject_task().getId());
+    }
+
+
+    TaskModel() {
+    }
+
+    public TaskModel(int id, String code, String description, Date due, int estimation, int assigne, Date createDate, Date updateDate, Date closedDate, int priority_task, int project_task, String comments, String stories, int status_task) {
+        this.id = id;
+        this.code = code;
+        this.description = description;
+        this.due = due;
+        this.estimation = estimation;
+        this.assigne = assigne;
+        this.createDate = createDate;
+        this.updateDate = updateDate;
+        this.closedDate = closedDate;
+        this.priority_task = priority_task;
+        this.project_task = project_task;
+        this.stories = stories;
+        this.status_task = status_task;
+    }
+
+    public int getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(int id) {
         this.id = id;
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
     }
 
     public String getDescription() {
@@ -48,28 +89,20 @@ public class TaskModel {
         this.due = due;
     }
 
-    public Date getEstimation() {
+    public int getEstimation() {
         return estimation;
     }
 
-    public void setEstimation(Date estimation) {
+    public void setEstimation(int estimation) {
         this.estimation = estimation;
     }
 
-    public UserModel getAssigne() {
+    public int getAssigne() {
         return assigne;
     }
 
-    public void setAssigne(UserModel assigne) {
+    public void setAssigne(int assigne) {
         this.assigne = assigne;
-    }
-
-    public String getCodtas() {
-        return codtas;
-    }
-
-    public void setCodtas(String codtas) {
-        this.codtas = codtas;
     }
 
     public Date getCreateDate() {
@@ -96,29 +129,22 @@ public class TaskModel {
         this.closedDate = closedDate;
     }
 
-    public PriorityModel getPriority_task() {
+    public int getPriority_task() {
         return priority_task;
     }
 
-    public void setPriority_task(PriorityModel priority_task) {
+    public void setPriority_task(int priority_task) {
         this.priority_task = priority_task;
     }
 
-    public ProjectModel getProject_task() {
+    public int getProject_task() {
         return project_task;
     }
 
-    public void setProject_task(ProjectModel project_task) {
+    public void setProject_task(int project_task) {
         this.project_task = project_task;
     }
 
-    public String getComments() {
-        return comments;
-    }
-
-    public void setComments(String comments) {
-        this.comments = comments;
-    }
 
     public String getStories() {
         return stories;
@@ -128,68 +154,12 @@ public class TaskModel {
         this.stories = stories;
     }
 
-    public String getAttachment() {
-        return attachment;
-    }
-
-    public void setAttachment(String attachment) {
-        this.attachment = attachment;
-    }
-
-    public StatusModel getStatus_task() {
+    public int getStatus_task() {
         return status_task;
     }
 
-    public void setStatus_task(StatusModel status_task) {
+    public void setStatus_task(int status_task) {
         this.status_task = status_task;
-    }
-
-    @Override
-    public String toString() {
-        return "TaskModel{" +
-                "id=" + id +
-                ", description='" + description + '\'' +
-                ", due=" + due +
-                ", estimation=" + estimation +
-                ", assigne=" + assigne +
-                ", codtas='" + codtas + '\'' +
-                ", createDate=" + createDate +
-                ", updateDate=" + updateDate +
-                ", closedDate=" + closedDate +
-                ", priority_task=" + priority_task +
-                ", project_task=" + project_task +
-                ", comments='" + comments + '\'' +
-                ", stories='" + stories + '\'' +
-                ", attachment='" + attachment + '\'' +
-                ", status_task=" + status_task +
-                '}';
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof TaskModel)) return false;
-        TaskModel taskModel = (TaskModel) o;
-        return Objects.equals(getId(), taskModel.getId()) &&
-                Objects.equals(getDescription(), taskModel.getDescription()) &&
-                Objects.equals(getDue(), taskModel.getDue()) &&
-                Objects.equals(getEstimation(), taskModel.getEstimation()) &&
-                Objects.equals(getAssigne(), taskModel.getAssigne()) &&
-                Objects.equals(getCodtas(), taskModel.getCodtas()) &&
-                Objects.equals(getCreateDate(), taskModel.getCreateDate()) &&
-                Objects.equals(getUpdateDate(), taskModel.getUpdateDate()) &&
-                Objects.equals(getClosedDate(), taskModel.getClosedDate()) &&
-                Objects.equals(getPriority_task(), taskModel.getPriority_task()) &&
-                Objects.equals(getProject_task(), taskModel.getProject_task()) &&
-                Objects.equals(getComments(), taskModel.getComments()) &&
-                Objects.equals(getStories(), taskModel.getStories()) &&
-                Objects.equals(getAttachment(), taskModel.getAttachment()) &&
-                Objects.equals(getStatus_task(), taskModel.getStatus_task());
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(getId(), getDescription(), getDue(), getEstimation(), getAssigne(), getCodtas(), getCreateDate(), getUpdateDate(), getClosedDate(), getPriority_task(), getProject_task(), getComments(), getStories(), getAttachment(), getStatus_task());
     }
 }
 

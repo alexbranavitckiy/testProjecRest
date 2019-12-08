@@ -38,8 +38,7 @@ public class ProjectController {
     @PostMapping
     public ResponseEntity<ProjectModel> saveProject(@RequestBody ProjectModel project) {
         if (project != null && projectService.getAll().lastIndexOf(project) == -1) {
-            project.setCod_project(project.getName().hashCode() + "");
-            System.out.println(project.getCod_project());
+
             System.out.println(projectService.getAll().indexOf(project));
             return ResponseEntity.ok(projectService.save(project));
         } else {

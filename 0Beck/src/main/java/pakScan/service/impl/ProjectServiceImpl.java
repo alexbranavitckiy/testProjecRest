@@ -22,7 +22,6 @@ public class ProjectServiceImpl implements ProjectService {
     }
 
 
-
     @Override
     public Project addProject(Project project) {
         Project aProject = projectRepository.save(project);

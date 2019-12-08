@@ -8,14 +8,39 @@ public class ProjectModel {
 
     private String cod_project;
 
+
     private String summary;
 
     private String name;
 
-    private String status;
-
     public int getId() {
         return id;
+    }
+
+    @Override
+    public String toString() {
+        return "ProjectModel{" +
+                "id=" + id +
+                ", cod_project='" + cod_project + '\'' +
+                ", summary='" + summary + '\'' +
+                ", name='" + name + '\'' +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof ProjectModel)) return false;
+        ProjectModel that = (ProjectModel) o;
+        return getId() == that.getId() &&
+                Objects.equals(getCod_project(), that.getCod_project()) &&
+                Objects.equals(getSummary(), that.getSummary()) &&
+                Objects.equals(getName(), that.getName());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getId(), getCod_project(), getSummary(), getName());
     }
 
     public void setId(int id) {
@@ -44,42 +69,6 @@ public class ProjectModel {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
-    }
-
-    @Override
-    public String toString() {
-        return "ProjectModel{" +
-                "id=" + id +
-                ", cod_project='" + cod_project + '\'' +
-                ", summary='" + summary + '\'' +
-                ", name='" + name + '\'' +
-                ", status='" + status + '\'' +
-                '}';
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof ProjectModel)) return false;
-        ProjectModel that = (ProjectModel) o;
-        return getId() == that.getId() &&
-                Objects.equals(getCod_project(), that.getCod_project()) &&
-                Objects.equals(getSummary(), that.getSummary()) &&
-                Objects.equals(getName(), that.getName()) &&
-                Objects.equals(getStatus(), that.getStatus());
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(getId(), getCod_project(), getSummary(), getName(), getStatus());
     }
 }
 

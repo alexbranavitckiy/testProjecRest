@@ -1,7 +1,6 @@
 export class Project {
 
    id:number;
-  cod_project:number;
   summary: string;
   name: string;
 
