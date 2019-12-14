@@ -25,12 +25,10 @@ export class CardComponent implements OnInit {
               private modalServ: ModalService) {
   }
 
-  goComponent(str: string, index: JSON) {
-    //['item', '5']
-    this.router.navigate([str, index]);
-    if (JSON) {
+  goComponent(str: string, index: number) {
+    this.router.navigate([str,index]);
+    if (index != 0) {
     }
     console.log(index);
-    console.log(this.list.values()[JSON.parse("cod_project")]);
   }
 }

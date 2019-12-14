@@ -15,10 +15,13 @@ public class UserController {
     private UserServic userService;
 
     @Autowired
-    public UserController(UserServic userService) {this.userService = userService; }
+    public UserController(UserServic userService) {
+        this.userService = userService;
+    }
 
     @GetMapping(value = "/all")
-    public ResponseEntity getAllUser(){
+
+    public ResponseEntity getAllUser() {
         return ResponseEntity.ok(userService.getAll());
     }
 
@@ -29,7 +32,7 @@ public class UserController {
 
     @PostMapping
     public ResponseEntity<UserModel> saveUser(@RequestBody UserModel user) {
-        if (user != null&& userService.getAll().lastIndexOf(user) == -1) {
+        if (user != null && userService.getAll().lastIndexOf(user) == -1) {
             user.setId(user.getLogin().hashCode());
             return ResponseEntity.ok(userService.save(user));
         }

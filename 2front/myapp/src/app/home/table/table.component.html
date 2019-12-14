@@ -9,61 +9,77 @@
   </tr>
   </thead>
   <tbody>
-  <ng-container *ngFor="let  data of Data of service.dataBase  let i= index">
+
+
+  <ng-container *ngFor="let  data of Data let i= index">
     <tr class="cardA">
       <ng-container>
-        <td>{{data?.idUsers | json }}</td>
+        <td>
+          <button type="button" class="btn  btn-dark"
+                  (click)="modalServ._openModal(task)">{{data?.code}}</button>
+        </td>
       </ng-container>
       <ng-container>
-        <td>{{data?.name | json }}</td>
+        <td>{{data?.assigne?.login|json}}</td>
       </ng-container>
       <ng-container>
-        <td>{{data?.role | json }}</td>
+        <td>{{data?.priority_task?.name_priority|json}}</td>
       </ng-container>
       <ng-container>
-        <td>{{data?.login | json }}</td>
+        <td>{{data?.status_task?.name|json}}</td>
       </ng-container>
       <ng-container>
-        <td>{{data?.password | json }}</td>
+        <td>{{data?.createDate}}</td>
       </ng-container>
       <ng-container>
-        <td>{{data?.idProject | json }}</td>
+        <td>{{data?.updateDate}}</td>
       </ng-container>
       <ng-container>
-      <td>{{data?.nameProject | json }}</td>
+        <td>{{data?.nameProject}}</td>
       </ng-container>
       <ng-container>
-        <td>{{data?.summary | json }}</td>
+        <td>{{data?.summary}}</td>
       </ng-container>
       <ng-container>
-        <td>{{data?.nameproject | json }}</td>
+        <td>{{data?.istorii}}</td>
       </ng-container>
       <ng-container>
-        <td>{{data?.nameproject | json }}</td>
+        <td>{{data?.task}}</td>
       </ng-container>
       <ng-container>
-        <td>{{data?.istorii | json }}</td>
+        <td>{{data?.comments}}</td>
       </ng-container>
-      <ng-container>
-        <td>{{data?.task | json }}</td>
-      </ng-container>
-      <ng-container>
-        <td>{{data?.comments | json }}</td>
-      </ng-container>
-      <ng-container>
-        <td>{{data?.customeremail | json }}</td>
-      </ng-container>
-    </tr>
-
-    <ng-container>
       <td>
-        <button (click)="modalServ.openLgCentered(content)" type="button" class=" btn btn-danger ">Delete</button>
-        <button (click)="modalServ.openLgCentered(content)" type="button" class=" btn btn-secondary ">Render</button>
-        <button (click)="modalServ.openScrollableContent(history)" type="button" class=" btn btn-secondary ">History
-        </button>
+        <ng-container>
+          <button (click)="histori(history,data.stories)" type="button" class=" btn btn-secondary ">History</button>
+          <button (click)="Delete(Data[i])" type="button" class=" btn btn-danger ">Delete</button>
+          <button (click)="modalServ.openLgCentered(Render)" type="button" class=" btn btn-secondary ">Render</button>
+        </ng-container>
       </td>
-    </ng-container>
+    </tr>
   </ng-container>
   </tbody>
 </table>
 
+<ng-template #Render let-modal>
+  <app-add-executer [title]="modal"></app-add-executer>
+</ng-template>
+<ng-template #task>
+  <app-task-work></app-task-work>
+</ng-template>
+
+<ng-template #history let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title">History</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    {{storis}}
+    <app-hitstori></app-hitstori>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
+  </div>
+</ng-template>

@@ -5,6 +5,8 @@ import {ModalService} from "../../shared/modalService";
 import {Project} from "../../model/project";
 import {ajaxGetJSON} from "rxjs/internal-compatibility";
 import {Subscription} from "rxjs";
+import {TaskConvector} from "../../model/taskConvector";
+import {TaskService} from "../../shared/task.service";
 
 @Component({
   selector: 'app-table',
@@ -13,19 +15,28 @@ import {Subscription} from "rxjs";
 })
 export class TableComponent implements OnInit {
 
-
-  @Input() list: String[];// лист титул
-  @Input() Data: String[];// входные данные
-
-  constructor(private router: Router, private service: Service, private modalServ :ModalService) {
+  private subscriptions: Subscription[] = [];
+  @Input() list: string[];// лист титул
+  @Input() Data: string[];// входные данные
+ private storis:string;
+  constructor(private router: Router, private service: Service, private modalServ: ModalService, private taskServer: TaskService) {
   }
+
   ngOnInit() {
-
-
-
   }
 
 
+  histori(longContent, storis: string): void {
+    this.storis=storis;
+    console.log(storis)
+    this.modalServ.openLgCentered(longContent)
+  }
 
+
+  Delete(Data: TaskConvector) {
+    this.subscriptions.push(this.taskServer.getdeleteTask(Data.id).subscribe(() => {
+      console.log(Data.id)
+    }));
+  }
 
 }

@@ -26,6 +26,7 @@ public class UserServiceImp implements UserServic {
 
     @Override
     public List<UserModel> getAll() {
+        System.out.println("List<UserModel> getAll()");
         RestTemplate restTemplate = new RestTemplate();
         UserModel[] users = restTemplate.getForObject(backendServerUrl + "/api/user/all", UserModel[].class);
         return users == null ? Collections.emptyList() : Arrays.asList(users);

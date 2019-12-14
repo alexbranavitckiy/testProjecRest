@@ -1,7 +1,7 @@
 import {Project} from "./project";
 import {User} from "./user";
 import {Status} from "./status";
-import {Priority} from "./Priority";
+import {Priority} from "./priority";
 
 export class Task {
   id: number;
@@ -17,9 +17,6 @@ export class Task {
   project_task: number;
   stories: string;
   status_task: number;
-
-
-
 
   constructor() {
 

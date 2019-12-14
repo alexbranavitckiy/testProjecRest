@@ -7,11 +7,12 @@ import {Task} from "../../../../model/task";
 import {Observable, Subject, Subscription} from "rxjs";
 import {TaskService} from "../../../../shared/task.service";
 import {User} from "../../../../model/user";
-import {Priority} from "../../../../model/Priority";
+import {Priority} from "../../../../model/priority";
 import {Status} from "../../../../model/status";
 import {UserService} from "../../../../shared/user.service";
 import {ProjectService} from "../../../../shared/project.service";
 import {debounceTime, map} from "rxjs/operators";
+import {TaskConvector} from "../../../../model/taskConvector";
 
 @Component({
   selector: 'app-new-task',
@@ -26,7 +27,8 @@ export class NewTaskComponent implements OnInit {
   private subscriptions: Subscription[] = [];
   public prioriti: Priority[] = [];
   public status: Status[] = [];
-  public newTask: Task = new Task();
+  public users: User[] = [];
+  public newTask: TaskConvector = new TaskConvector();
   today = new Date();
   public projectNow: Project[] = [];
 
@@ -49,7 +51,7 @@ export class NewTaskComponent implements OnInit {
 
     this.userService.getAllUser().subscribe((data: User[]) => {
       data.forEach((user: User) => this.user.push(user));
-      console.log(this.status)
+      console.log(this.users+'asdasdsad')
     });
   }
 
@@ -87,19 +89,20 @@ export class NewTaskComponent implements OnInit {
 
   public createNewTask(): void {
     console.log(this.taskForm)
+    this.newTask.createDate=this.today;
+    this.newTask.stories="Истории";
     this.newTask.project_task =this.taskForm.get("projectName").value;
     this.newTask.description = this.taskForm.get("description").value;
-    this.newTask.priority_task = this.taskForm.get("priority").value;
-    this.newTask.status_task = this.taskForm.get("Status").value;
+    this.newTask.priority_task = this.prioriti[this.taskForm.get("priority").value];
+    this.newTask.status_task = this.status[this.taskForm.get("Status").value];
     this.newTask.estimation = this.taskForm.get("estimation").value;
     this.newTask.assigne = this.taskForm.get("Reporter").value;
     this.newTask.due = this.today;
     this.newTask.createDate = this.today;
     this.newTask.updateDate = this.today;
     this.newTask.closedDate = this.today;
-
     this.subscriptions.push(this.taskServer.saveTask(this.newTask).subscribe(() => {
-      this.newTask = new Task();
+     // this.newTask = new TaskConvector();
       console.log("Task created");
     }));
     console.log(this.newTask);

@@ -9,12 +9,15 @@ import java.util.Objects;
 public class Project {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    // @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Integer id;
 
     @Column(name = "summary")
     private String summary;
+    @Column(name = "statusRFT")
+    private String statusRFT;
+
 
     @Column(name = "cod_project")
     private String cod_project;
@@ -49,6 +52,14 @@ public class Project {
         return Objects.hash(getId(), getSummary(), getCod_project(), getName());
     }
 
+    public String getStatusRFT() {
+        return statusRFT;
+    }
+
+    public void setStatusRFT(String statusRFT) {
+        this.statusRFT = statusRFT;
+    }
+
     public Integer getId() {
         return id;
     }
@@ -80,4 +91,6 @@ public class Project {
     public void setName(String name) {
         this.name = name;
     }
+
+
 }

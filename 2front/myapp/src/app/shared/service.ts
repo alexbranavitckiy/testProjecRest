@@ -40,6 +40,15 @@ export class Service {
   }
 
   goComponent(str: string, flagUserList?: boolean): any {
+
+
+
+
+
+
+
+
+
     this.flagUserList = flagUserList;
     this.router.navigate([str]);
   }
@@ -55,6 +64,8 @@ export class Service {
     {Role: 3, nameRout: 'Home/ListProject', nameForm: "My tasks", booleanCheckOpenList: false},
     {Role: 4, nameRout: 'Home/ListProject', nameForm: "My tasks", booleanCheckOpenList: false}
   ];
+
+
   public dataBase: DataBase[] = [];
 
   constructor(private http: HttpClient, private router: Router) {
@@ -64,7 +75,7 @@ export class Service {
     return this.http.get<Project[]>('/api/ba');
   }
 
-//getUsers
+
   getBillingAccounts(): Observable<Project[]> {
 
     return this.http.get<Project[]>('api/project/all');

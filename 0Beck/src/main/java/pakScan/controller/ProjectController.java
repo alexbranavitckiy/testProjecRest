@@ -35,14 +35,10 @@ public class ProjectController {
 
     @GetMapping(value = "/allName/{name}")
     public Iterable<Project> getAllName(@PathVariable(name = "name") String name) {
-        System.out.println(projectService.getAllName(name));
         return projectService.getAllName(name);
     }
 
-    @GetMapping(value = "/{cod_project}")
-    public Project findProjectBycod_project(@PathVariable(name = "cod_project") Integer cod_project) {
-        return projectService.findBycod_project(cod_project).get();
-    }
+
 
 
 }

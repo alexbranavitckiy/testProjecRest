@@ -58,7 +58,7 @@
           <label class="h5">Status</label>
           <select name="Status" formControlName="Status" class="custom-select" required>
             <ng-container *ngFor="let  data of status;  let i= index">
-              <option [ngStyle]="{'value':i}" value="1">{{data?.name}}</option>
+              <option [value]="data.id">{{data?.name}}</option>
             </ng-container>
           </select>
           <div class="invalid-feedback h5">Example invalid custom select feedback</div>
@@ -69,7 +69,7 @@
           <label class="h5">Priority</label>
           <select name="priority" formControlName="priority" class="custom-select" required>
             <ng-container *ngFor="let  data of prioriti;  let i= index">
-              <option [ngStyle]="{'value':i}" value="1">{{data?.name_priority}}</option>
+              <option  [value]="data.id" >{{data?.name_priority}}</option>
             </ng-container>
           </select>
           <div class="invalid-feedback h5">Example invalid custom select feedback</div>

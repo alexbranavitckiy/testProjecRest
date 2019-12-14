@@ -6,7 +6,7 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "task")
-public class Task {
+public class Task<T> {
 
 
     @Id
@@ -48,7 +48,6 @@ public class Task {
 
     @Column(name = "project_task")
     private Integer project_task;
-
 
 
     @Column(name = "stories")
@@ -144,8 +143,6 @@ public class Task {
     public void setProject_task(Integer project_task) {
         this.project_task = project_task;
     }
-
-
 
 
     public String getStories() {

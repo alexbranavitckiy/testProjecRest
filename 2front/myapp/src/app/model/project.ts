@@ -3,7 +3,8 @@ export class Project {
    id:number;
   summary: string;
   name: string;
-
+  cod_project:string;
+ statusRFT:string;
 
 
    // id:String;

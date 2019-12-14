@@ -11,8 +11,6 @@ public interface ProjectService {
     Optional<Project> findById(Integer id);
 
 
-    Optional<Project> findBycod_project(Integer cod_project);
-
     List<Project> getAll();
 
 

@@ -29,13 +29,13 @@ import { SidemenuComponent } from './home/menu/sidemenu/sidemenu.component';
 import {NgbActiveModal, NgbModule} from "@ng-bootstrap/ng-bootstrap";
 import { SettingsComponent } from './home/menu/middle/settings/settings.component';
 import { AddExecuterComponent } from './home/modal/add-executer/add-executer.component';
-import { HistoryComponent } from './home/modal/history/history.component';
 import { TableComponent } from './home/table/table.component';
 import {TaskService} from "./shared/task.service";
 import {ProjectService} from "./shared/project.service";
 import {UserService} from "./shared/user.service";
 import {SortMenuComponent} from "./home/menu/middle/list-progect/sort-menu/sort-menu.component";
 import {CardComponent} from "./home/menu/middle/list-progect/card/card.component";
+import { HitstoriComponent } from './home/modal/hitstori/hitstori.component';
 
 
 
@@ -79,11 +79,11 @@ const appRoutes: Routes = [
     SidemenuComponent,
     SettingsComponent,
     AddExecuterComponent,
-    HistoryComponent,
     TableComponent,
     SortMenuComponent,
     CardComponent,
     PaginationComponent,
+    HitstoriComponent,
 
   ],
   imports: [BrowserAnimationsModule, NgbModule,FormsModule,

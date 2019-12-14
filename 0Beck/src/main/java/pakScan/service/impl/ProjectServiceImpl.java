@@ -33,14 +33,8 @@ public class ProjectServiceImpl implements ProjectService {
     public List<Project> getAllName(String name) {
         System.out.println((List<Project>) projectRepository.findByName(name));
         return (List<Project>) projectRepository.findByName(name);
-
     }
 
-
-    @Override
-    public Optional<Project> findBycod_project(Integer cod_project) {
-        return projectRepository.findById(cod_project);
-    }
 
     @Override
     public Optional<Project> findById(Integer id) {

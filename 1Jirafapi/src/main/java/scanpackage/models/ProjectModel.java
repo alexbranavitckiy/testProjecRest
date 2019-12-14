@@ -8,6 +8,7 @@ public class ProjectModel {
 
     private String cod_project;
 
+    private String statusRFT;
 
     private String summary;
 
@@ -22,6 +23,7 @@ public class ProjectModel {
         return "ProjectModel{" +
                 "id=" + id +
                 ", cod_project='" + cod_project + '\'' +
+                ", statusRFT='" + statusRFT + '\'' +
                 ", summary='" + summary + '\'' +
                 ", name='" + name + '\'' +
                 '}';
@@ -41,6 +43,14 @@ public class ProjectModel {
     @Override
     public int hashCode() {
         return Objects.hash(getId(), getCod_project(), getSummary(), getName());
+    }
+
+    public String getStatusRFT() {
+        return statusRFT;
+    }
+
+    public void setStatusRFT(String statusRFT) {
+        this.statusRFT = statusRFT;
     }
 
     public void setId(int id) {

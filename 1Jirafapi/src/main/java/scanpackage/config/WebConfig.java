@@ -1,6 +1,6 @@
 package scanpackage.config;
 //Аннотация @EnableAutoConfiguration переключает
-  //      на приемлемое по умолчанию поведение, основанное на содержании вашего classpath.
+//      на приемлемое по умолчанию поведение, основанное на содержании вашего classpath.
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;

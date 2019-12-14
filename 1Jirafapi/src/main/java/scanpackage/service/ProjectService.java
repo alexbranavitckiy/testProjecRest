@@ -7,10 +7,9 @@ import java.util.List;
 public interface ProjectService {
 
     List<ProjectModel> getAll();
-
+    List<ProjectModel> findAllByObject(ProjectModel name);
     ProjectModel findById(Integer id);
     List<ProjectModel> findAllByName(String name);
-    ProjectModel findBycodId(Integer id);
     ProjectModel save(ProjectModel project);
 
 }

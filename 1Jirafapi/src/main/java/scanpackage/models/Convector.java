@@ -12,11 +12,11 @@ public class Convector {
 
      TaskModel taskModel=new TaskModel();
      taskModel.setDescription(taskKonvert.getDescription());
-     taskModel.setStatus_task(taskKonvert.getStatus_task());
+     taskModel.setStatus_task(taskKonvert.getStatus_task().getId());
      taskModel.setAssigne(taskKonvert.getAssigne().getId());
      taskModel.setCode(taskKonvert.getProject_task().getName() + taskKonvert.getEstimation());
      taskModel.setEstimation(taskKonvert.getEstimation());
-     taskModel.setPriority_task(taskKonvert.getPriority_task());
+     taskModel.setPriority_task(taskKonvert.getPriority_task().getId());
      taskModel.setDue(taskKonvert.getDue());
      taskModel.setCreateDate(taskKonvert.getCreateDate());
      taskModel.setClosedDate(taskKonvert.getClosedDate());

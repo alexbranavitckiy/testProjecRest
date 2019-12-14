@@ -1,18 +1,18 @@
 <div class="container textColor">
   <div class="row">
-    <div class="col form-group cardA">
-      <label for="exampleFormControlInput1" class="h4">Project name</label>
-      <select id="exampleFormControlInput1" class="custom-select h5" required disabled>
-        <option value="">Project name</option>
+    <div class="col form-group ">
+      <label class="h5">Project name</label>
+      <select  class="custom-select h5" required disabled>
+        <option value="0">{{projectThis?.name}}</option>
         <option value="1">Project59</option>
         <option value="2">Project253</option>
         <option value="3">Project2</option>
       </select>
     </div>
-    <div id="Priority" class="col form-group cardA">
+    <div id="Priority" class="col form-group ">
       <label class="h5" for="Priority">Status RFT</label>
       <select class="custom-select" disabled>
-        <option value="0">Open</option>
+        <option value="0">{{projectThis?.statusRFT}}</option>
         <option value="1">InProgress</option>
         <option value="2">Ressolved</option>
         <option value="3">Reopend</option>
@@ -21,7 +21,7 @@
       <div class="invalid-feedback">Example invalid custom select feedback</div>
     </div>
   </div>
-  <table *ngIf="service.getIdUser()!=(3||4)" class="table table-hover ">
+ <!-- <table *ngIf="service.getIdUser()!=(3||4)" class="table table-hover ">
     <thead class="table-light  ">
     <tr>
       <th scope="col">
@@ -107,13 +107,14 @@
       </td>
     </tr>
     </tbody>
-  </table>
+  </table> -->
+  <app-table [Data]="allTask" [list]="listTitleTable"></app-table>
   <div class=" <col-md-9 card-deck">
     <div class="container cardA">
       <div class="row">
         <div class="col form-group cardA">
           <label for="exampleFormControlTextarea3" class="h5">Summary</label>
-          <textarea class="form-control" id="exampleFormControlTextarea3" rows="3"></textarea>
+          <textarea disabled [value]="projectThis?.summary" class="form-control" id="exampleFormControlTextarea3" rows="3"></textarea>
         </div>
       </div>
       <div class="custom-file">
@@ -124,7 +125,7 @@
         <div class="container cardA row">
           <div class="col">
             <div class="h6">Start date
-              <input type="date" class="form-control" id="date" name="date" placeholder="Дата" required disabled>
+              <input type="date"   class="form-control" id="date" name="date" placeholder="Дата" required disabled>
             </div>
           </div>
           <div class="col">
@@ -155,42 +156,8 @@
     </button>
   </div>
   <div class="modal-body">
-    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-      Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet
-      rutrum faucibus dolor auctor.</p>
-    <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur
-      et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-      Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet
-      rutrum faucibus dolor auctor.</p>
-    <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur
-      et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-      Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet
-      rutrum faucibus dolor auctor.</p>
-    <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur
-      et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-      Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet
-      rutrum faucibus dolor auctor.</p>
-    <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur
-      et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-      Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet
-      rutrum faucibus dolor auctor.</p>
-    <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur
-      et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-      Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet
-      rutrum faucibus dolor auctor.</p>
-    <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur
-      et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+
+<app-hitstori></app-hitstori>
   </div>
   <div class="modal-footer">
     <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>

@@ -13,10 +13,30 @@ public class TaskKonvert {
     private Date createDate;
     private Date updateDate;
     private Date closedDate;
-    private int priority_task;
+    private PriorityModel priority_task;
     private ProjectModel project_task;
     private String stories;
-    private int status_task;
+    private StatusModel status_task;
+
+
+    @Override
+    public String toString() {
+        return "TaskKonvert{" +
+                "id=" + id +
+                ", code='" + code + '\'' +
+                ", description='" + description + '\'' +
+                ", due=" + due +
+                ", estimation=" + estimation +
+                ", assigne=" + assigne +
+                ", createDate=" + createDate +
+                ", updateDate=" + updateDate +
+                ", closedDate=" + closedDate +
+                ", priority_task=" + priority_task +
+                ", project_task=" + project_task +
+                ", stories='" + stories + '\'' +
+                ", status_task=" + status_task +
+                '}';
+    }
 
     public int getId() {
         return id;
@@ -50,11 +70,11 @@ public class TaskKonvert {
         this.due = due;
     }
 
-    public Integer getEstimation() {
+    public int getEstimation() {
         return estimation;
     }
 
-    public void setEstimation(Integer estimation) {
+    public void setEstimation(int estimation) {
         this.estimation = estimation;
     }
 
@@ -90,11 +110,11 @@ public class TaskKonvert {
         this.closedDate = closedDate;
     }
 
-    public Integer getPriority_task() {
+    public PriorityModel getPriority_task() {
         return priority_task;
     }
 
-    public void setPriority_task(Integer priority_task) {
+    public void setPriority_task(PriorityModel priority_task) {
         this.priority_task = priority_task;
     }
 
@@ -114,23 +134,11 @@ public class TaskKonvert {
         this.stories = stories;
     }
 
-    public Integer getStatus_task() {
+    public StatusModel getStatus_task() {
         return status_task;
     }
 
-    public void setStatus_task(Integer status_task) {
-        this.status_task = status_task;
-    }
-
-    public void setEstimation(int estimation) {
-        this.estimation = estimation;
-    }
-
-    public void setPriority_task(int priority_task) {
-        this.priority_task = priority_task;
-    }
-
-    public void setStatus_task(int status_task) {
+    public void setStatus_task(StatusModel status_task) {
         this.status_task = status_task;
     }
 }

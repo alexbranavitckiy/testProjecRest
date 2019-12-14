@@ -35,11 +35,12 @@ public class ProjectServiceImpl implements ProjectService {
         RestTemplate restTemplate = new RestTemplate();
         return restTemplate.getForObject(url + "/api/project/" + id, ProjectModel.class);
     }
+
     @Override
-    public ProjectModel findBycodId(Integer cod_project) {
+    public List<ProjectModel> findAllByObject(ProjectModel name) {
         RestTemplate restTemplate = new RestTemplate();
-        return restTemplate.getForObject(url + "/api/project/" + cod_project, ProjectModel.class);
-    }
+        ProjectModel[] projectModels = restTemplate.getForObject(url + "/api/project/allName/"+name, ProjectModel[].class);
+        return projectModels == null ? Collections.emptyList() : Arrays.asList(projectModels);}
 
 
     @Override
